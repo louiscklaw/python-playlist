@@ -5,16 +5,20 @@
 # You can import up to 25 other configs in total.
 os: linux
 
-script:
-  - echo "helloworld"
-
 jobs:
   include:
+
     - stage: Merge
       script:
         - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
         - bash merge_if_success.sh
 
+    - stage: Test
+      script:
+        - cd unittest-helloworld
+        - pipenv sync
+        - pipenv run python3 main.py
+        - cd ..
 stages:
   - Unit_test
   - Test
