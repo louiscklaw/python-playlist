@@ -62,6 +62,7 @@ jobs:
         - cd ..
 
       after_failure:
+        - node -v
         - cat /home/travis/.npm/_logs/*.log
 
 stages:
