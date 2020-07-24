@@ -63,6 +63,8 @@ jobs:
 
         - cd ..
 
+      after_failure:
+        - cat /home/travis/.npm/_logs/*.log
 
 stages:
   - Unit_test
