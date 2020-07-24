@@ -30,7 +30,7 @@ jobs:
 
   allow_failures:
     - stage: Test
-      name: some test with known fault
+      name: test unittest-html-test-runner-helloworld
 
       before_script:
         - sudo apt update
