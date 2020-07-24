@@ -19,11 +19,13 @@ jobs:
         - bash merge_if_success.sh
 
     - stage: Test
+      name: unittest-helloworld
       script:
         - cd unittest-helloworld
         - pipenv sync
         - pipenv run python3 main.py
         - cd ..
+
 
 stages:
   - Unit_test
