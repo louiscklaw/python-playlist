@@ -20,8 +20,6 @@ jobs:
 
     - stage: Test
       script:
-
-
         - cd unittest-helloworld
         - pipenv sync
         - pipenv run python3 main.py
