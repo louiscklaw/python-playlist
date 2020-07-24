@@ -43,6 +43,16 @@ jobs:
         - pipenv run python3 main.py
         - cd ..
 
+      after_script:
+        - cd unittest-html-test-runner-helloworld
+        - cd reports
+        - mv TestResults*.html index.html
+        - cd ..
+
+        -
+
+        - cd ..
+
 
 stages:
   - Unit_test
