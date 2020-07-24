@@ -9,11 +9,6 @@ os: linux
 
 jobs:
   include:
-    - stage: Merge
-      script:
-        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
-        - bash merge_if_success.sh
-
     - stage: Test
       name: unittest-helloworld
 
@@ -27,6 +22,11 @@ jobs:
         - pipenv sync
         - pipenv run python3 main.py
         - cd ..
+
+    - stage: Merge
+      script:
+        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
+        - bash merge_if_success.sh
 
   allow_failures:
     - stage: Test
@@ -42,6 +42,7 @@ jobs:
         - pipenv sync
         - pipenv run python3 main.py
         - cd ..
+
 
 stages:
   - Unit_test
