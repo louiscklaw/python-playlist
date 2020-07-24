@@ -26,6 +26,13 @@ jobs:
         - pipenv run python3 main.py
         - cd ..
 
+    - stage: Test
+      name: some test with known fault
+      script:
+        - cd unittest-html-test-runner-helloworld
+        - pipenv sync
+        - pipenv run python3 main.py
+        - cd ..
 
 stages:
   - Unit_test
