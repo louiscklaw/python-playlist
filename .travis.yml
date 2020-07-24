@@ -70,6 +70,7 @@ jobs:
 
       after_failure:
         - node -v
+        - ls -l unittest-html-test-runner-helloworld/reports
         - cat /home/travis/.npm/_logs/*.log
 
 stages:
