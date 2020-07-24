@@ -23,11 +23,6 @@ jobs:
         - pipenv run python3 main.py
         - cd ..
 
-    - stage: Merge
-      script:
-        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
-        - bash merge_if_success.sh
-
     - stage: Unit_Test
       name: test unittest-html-test-runner-helloworld
 
@@ -41,6 +36,11 @@ jobs:
         - pipenv sync
         - pipenv run python3 main.py || true
         - cd ..
+
+    - stage: Merge
+      script:
+        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
+        - bash merge_if_success.sh
 
     - stage: Publish_Result
       name: test publish result
