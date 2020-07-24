@@ -59,7 +59,7 @@ jobs:
         -   cd reports
         -     mv TestResults*.html index.html
         -   cd ..
-        -   push-dir --dir=reports --branch=gh-pages
+        -   npm run push_result
 
         - cd ..
 
