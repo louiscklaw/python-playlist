@@ -9,7 +9,7 @@ os: linux
 
 jobs:
   include:
-    - stage: Test
+    - stage: Unit_Test
       name: unittest-helloworld
 
       before_script:
@@ -29,7 +29,7 @@ jobs:
         - bash merge_if_success.sh
 
   allow_failures:
-    - stage: Test
+    - stage: Unit_Test
       name: test unittest-html-test-runner-helloworld
 
       before_script:
