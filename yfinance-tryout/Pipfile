@@ -6,6 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+yfinance = {editable = true,path = "./yfinance"}
+lxml = "*"
 
 [requires]
 python_version = "3"

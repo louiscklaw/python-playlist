@@ -2,6 +2,9 @@
 
 cp ../scripts/main.py ./main.py
 cp ../scripts/Pipfile ./Pipfile
+cp ../scripts/dev.sh ./dev.sh
+
+chmod +x dev.sh
 
 touch Pipfile
 
