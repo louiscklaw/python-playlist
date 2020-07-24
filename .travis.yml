@@ -68,6 +68,16 @@ jobs:
         -   npm run push_result
         - cd ..
 
+      deploy:
+        - provider: pages
+          skip_cleanup: true
+          local_dir: unittest-html-test-runner-helloworld/reports
+          github_token: $GITHUB_TOKEN
+      #     on:
+      #       branch: master
+
+      # if: branch = master
+
       after_failure:
         - node -v
         - ls -l unittest-html-test-runner-helloworld/reports
