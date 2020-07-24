@@ -28,7 +28,6 @@ jobs:
         - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
         - bash merge_if_success.sh
 
-  allow_failures:
     - stage: Unit_Test
       name: test unittest-html-test-runner-helloworld
 
