@@ -12,7 +12,6 @@ before_script:
 
 jobs:
   include:
-
     - stage: Merge
       script:
         - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
@@ -26,6 +25,7 @@ jobs:
         - pipenv run python3 main.py
         - cd ..
 
+  allow_failures:
     - stage: Test
       name: some test with known fault
       script:
