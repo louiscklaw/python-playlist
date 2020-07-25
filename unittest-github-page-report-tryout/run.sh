@@ -11,4 +11,4 @@ pipenv run python3 main.py
 
 mkdir -p ../docs
 
-cp -R ./reports/*.html ../docs
+cp -R ./reports/*.html ../docs/index.html

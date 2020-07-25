@@ -4,12 +4,11 @@ set -x
 
 rm -rf reports/*.html
 
-pipenv --rm
+# pipenv --rm
+# pipenv sync
 
-pipenv sync
 pipenv run python3 main.py
 
+mkdir -p ../docs
 
-cd reports
-  mv TestResults*.html index.html
-cd ..
+cp -R ./reports/*.html ../docs/index.html
