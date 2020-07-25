@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Unittest Results</h2>
-                <p class='attribute'><strong>Start Time: </strong>2020-07-25 16:06:17</p>
-                <p class='attribute'><strong>Duration: </strong>0 ms</p>
-                <p class='attribute'><strong>Summary: </strong>Total: 12, Pass: 6, Fail: 2, Error: 2, Skip: 2</p>
+                <p class='attribute'><strong>Start Time: </strong>2020-07-25 16:16:17</p>
+                <p class='attribute'><strong>Duration: </strong>1 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 18, Pass: 9, Fail: 3, Error: 3, Skip: 3</p>
             </div>
         </div>
         <div class="row">
@@ -38,7 +38,7 @@
                         </tr>
                         <tr style="display:none;">
                             <td class="col-xs-9" colspan="3"><p style="color:maroon;">ValueError: </p><p style="color:maroon;">Traceback (most recent call last):
-  File "main.py", line 56, in test_error
+  File "main.py", line 25, in test_error
     raise ValueError
 ValueError
 </p>
@@ -55,7 +55,7 @@ ValueError
                         </tr>
                         <tr style="display:none;">
                             <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 1 != 2</p><p style="color:maroon;">Traceback (most recent call last):
-  File "main.py", line 60, in test_fail
+  File "main.py", line 29, in test_fail
     self.assertEqual(1, 2)
 AssertionError: 1 != 2
 </p>
@@ -129,7 +129,7 @@ AssertionError: 1 != 2
                         </tr>
                         <tr style="display:none;">
                             <td class="col-xs-9" colspan="3"><p style="color:maroon;">ValueError: </p><p style="color:maroon;">Traceback (most recent call last):
-  File "main.py", line 26, in test_error
+  File "main.py", line 55, in test_error
     raise ValueError
 ValueError
 </p>
@@ -146,7 +146,98 @@ ValueError
                         </tr>
                         <tr style="display:none;">
                             <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 1 != 2</p><p style="color:maroon;">Traceback (most recent call last):
-  File "main.py", line 30, in test_fail
+  File "main.py", line 59, in test_fail
+    self.assertEqual(1, 2)
+AssertionError: 1 != 2
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_isupper</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='info'>
+                            <td class="col-xs-10">test_skip</td>
+                            <td class="col-xs-1">
+                                <span class="label label-info" style="display:block;width:40px;">Skip</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">This is a skipped test.</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_split</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_upper</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 6, Pass: 3, Fail: 1, Error: 1, Skip: 1 -- Duration: 0 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestStringMethods3</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_error</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ValueError: </p><p style="color:maroon;">Traceback (most recent call last):
+  File "main.py", line 85, in test_error
+    raise ValueError
+ValueError
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_fail</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 1 != 2</p><p style="color:maroon;">Traceback (most recent call last):
+  File "main.py", line 89, in test_fail
     self.assertEqual(1, 2)
 AssertionError: 1 != 2
 </p>
