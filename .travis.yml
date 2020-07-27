@@ -75,6 +75,16 @@ jobs:
         - pipenv run python3 after_test.py
         - cd ..
 
+    - stage: Publish_Result
+      name: generate gatsby test result page
+
+      script:
+        - cd gatsby-test-result-page
+        - yarn
+        - yarn build
+        - cd ..
+
+
     - stage: Merge
       script:
         - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
