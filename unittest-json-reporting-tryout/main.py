@@ -1,7 +1,22 @@
 #!/usr/bin/env python3
+
+import os,sys
+import subprocess
+from pprint import pprint
+
 import random
 import unittest
 import xmlrunner
+import xmltodict
+
+from config import *
+
+def run_test():
+  unittest.main(
+    testRunner=xmlrunner.XMLTestRunner(output=TEST_REPORT_DIRECTORY),
+    # these make sure that some options that are not applicable
+    # remain hidden from the help menu.
+    failfast=False, buffer=False, catchbreak=False)
 
 class TestSequenceFunctions(unittest.TestCase):
 
@@ -32,8 +47,4 @@ class TestSequenceFunctions(unittest.TestCase):
       self.assertTrue(element in self.seq)
 
 if __name__ == '__main__':
-  unittest.main(
-    testRunner=xmlrunner.XMLTestRunner(output='test-reports'),
-    # these make sure that some options that are not applicable
-    # remain hidden from the help menu.
-    failfast=False, buffer=False, catchbreak=False)
+  run_test()
