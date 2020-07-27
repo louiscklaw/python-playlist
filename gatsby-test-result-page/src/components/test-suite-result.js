@@ -4,15 +4,15 @@ const checkTestPassed = (test_detail) => {
   return (Object.keys(test_detail).indexOf('error') ==-1 && Object.keys(test_detail).indexOf('skipped') ==-1 )
 }
 
-function showError(test_detail){
+function ShowError(test_detail){
   return(
     <>
-      {}
+      error testcase
     </>
   )
 }
 
-function showSkip(test_detail){
+function ShowSkip(test_detail){
   return(
     <>
       {}
@@ -38,8 +38,8 @@ function TestSuiteResult(props){
       <div> {props['@system-err']} </div>
 
       <div> {checkTestPassed(props) ? 'test passed':'not pass'} </div>
-      <div> { Object.keys(props).indexOf("error") > -1 ? 'test error': 'not error' } </div>
-      <div> { Object.keys(props).indexOf("skipped") > -1 ? 'test skipped': 'not skipped' } </div>
+      <div> { Object.keys(props).indexOf("error") > -1 ? <ShowError />: 'not error' } </div>
+      <div> { Object.keys(props).indexOf("skipped") > -1 ? <ShowSkip />: 'not skipped' } </div>
 
       <pre>
         {JSON.stringify(props, null, 2)}
