@@ -6,13 +6,7 @@ const IndexPage = () => (
     <h1>Sourcing content from YAML</h1>
     <ul>
       <li>
-        <Link to="/json-at-buildtime">json-at-buildtime</Link>
-      </li>
-      <li>
         <Link to="/json-test-result">json-test-result</Link>
-      </li>
-      <li>
-        <Link to="/yml-at-buildtime">yml-at-buildtime</Link>
       </li>
     </ul>
   </div>
