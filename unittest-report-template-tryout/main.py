@@ -93,5 +93,11 @@ class TestStringMethods3(unittest.TestCase):
         """ This test should be skipped. """
         pass
 
+
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(combine_reports=True))
+    unittest.main(
+      testRunner=HtmlTestRunner.HTMLTestRunner(
+        combine_reports=True,
+        template='templates/test.html'
+        )
+      )
