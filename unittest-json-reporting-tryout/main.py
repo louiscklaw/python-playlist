@@ -27,6 +27,12 @@ class TestSequenceFunctions(unittest.TestCase):
   def test_skipped(self):
     self.fail("shouldn't happen")
 
+  def test_passed(self):
+    self.assertTrue(True,'test_passed should be always passed')
+
+  def test_failed(self):
+    self.assertFalse(True,'test_failed should be always failed')
+
   def test_shuffle(self):
     # make sure the shuffled sequence does not lose any elements
     random.shuffle(self.seq)

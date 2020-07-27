@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <style>
+    .box1 {
+      background-color: hsl(141, 71%, 48%);
+      min-width: calc(100% / 16);
+    }
+
+    .box3 {
+      background-color: hsl(171, 100%, 41%);
+    }
+
+    .box2 {
+      background-color: hsl(48, 100%, 67%);
+    }
+
+    .box4 {
+      background-color: hsl(348, 100%, 61%);
+    }
+
+    .result-tile {
+      /* min-height: 50%; */
+    }
+
+    .result-grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(16, calc(100%/16));
+      grid-template-rows: repeat(6, calc(100%/6));
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, calc(100% /4));
+      /* grid-template-rows: repeat(4, calc(100vh/4)); */
+
+      gap: 10px 10px;
+
+    }
+
+    iframe {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- nav -->
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox"
+          width="112" height="28">
+      </a>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="//bulma.io/">Home</a>
+        <a class="navbar-item" href="//www.example.com">Unit</a>
+        <a class="navbar-item" href="//www.example.com">Integration</a>
+        <a class="navbar-item" href="//www.example.com">System</a>
+        <a class="navbar-item" href="//www.example.com">Sanity</a>
+        <a class="navbar-item" href="//www.example.com">Smoke</a>
+        <a class="navbar-item" href="//www.example.com">Interface</a>
+        <a class="navbar-item" href="//www.example.com">Regression</a>
+        <a class="navbar-item" href="//www.example.com">Beta/Acceptance</a>
+
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                data-social-target="https://bulma.io" target="_blank"
+                href="//www.github.com/louiscklaw">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- nav -->
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-6">Unit test</h1>
+      <h2 class="subtitle is-6">Unittest description</h2>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="title is-6">Results:</p>
+
+      <!-- columns -->
+      <div class="columns">
+
+        <!-- column -->
+        <div class="column">
+          <!-- card -->
+          <div class="card">
+
+            <div class="result-tile">
+              <div class="result-grid-wrapper">
+
+                <div class="box1">P</div>
+                <div class="box2">E</div>
+                <div class="box3">S</div>
+                <div class="box4">F</div>
+
+              </div>
+            </div>
+
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-6">__main__.TestStringMethods</p>
+                  <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                </div>
+              </div>
+
+              <div class="content">
+                testing python string method
+                <br>
+                <br>
+                <a href="#">#css</a> <a href="#">#responsive</a>
+                <br>
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                <br>
+                <div>
+                  Total: 6, Pass: 3, Fail: 1, Error: 1, Skip: 1 -- Duration: 0 ms
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+        <!-- column -->
+
+
+      </div>
+      <!-- columns -->
+
+
+
+
+
+    </div>
+  </section>
+</body>
+
+</html>
