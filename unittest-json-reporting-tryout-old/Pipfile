@@ -7,7 +7,7 @@ verify_ssl = true
 
 [packages]
 unittest-xml-reporting = "*"
-xmlrunner = "*"
+xmltodict = "*"
 
 [requires]
 python_version = "3.6"
