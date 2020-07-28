@@ -15,9 +15,15 @@ function TestSuiteResult(props){
     display: 'inline-flex',
   }
 
+  let testcase = props.testcase
+
   return(
     <div style={test_results_style}>
-      { Object.values(props).map( test_result => <IconStatus {...test_result} /> )}
+      { Object.values(testcase).map( test_result => {
+        return(
+          <IconStatus {...test_result} />
+        )
+      } )}
     </div>
   )
 

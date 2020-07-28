@@ -22,6 +22,7 @@ class TestSuite1(unittest.TestCase):
     self.assertRaises(TypeError, random.shuffle, (1,2,3))
 
   def test_choice(self):
+    """test_choice description"""
     element = random.choice(self.seq)
     self.assertTrue(element in self.seq)
 

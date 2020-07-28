@@ -5,6 +5,8 @@ import Navbar from '../components/nav'
 import style from '../scss/style.module.scss'
 import {combineStyle} from '../utils/common'
 
+import TestSuite from '../components/test-suite'
+import TestSuites from '../components/test-suites'
 import TestSuiteResult from '../components/test-suite-result'
 
 function jsonTemplate(props){
@@ -13,9 +15,7 @@ function jsonTemplate(props){
   let test_result = page_context.testResult
   let test_suite_name = page_context.testSuiteName
 
-  let test_case = page_context.testcase
-
-  let testsuite = test_result.testsuites
+  let testsuite = page_context.testResult.reports.testsuite
 
   return(
     <>
@@ -28,14 +28,16 @@ function jsonTemplate(props){
         <Link to={`/`}>Back</Link>
       </div>
 
-      <h4> pass case </h4>
+      <h4>  </h4>
       <div>
-        <TestSuiteResult {...test_case} />
+        <TestSuites {...testsuite}/>
       </div>
 
-      <pre>
-        {JSON.stringify(testsuite, null, 2)}
-      </pre>
+      {/*
+        <div>
+          <TestSuiteResult {...testsuite[1]} />
+        </div>
+      */}
 
     </>
   )
