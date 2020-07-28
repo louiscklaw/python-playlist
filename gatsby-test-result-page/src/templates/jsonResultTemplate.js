@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'gatsby'
 import Navbar from '../components/nav'
 
+import {combineStylle} from '../utils/common'
+
 import TestSuiteResult from '../components/test-suite-result'
 
 function jsonTemplate(props){
@@ -13,9 +15,17 @@ function jsonTemplate(props){
   return(
     <>
       <Navbar />
+      <div className={combineStylle([style.title, style['is-6']])}>
+        {props.testSuiteName}
+      </div>
+
       <div>
         <Link to={`/`}>Back</Link>
       </div>
+
+      <pre>
+        {JSON.stringify(props, null, 2)}
+      </pre>
 
       <div> json template </div>
 
