@@ -1,10 +1,8 @@
-#!/usr/bin/env python3
 import random
 import unittest
 import xmlrunner
 
 class TestSequenceFunctions(unittest.TestCase):
-
     def setUp(self):
         self.seq = list(range(10))
 
@@ -32,8 +30,7 @@ class TestSequenceFunctions(unittest.TestCase):
             self.assertTrue(element in self.seq)
 
 if __name__ == '__main__':
-    unittest.main(
-        testRunner=xmlrunner.XMLTestRunner(output='test-reports'),
-        # these make sure that some options that are not applicable
-        # remain hidden from the help menu.
-        failfast=False, buffer=False, catchbreak=False)
+    with open('test-reports/unit.xml', 'w') as output:
+        unittest.main(
+            testRunner=xmlrunner.XMLTestRunner(output=output),
+            failfast=False, buffer=False, catchbreak=False)
