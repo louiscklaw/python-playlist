@@ -1,13 +1,15 @@
-import React from 'react'
+import {
+  checkTestPassed,
+  checkTestError,
+  checkTestSkipped
+} from '../utils/common'
 
-const checkTestPassed = (test_detail) => {
-  return (Object.keys(test_detail).indexOf('error') ==-1 && Object.keys(test_detail).indexOf('skipped') ==-1 )
-}
+import React from 'react'
 
 function ShowError(test_detail){
   return(
     <>
-      error testcase
+      error_testcase
     </>
   )
 }
@@ -15,34 +17,35 @@ function ShowError(test_detail){
 function ShowSkip(test_detail){
   return(
     <>
-      {}
+      skipped_testcase
     </>
   )
 }
 
 function TestSuiteResult(props){
+  let test_detail_json = props
   return(
     <>
 
       <h4>TestSuiteResult</h4>
 
-      <div> {JSON.stringify(Object.keys(props))} </div>
+      <div> {JSON.stringify(Object.keys(test_detail_json))} </div>
 
-      <div> {props['@classname']} </div>
-      <div> {props['@file']} </div>
-      <div> {props['@line']} </div>
-      <div> {props['@name']} </div>
-      <div> {props['@time']} </div>
-      <div> {props['@timestamp']} </div>
-      <div> {props['@system-out']} </div>
-      <div> {props['@system-err']} </div>
+      <div> {test_detail_json['@classname']} </div>
+      <div> {test_detail_json['@file']} </div>
+      <div> {test_detail_json['@line']} </div>
+      <div> {test_detail_json['@name']} </div>
+      <div> {test_detail_json['@time']} </div>
+      <div> {test_detail_json['@timestamp']} </div>
+      <div> {test_detail_json['@system-out']} </div>
+      <div> {test_detail_json['@system-err']} </div>
 
-      <div> {checkTestPassed(props) ? 'test passed':'not pass'} </div>
-      <div> { Object.keys(props).indexOf("error") > -1 ? <ShowError />: 'not error' } </div>
-      <div> { Object.keys(props).indexOf("skipped") > -1 ? <ShowSkip />: 'not skipped' } </div>
+      <div> {checkTestPassed(test_detail_json) ? 'test passed':'not pass'} </div>
+      <div> { checkTestError(test_detail_json) ? <ShowError />: 'not error' } </div>
+      <div> { checkTestSkipped(test_detail_json) ? <ShowSkip />: 'not skipped' } </div>
 
       <pre>
-        {JSON.stringify(props, null, 2)}
+        {JSON.stringify(test_detail_json, null, 2)}
       </pre>
 
     </>
