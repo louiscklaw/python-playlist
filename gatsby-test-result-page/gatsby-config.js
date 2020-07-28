@@ -4,5 +4,7 @@ module.exports = {
     description: `Gatsby Source with JSON OR YAML`,
     author: `@gatsbyjs`,
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-sass`,
+  ],
 }

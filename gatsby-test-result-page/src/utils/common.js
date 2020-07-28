@@ -14,6 +14,8 @@ const checkTestSkipped = ( test_detail_json ) => {
   return checkSkippedKeyExist( test_detail_json )
 }
 
+const combineStyle = (styles) => styles.join(' ')
+
 function helloworld() {
   console.log( 'helloworld' )
   return 'helloworld'
@@ -23,5 +25,6 @@ export {
   helloworld,
   checkTestPassed,
   checkTestError,
-  checkTestSkipped
+  checkTestSkipped,
+  combineStyle
 }

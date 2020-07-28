@@ -12,7 +12,7 @@ const path = require(`path`)
 
 const getPath = (json_filename) => json_filename.replace(/.json$/,'').replace(/^\.\//,'')
 
-const isTestResultJson = (json_filename) => json_filename.search(/TEST-/) > -1
+const isTestResultJson = (json_filename) => json_filename.search(/.json$/) > -1
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
@@ -26,6 +26,8 @@ exports.createPages = ({ actions }) => {
       if(json_file_fullpath.search(/\.json$/) > -1){
         let json_content = fs.readFileSync(json_file_fullpath,{encoding:'utf-8'})
         let page_path = getPath(json_file_fullpath)
+
+        console.log(`creating page ${page_path}`)
 
         createPage({
           path: page_path,

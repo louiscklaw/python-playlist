@@ -5,51 +5,22 @@ import {
 } from '../utils/common'
 
 import React from 'react'
-
-function ShowError(test_detail){
-  return(
-    <>
-      error_testcase
-    </>
-  )
-}
-
-function ShowSkip(test_detail){
-  return(
-    <>
-      skipped_testcase
-    </>
-  )
-}
+import IconStatus from './icon-status'
 
 function TestSuiteResult(props){
   let test_detail_json = props
+  console.log([...Object.values(props)])
+
+  const test_results_style = {
+    display: 'inline-flex',
+  }
+
   return(
-    <>
-
-      <h4>TestSuiteResult</h4>
-
-      <div> {JSON.stringify(Object.keys(test_detail_json))} </div>
-
-      <div> {test_detail_json['@classname']} </div>
-      <div> {test_detail_json['@file']} </div>
-      <div> {test_detail_json['@line']} </div>
-      <div> {test_detail_json['@name']} </div>
-      <div> {test_detail_json['@time']} </div>
-      <div> {test_detail_json['@timestamp']} </div>
-      <div> {test_detail_json['@system-out']} </div>
-      <div> {test_detail_json['@system-err']} </div>
-
-      <div> {checkTestPassed(test_detail_json) ? 'test passed':'not pass'} </div>
-      <div> { checkTestError(test_detail_json) ? <ShowError />: 'not error' } </div>
-      <div> { checkTestSkipped(test_detail_json) ? <ShowSkip />: 'not skipped' } </div>
-
-      <pre>
-        {JSON.stringify(test_detail_json, null, 2)}
-      </pre>
-
-    </>
+    <div style={test_results_style}>
+      { Object.values(props).map( test_result => <IconStatus {...test_result} /> )}
+    </div>
   )
+
 }
 
 export default TestSuiteResult
