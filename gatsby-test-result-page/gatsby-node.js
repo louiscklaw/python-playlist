@@ -14,7 +14,7 @@ const getPath = (json_filename) => json_filename.replace(/.json$/,'').replace(/^
 
 const isTestResultJson = (json_filename) => json_filename.search(/.json$/) > -1
 
-const getTestSuiteName = json_filename => json_filename.match(/(\w+)\.json)/)[1]
+const getTestSuiteName = json_filename => json_filename.match(/(\w+)\.json/)[1]
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
@@ -36,7 +36,7 @@ exports.createPages = ({ actions }) => {
           component: require.resolve(`./src/templates/jsonResultTemplate.js`),
           context:{
             testResult: JSON.parse(json_content),
-            testSuiteName: json_file_fullpath.match(/(\w+)\.json/)[1]
+            testSuiteName: getTestSuiteName(json_file_fullpath)
           }
         })
 

@@ -2,37 +2,40 @@ import React from 'react'
 import {Link} from 'gatsby'
 import Navbar from '../components/nav'
 
-import {combineStylle} from '../utils/common'
+import style from '../scss/style.module.scss'
+import {combineStyle} from '../utils/common'
 
 import TestSuiteResult from '../components/test-suite-result'
 
 function jsonTemplate(props){
-  let test_results = props.pageResources.json.pageContext.testResult
-  let test_suite = test_results.testsuite
+  let page_context = props.pageResources.json.pageContext
 
-  let testcase_results = test_suite.testcase
+  let test_result = page_context.testResult
+  let test_suite_name = page_context.testSuiteName
+
+  let test_case = page_context.testcase
+
+  let testsuite = test_result.testsuites
 
   return(
     <>
       <Navbar />
-      <div className={combineStylle([style.title, style['is-6']])}>
-        {props.testSuiteName}
+      <div className={combineStyle([style.title, style['is-6']])}>
+        {test_suite_name}
       </div>
 
       <div>
         <Link to={`/`}>Back</Link>
       </div>
 
-      <pre>
-        {JSON.stringify(props, null, 2)}
-      </pre>
-
-      <div> json template </div>
-
       <h4> pass case </h4>
       <div>
-        <TestSuiteResult {...testcase_results} />
+        <TestSuiteResult {...test_case} />
       </div>
+
+      <pre>
+        {JSON.stringify(testsuite, null, 2)}
+      </pre>
 
     </>
   )

@@ -8,7 +8,7 @@ pipenv sync
 
 pipenv run python3 before_test.py
 
-pipenv run python3 test/unit/test_unittest.py &
+pipenv run python3 test/unit/test_unit.py &
 pipenv run python3 test/integration/test_integration.py &
 pipenv run python3 test/system/test_system.py &
 pipenv run python3 test/sanity/test_sanity.py &

@@ -24,6 +24,13 @@ def getJsonFileFullPath(filepath_in):
   filename = os.path.basename(filepath_in)
   return TEST_REPORT_DIRECTORY+'/'+getJsonFilename(filename)
 
+def getTestTypeName(xml_filename):
+  "should be something link Unit/System/Smoke/Sanity/Regression/Interface/Integration/Acceptance according to xml filename"
+  return os.path.basename(xml_filename).replace('.xml','')+'_test'
+
+def getOpenAndClose(text):
+  return ('<'+text+'>','</'+text+'>')
+
 def convertXmlToJson():
   xml_files = list(listXmlFiles())
   pprint(xml_files)
@@ -36,8 +43,15 @@ def convertXmlToJson():
     print('writing json file: {}'.format(json_path))
 
     try:
+      (t_open, t_close) = getOpenAndClose('reports')
+
       f_xml = open(xml_path,'r')
-      data_dict = xmltodict.parse(f_xml.read())
+      raw_xml = f_xml.read().replace('<?xml version="1.0" ?>','')
+
+      tuned_xml = t_open+raw_xml+t_close
+      print(tuned_xml)
+
+      data_dict = xmltodict.parse(tuned_xml)
       f_xml.close()
 
       f_json = open(json_path,'w')
