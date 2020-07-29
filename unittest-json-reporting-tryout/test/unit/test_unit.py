@@ -13,7 +13,10 @@ class TestSuite1(unittest.TestCase):
     self.fail("shouldn't happen")
 
   def test_shuffle(self):
-    # make sure the shuffled sequence does not lose any elements
+    """
+    make sure the shuffled sequence does not lose any elements
+    """
+
     random.shuffle(self.seq)
     self.seq.sort()
     self.assertEqual(self.seq, list(range(10)))
@@ -34,7 +37,10 @@ class TestSuite2(unittest.TestCase):
     self.fail("shouldn't happen")
 
   def test_shuffle(self):
-    # make sure the shuffled sequence does not lose any elements
+    """
+    make sure the shuffled sequence does not lose any elements
+    """
+
     random.shuffle(self.seq)
     self.seq.sort()
     self.assertEqual(self.seq, list(range(10)))
@@ -43,10 +49,18 @@ class TestSuite2(unittest.TestCase):
     self.assertRaises(TypeError, random.shuffle, (1,2,3))
 
   def test_choice(self):
+    """
+    make sure the shuffled sequence does not lose any elements
+    """
+
     element = random.choice(self.seq)
     self.assertTrue(element in self.seq)
 
   def test_sample(self):
+    """
+    make sure the shuffled sequence does not lose any elements
+    """
+
     with self.assertRaises(ValueError):
       random.sample(self.seq, 20)
     for element in random.sample(self.seq, 5):
@@ -135,7 +149,49 @@ class TestSuite5(unittest.TestCase):
     element = random.choice(self.seq)
     self.assertTrue(element in self.seq)
 
-  def test_sample(self):
+  def test_sample01(self):
+    with self.assertRaises(ValueError):
+      random.sample(self.seq, 20)
+    for element in random.sample(self.seq, 5):
+      self.assertTrue(element in self.seq)
+
+  def test_sample02(self):
+    with self.assertRaises(ValueError):
+      random.sample(self.seq, 20)
+    for element in random.sample(self.seq, 5):
+      self.assertTrue(element in self.seq)
+
+  def test_sample11(self):
+    with self.assertRaises(ValueError):
+      random.sample(self.seq, 20)
+    for element in random.sample(self.seq, 5):
+      self.assertTrue(element in self.seq)
+
+  def test_sample12(self):
+    with self.assertRaises(ValueError):
+      random.sample(self.seq, 20)
+    for element in random.sample(self.seq, 5):
+      self.assertTrue(element in self.seq)
+
+  def test_sample101(self):
+    with self.assertRaises(ValueError):
+      random.sample(self.seq, 20)
+    for element in random.sample(self.seq, 5):
+      self.assertTrue(element in self.seq)
+
+  def test_sample102(self):
+    with self.assertRaises(ValueError):
+      random.sample(self.seq, 20)
+    for element in random.sample(self.seq, 5):
+      self.assertTrue(element in self.seq)
+
+  def test_sample111(self):
+    with self.assertRaises(ValueError):
+      random.sample(self.seq, 20)
+    for element in random.sample(self.seq, 5):
+      self.assertTrue(element in self.seq)
+
+  def test_sample112(self):
     with self.assertRaises(ValueError):
       random.sample(self.seq, 20)
     for element in random.sample(self.seq, 5):
@@ -143,6 +199,4 @@ class TestSuite5(unittest.TestCase):
 
 if __name__ == '__main__':
   with open('test-reports/unit.xml', 'w') as output:
-    unittest.main(
-      testRunner=xmlrunner.XMLTestRunner(output=output),
-      failfast=False, buffer=False, catchbreak=False)
+    unittest.main( testRunner=xmlrunner.XMLTestRunner(output=output), failfast=False, buffer=False, catchbreak=False)

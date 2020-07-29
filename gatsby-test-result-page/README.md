@@ -11,9 +11,9 @@
 | unittest      | report page |
 | ------------- | ------------- |
 | test_unit.json  | 即係 page 啦 (http://localhost:8000/content/unit) |
-| testsuites/reports [1,2,3...]  | cards (幾張咭走埋一齊)?|
-| testsuite  | card (好多粒 status 走出黎) |
-| testcase[1,2,3...] | icon-status.js|
+| testsuites/reports [1,2,3...]  | test-suites.js (幾張咭走埋一齊)?|
+| testsuite  |  card.js (好多粒 status 走出黎) |
+| testcase[1,2,3...] | icon-status.js / result-details.js |
 
 ### dev:
 to regenerate the test result
