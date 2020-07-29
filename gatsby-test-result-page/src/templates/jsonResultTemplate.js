@@ -5,6 +5,8 @@ import Navbar from '../components/nav'
 import style from '../scss/style.module.scss'
 import {combineStyle} from '../utils/common'
 
+import TestDescription from '../components/test-description'
+
 import TestSuite from '../components/test-suite'
 import TestSuites from '../components/test-suites'
 import TestSuiteResult from '../components/test-suite-result'
@@ -33,6 +35,7 @@ function jsonTemplate(props){
 
       <div>
         descriptions:
+        <TestDescription />
         <pre>
           {JSON.stringify(test_meta_desc, null, 2)}
         </pre>
