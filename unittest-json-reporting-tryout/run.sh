@@ -6,9 +6,11 @@ PROJ_HOME='/home/logic/_workspace/python-playlist'
 
 pipenv sync
 
-# pipenv run python3 before_test.py
+pipenv run python3 before_test.py
 
-# pipenv run python3 test/unit/test_unit_meta.py &
+mkdir -p test-reports
+
+pipenv run python3 test/unit/test_unit_meta.py &
 # pipenv run python3 test/integration/test_integration_meta.py &
 # pipenv run python3 test/system/test_system_meta.py &
 # pipenv run python3 test/sanity/test_sanity_meta.py &

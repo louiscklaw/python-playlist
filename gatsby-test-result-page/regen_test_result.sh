@@ -7,6 +7,7 @@ PROJ_HOME='/home/logic/_workspace/python-playlist'
 rm -rf content/*.json
 
 cd ../unittest-json-reporting-tryout
+  # run unittest
   ./run.sh
 cd ..
 
