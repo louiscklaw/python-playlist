@@ -5,38 +5,20 @@ import HtmlToReact from  'html-to-react'
 import ReactMarkdown from 'react-markdown'
 import htmlParser from 'react-markdown/plugins/html-parser'
 
+function MyStyle(level, props){
+  return "hello mystyle"
+}
+
 function TestDescription(props){
-  const markdown = `
-# This is a header
+  const markdown = props.content
 
-And this is a paragraph **bold**
-
-This block of Markdown contains <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>, and will require the <code>html-parser</code> AST plugin to be loaded, in addition to setting the <code class="prop">escapeHtml</code> property to false.
-
-helloworld
-
-<custom test="test_props">
-hello code apple
-</custom>
-`
   let processNodeDefinitions = new HtmlToReact.ProcessNodeDefinitions(React);
   let processingInstructions = [
     {
-      shouldProcessNode: function (node) {
-        return node.parent && node.parent.name && node.parent.name === 'custom';
-      },
-      processNode: function (node, children) {
-        console.log(node)
-        return (
-          <pre>
-            {node.data.toUpperCase()}
-          </pre>
-        );
-      }
-    },
-    {
         // Anything else
         shouldProcessNode: function (node) {
+          console.log('shouldProcessNode',node)
+          console.log('shouldProcessNode','node.parent',node.parent)
           return true;
         },
         processNode: processNodeDefinitions.processDefaultNode
@@ -53,7 +35,10 @@ hello code apple
       <ReactMarkdown
         source={markdown}
         escapeHtml={false}
-        astPlugins={[parseHtml]}
+        renderers={{
+        heading: props => MyStyle(props.level, props)
+
+        }}
       />
     </>
   )
