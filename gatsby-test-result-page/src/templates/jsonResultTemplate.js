@@ -15,7 +15,7 @@ function jsonTemplate(props){
   let test_result = page_context.testResult
   let test_suite_name = page_context.testSuiteName
 
-  let testsuite = page_context.testResult.reports.testsuite
+  let testsuites = page_context.testResult.reports.testsuite
 
   return(
     <>
@@ -28,9 +28,8 @@ function jsonTemplate(props){
         <Link to={`/`}>Back</Link>
       </div>
 
-      <h4>  </h4>
       <div>
-        <TestSuites {...testsuite}/>
+        <TestSuites {...testsuites}/>
       </div>
 
       {/*

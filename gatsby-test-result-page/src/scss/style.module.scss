@@ -1,6 +1,16 @@
 @charset "utf-8";
 @import "bulma/bulma.sass";
 
+.result-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(16, calc(100%/16));
+  grid-template-rows: repeat(6, calc(100%/6));
+}
+
+.result-tile {
+  /* min-height: 50%; */
+}
+
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(4, calc(100% /4));
