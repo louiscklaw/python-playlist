@@ -3,6 +3,7 @@
 set -x
 
 rm -rf test-reports/*.xml
+mkdir -p test-reports
 
 pipenv sync
 
