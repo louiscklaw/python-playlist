@@ -4,7 +4,7 @@ set -x
 
 PROJ_HOME='/home/logic/_workspace/python-playlist'
 
-# pipenv sync
+pipenv sync
 
 # pipenv run python3 before_test.py
 
