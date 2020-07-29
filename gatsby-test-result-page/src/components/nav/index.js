@@ -30,9 +30,9 @@ function Navbar(props){
         <Link to="/content/smoke" className={style.navbarItem}> Smoke </Link>
         <Link to="/content/interface" className={style.navbarItem}> Interface </Link>
         <Link to="/content/regression" className={style.navbarItem}> Regression </Link>
-        <Link to="/content/acceptance" className={style.navbarItem}> Beta/Acceptance </Link>
+        <Link to="/content/acceptance" className={style.navbarItem}> Acceptance </Link>
 
-          <a className={style.navbarItem}> Documentation </a>
+        <Link to="/statistics" className={style.navbarItem}> Statistics </Link>
 
           <div className={combineStyle([style.navbarItem, style.hasDropdown, style.isHoverable])}>
             <a className={style.navbarLink}>
@@ -41,14 +41,10 @@ function Navbar(props){
 
             <div className={style.navbarDropdown}>
               <a className={style.navbarItem}> About </a>
-              <a className={style.navbarItem}> Jobs </a>
-              <a className={style.navbarItem}> Contact </a>
-
-              <hr className={style.navbarDivider} />
-
+              <a className={style.navbarItem}> Documentation </a>
               <a className={style.navbarItem}> Report an issue </a>
-
             </div>
+
           </div>
         </div>
 

@@ -13,19 +13,29 @@ function jsonTemplate(props){
   let page_context = props.pageResources.json.pageContext
 
   let test_result = page_context.testResult
+  let test_reports = test_result.reports
+  let test_meta_desc = test_reports.meta.desc
   let test_suite_name = page_context.testSuiteName
-
   let testsuites = page_context.testResult.reports.testsuite
+
+
 
   return(
     <>
       <Navbar />
       <div className={combineStyle([style.title, style['is-6']])}>
-        {test_suite_name}
+        {test_suite_name} test
       </div>
 
       <div>
         <Link to={`/`}>Back</Link>
+      </div>
+
+      <div>
+        descriptions:
+        <pre>
+          {JSON.stringify(test_meta_desc, null, 2)}
+        </pre>
       </div>
 
       <div>

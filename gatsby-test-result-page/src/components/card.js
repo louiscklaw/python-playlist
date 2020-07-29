@@ -5,14 +5,19 @@ import IconStatus from './icon-status'
 
 function Card(props){
   'card = testsuite'
-  let testcases = props.testcase
+  let testsuite = props
+  let testcases = testsuite.testcase
 
-  let testsuite_classname = testcases['0']['@classname']
-  let testsuite_errors = "0"
-  let testsuite_failures = "0"
-  let testsuite_name = "TestSuite1-20200729162324"
-  let testsuite_tests = "2"
-  let testsuite_time = "0.000"
+  let testcases_array = testcases['0'] ? testcases: [testcases]
+
+  let testsuite_classname = testcases['0'] ? testcases['0']['@classname'] : testcases['@classname']
+  let testsuite_errors = testsuite['@errors']
+  let testsuite_failures = testsuite['@failures']
+  let testsuite_name = testsuite['@name']
+  let testsuite_tests = testsuite['@tests']
+  let testsuite_time = testsuite['@time']
+
+
 
   return(
 
@@ -24,7 +29,7 @@ function Card(props){
       <div className={style.resultTile}>
         <div className={style.resultGridWrapper}>
           {
-            testcases.map(testcase => <IconStatus {...testcase} key={`icon_status_${JSON.stringify(testcase)}`}/> )
+            testcases_array.map(testcase => <IconStatus {...testcase} key={`icon_status_${JSON.stringify(testcase)}`}/> )
           }
         </div>
       </div>

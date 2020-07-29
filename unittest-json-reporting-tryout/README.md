@@ -1,6 +1,9 @@
 https://github.com/xmlrunner/unittest-xml-reporting
 
 
+### markdowns
+- markdown tried best to follow github markdown spec.
+
 ### to generate testcases
 
 `python3 scripts/gen_main.py`
