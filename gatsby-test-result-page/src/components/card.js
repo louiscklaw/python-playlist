@@ -7,13 +7,18 @@ function Card(props){
   'card = testsuite'
   let testcases = props.testcase
 
-  let testsuite_name = testcases['0']['@classname']
+  let testsuite_classname = testcases['0']['@classname']
+  let testsuite_errors = "0"
+  let testsuite_failures = "0"
+  let testsuite_name = "TestSuite1-20200729162324"
+  let testsuite_tests = "2"
+  let testsuite_time = "0.000"
 
   return(
 
     <div className={style.card}>
       <header className={style.cardHeader}>
-      <h3 className={style.cardHeaderTitle}>{testsuite_name}</h3>
+      <h3 className={style.cardHeaderTitle}>{testsuite_classname}</h3>
       </header>
 
       <div className={style.resultTile}>
@@ -31,12 +36,12 @@ function Card(props){
       </div>
 
       <div className={style.content}>
-        testing the outlook of the page
-        <br /><a>@bulmaio</a>.
-        <br /><a href="#">#css</a>
-        <br /><a href="#">#responsive</a>
+        <br /><a>{testsuite_name}</a>
+        <br /><a>errrors: {testsuite_errors}</a>
+        <br /><a>failures: {testsuite_failures}</a>.
+        <br /><a>tests: {testsuite_tests}</a>
+        <br /><a href="#">total time spent: {testsuite_time}</a>
         <br />
-        <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
       </div>
     </div>
 
