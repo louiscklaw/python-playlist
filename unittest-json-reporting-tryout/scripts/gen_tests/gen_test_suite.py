@@ -16,6 +16,17 @@ import random
 suite_template='''
 
 class Test_$SUITE_NAME(unittest.TestCase):
+  """
+  # this is the test suite show case for $SUITE_NAME
+  ## h2
+  ### h3
+
+  helloworld
+
+  ```
+    print('helloworld')
+  ```
+  """
 '''
 
 skipped_template='''
