@@ -3,36 +3,50 @@ import random
 
 class Test_integration_suite1(unittest.TestCase):
   """
-  # this is the test suite show case for integration_suite1
-  ## h2
-  ### h3
+  # helloworld h1
 
-  helloworld
+  ## This is an h2 tag
 
-  ```
-    print('helloworld')
-  ```
+  ### This is an h3 tag
+
+  #### This is an h4 tag
+
+  ##### This is an h5 tag
+
+  ###### This is an h6 tag
+
+
+  I think you should use an
+  `<addr>` element here instead.
+
+  First Header | Second Header
+  ------------ | -------------
+  Content from cell 1 | Content from cell 2
+  Content in the first column | Content in the second column
+
+  - white box test
+  - test by functions
   """
 
   @unittest.skip("demonstrating skipping")
   def test_sample_0(self):
     self.fail("shouldn't happen")
 
-  @unittest.skip("demonstrating skipping")
   def test_sample_1(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
+  @unittest.skip("demonstrating skipping")
   def test_sample_2(self):
     self.fail("shouldn't happen")
 
   def test_sample_3(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_4(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_5(self):
-    self.assertTrue(True)
+    self.fail("shouldn't happen")
 
   def test_sample_6(self):
     self.assertTrue(True)
@@ -51,28 +65,26 @@ class Test_integration_suite1(unittest.TestCase):
     self.fail("shouldn't happen")
 
   def test_sample_11(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_12(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
-  @unittest.skip("demonstrating skipping")
   def test_sample_13(self):
     self.fail("shouldn't happen")
 
-  @unittest.skip("demonstrating skipping")
   def test_sample_14(self):
-    self.fail("shouldn't happen")
-
-  def test_sample_15(self):
     self.assertTrue(True)
 
   @unittest.skip("demonstrating skipping")
-  def test_sample_16(self):
+  def test_sample_15(self):
     self.fail("shouldn't happen")
 
+  def test_sample_16(self):
+    self.assertTrue(True)
+
   def test_sample_17(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_18(self):
     self.assertTrue(True)
@@ -80,47 +92,44 @@ class Test_integration_suite1(unittest.TestCase):
   def test_sample_19(self):
     self.assertTrue(True)
 
-  @unittest.skip("demonstrating skipping")
   def test_sample_20(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
-  @unittest.skip("demonstrating skipping")
   def test_sample_21(self):
     self.fail("shouldn't happen")
 
   def test_sample_22(self):
     self.assertTrue(True)
 
+  @unittest.skip("demonstrating skipping")
   def test_sample_23(self):
-    self.assertTrue(True)
+    self.fail("shouldn't happen")
 
   def test_sample_24(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_25(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_26(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
-  @unittest.skip("demonstrating skipping")
   def test_sample_27(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_28(self):
     self.assertTrue(True)
 
-  @unittest.skip("demonstrating skipping")
   def test_sample_29(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
+  @unittest.skip("demonstrating skipping")
   def test_sample_30(self):
     self.fail("shouldn't happen")
 
   def test_sample_31(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
-  @unittest.skip("demonstrating skipping")
   def test_sample_32(self):
     self.fail("shouldn't happen")
 
@@ -128,13 +137,13 @@ class Test_integration_suite1(unittest.TestCase):
     self.assertTrue(True)
 
   def test_sample_34(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_35(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_36(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_37(self):
     self.fail("shouldn't happen")
@@ -142,35 +151,71 @@ class Test_integration_suite1(unittest.TestCase):
   def test_sample_38(self):
     self.assertTrue(True)
 
+  @unittest.skip("demonstrating skipping")
   def test_sample_39(self):
-    self.assertTrue(True)
+    self.fail("shouldn't happen")
 
   def test_sample_40(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_41(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_42(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_43(self):
     self.assertTrue(True)
 
   def test_sample_44(self):
-    self.fail("shouldn't happen")
+    self.assertTrue(True)
 
   def test_sample_45(self):
     self.assertTrue(True)
 
   def test_sample_46(self):
-    self.assertTrue(True)
+    self.fail("shouldn't happen")
 
   def test_sample_47(self):
-    self.assertTrue(True)
+    self.fail("shouldn't happen")
 
+  @unittest.skip("demonstrating skipping")
   def test_sample_48(self):
+    self.fail("shouldn't happen")
+
+  @unittest.skip("demonstrating skipping")
+  def test_sample_49(self):
+    self.fail("shouldn't happen")
+
+  def test_sample_50(self):
     self.assertTrue(True)
 
-  def test_sample_49(self):
+  def test_sample_51(self):
+    self.assertTrue(True)
+
+  def test_sample_52(self):
+    self.assertTrue(True)
+
+  def test_sample_53(self):
+    self.fail("shouldn't happen")
+
+  def test_sample_54(self):
+    self.assertTrue(True)
+
+  def test_sample_55(self):
+    self.assertTrue(True)
+
+  def test_sample_56(self):
+    self.assertTrue(True)
+
+  def test_sample_57(self):
+    self.assertTrue(True)
+
+  def test_sample_58(self):
+    self.assertTrue(True)
+
+  def test_sample_59(self):
+    self.assertTrue(True)
+
+  def test_sample_60(self):
     self.assertTrue(True)

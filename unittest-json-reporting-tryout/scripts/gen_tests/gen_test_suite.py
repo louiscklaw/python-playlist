@@ -17,15 +17,29 @@ suite_template='''
 
 class Test_$SUITE_NAME(unittest.TestCase):
   """
-  # this is the test suite show case for $SUITE_NAME
-  ## h2
-  ### h3
+  # helloworld h1
 
-  helloworld
+  ## This is an h2 tag
 
-  ```
-    print('helloworld')
-  ```
+  ### This is an h3 tag
+
+  #### This is an h4 tag
+
+  ##### This is an h5 tag
+
+  ###### This is an h6 tag
+
+
+  I think you should use an
+  `<addr>` element here instead.
+
+  First Header | Second Header
+  ------------ | -------------
+  Content from cell 1 | Content from cell 2
+  Content in the first column | Content in the second column
+
+  - white box test
+  - test by functions
   """
 '''
 
@@ -65,9 +79,17 @@ def gen_py_test_suite(test_type, file_num):
   filename= 'test/{}/{}_suite{}.py'.format(test_type, test_type, file_num)
   with open(filename,'w') as f_out:
     for i in range(0,int(random.randint(30,300))):
-      random_idx = random.randrange(TEMPLATE_LIST_LEN)
+      random_num = random.randrange(100)
 
-      out_list.append(template_list[random_idx].replace('$NUMBER',str(i)))
+      if random_num < 66:
+        # passed template
+        out_list.append(template_list[0].replace('$NUMBER',str(i)))
+      elif random_num >= 66 and random_num <= 90:
+        # failed template
+        out_list.append(template_list[1].replace('$NUMBER',str(i)))
+      else:
+        # skipped template
+        out_list.append(template_list[2].replace('$NUMBER',str(i)))
 
     f_out.writelines(out_list)
 
