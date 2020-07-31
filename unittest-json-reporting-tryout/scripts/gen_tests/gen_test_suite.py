@@ -46,16 +46,19 @@ class Test_$SUITE_NAME(unittest.TestCase):
 skipped_template='''
   @unittest.skip("demonstrating skipping")
   def test_sample_$NUMBER(self):
+    """ skipped template """
     self.fail("shouldn't happen")
 '''
 
 failed_template='''
   def test_sample_$NUMBER(self):
+    """ failed template """
     self.fail("shouldn't happen")
 '''
 
 passed_template='''
   def test_sample_$NUMBER(self):
+    """ passed template """
     self.assertTrue(True)
 '''
 
