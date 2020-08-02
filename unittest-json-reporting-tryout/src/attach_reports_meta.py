@@ -1,17 +1,8 @@
 #!/usr/bin/env python3
 
-import os,sys
-from pprint import pprint
-
-import json
-from jsonpath_ng import jsonpath
-from jsonpath_ng.ext import parse
-
-REPORT_DIRECTORY= os.path.dirname(os.path.abspath(__file__))+'/'+'test-reports'
-
-META_DIRECTORY=os.path.dirname(
-  os.path.abspath(__file__)
-)+'/'+"reports_meta"
+from py_imports import *
+from common import *
+from config import *
 
 def listJsonFileInDirectory(dir_in):
   output_json_filelist = []

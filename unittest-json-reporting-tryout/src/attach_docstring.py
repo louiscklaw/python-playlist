@@ -1,29 +1,17 @@
 #!/usr/bin/env python3
 
-import os,sys
-from pprint import pprint
+from py_imports import *
+from common import *
+from config import *
 
-import json
-from jsonpath_ng import jsonpath
-from jsonpath_ng.ext import parse
+sys.path.append(TEST_SRC_DIR)
 
-REPORT_DIRECTORY= os.path.dirname(os.path.abspath(__file__))+'/'+'test-reports'
+# import depth=1 dir from TEST_SRC for test types
+for root, dirs, files in os.walk(TEST_SRC_DIR):
+  for dirname in dirs:
+    # print('importing class {}'.format(dirname))
+    exec('import {}'.format(dirname))
 
-sys.path.append('/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/test')
-
-test_types = []
-
-# from unit import *
-import unit, integration
-# acceptance, integration, interface, regression, sanity, smoke, system,
-test_types.append(('unit', unit))
-test_types.append(('integration', integration))
-
-# print(Test_unit_suite1.__doc__)
-# print(list(filter(lambda x: x.find("test_") > -1, dir(Test_unit_suite1) )))
-# print(Test_unit_suite1.test_sample_0.__doc__)
-
-# lookinto unit
 
 def listSuiteInsideClass(class_in):
   return filter(lambda x: x.find('Test_') > -1, dir(class_in))
@@ -75,7 +63,7 @@ def extractFromTestType(testtype):
   for txt_suite in txt_suites:
     output.append((txt_suite, eval('{}.{}'.format(testtype.__name__,txt_suite))))
 
-  print(dir(testtype))
+  # print(dir(testtype))
 
 
   # [ ('unit_suite1', unit.unit_suite1) ]
@@ -133,12 +121,25 @@ def getTestcaseResultFromJson(test_type, json_data):
 
 
 def listJsonFileInDirectory(dir_in):
-  output_json_filelist = []
-  for root, dirs, files in os.walk(dir_in):
-    for file in filter(lambda x: x.find('.json') > -1, files):
-      output_json_filelist.append(file)
-  return output_json_filelist
+  try:
+    output_json_filelist = []
+    for root, dirs, files in os.walk(dir_in):
+      for file in filter(lambda x: x.find('.json') > -1, files):
+        output_json_filelist.append(file)
 
+    if len(output_json_filelist) < 1:
+      raise 'cannot find json file to load'
+
+    return output_json_filelist
+
+  except Exception as e:
+    printError('cannot find json file to load')
+    raise e
+
+def dumpJsonToFile(json_file_path, json_obj ):
+  f_out = open(json_file_path,'w')
+  json.dump(json_obj, f_out, sort_keys=True, indent=2)
+  f_out.close()
 
 def main():
   json_file_list = listJsonFileInDirectory(REPORT_DIRECTORY)
@@ -159,15 +160,16 @@ def main():
     for test_result_path, test_result_obj in json_result_testcase_list:
       # test_result_obj.value['hello123'] = 'world123'
 
-      pprint(test_docstring_pool.keys())
-      pprint(test_result_path)
+      # pprint(test_docstring_pool.keys())
+      # pprint(test_result_path)
       # sys.exit()
 
       if (test_result_path in test_docstring_pool.keys()):
         test_result_obj.value['doc_string'] = test_docstring_pool[test_result_path]
 
-    f_out = open(json_file_path,'w')
-    json.dump(json_data, f_out, sort_keys=True, indent=2)
+    # f_out = open(json_file_path,'w')
+    # json.dump(json_data, f_out, sort_keys=True, indent=2)
+    dumpJsonToFile(json_file_path, json_data)
 
     # merge docstring according to test address
     # testaddress is something like `unit.unit_suite1.Test_unit_suite1.test_helloworld`

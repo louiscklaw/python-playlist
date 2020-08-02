@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import os,sys
 from pprint import pprint
 
@@ -12,12 +11,15 @@ for root, dirs, files in os.walk(CURR_PATH):
   for py_file in py_files:
 
     if (py_file  in ['__init__.py']):
-      print('skipping {}'.format(py_file))
+      # print('skipping {}'.format(py_file))
+      pass
 
     elif (py_file.find('_run.py') > -1):
-      print('skipping {}'.format(py_file))
+      # print('skipping {}'.format(py_file))
+      pass
 
     else:
-      print('will import pyfile {}'.format(py_file))
+      # print('will import pyfile {}'.format(py_file))
+
       classname = py_file.replace('.py','')
       exec('import {}'.format(classname))

@@ -1,21 +1,11 @@
 #!/usr/bin/env python3
 
-import os,sys
-from pprint import pprint
-
-import json
-from jsonpath_ng import jsonpath
-from jsonpath_ng.ext import parse
-
-
-
-UNITTEST_SCIRPT_DIRECTORY='/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/test'
-
-REPORT_DIRECTORY= os.path.dirname(os.path.abspath(__file__))+'/'+'test-reports'
-
+from py_imports import *
+from common import *
+from config import *
 
 # import unit, integration
-sys.path.append(UNITTEST_SCIRPT_DIRECTORY)
+sys.path.append(TEST_SRC_DIR)
 import unit, integration
 
 def listJsonFileInDirectory(dir_in):

@@ -2,6 +2,12 @@
 
 `$ ./regen_test_result.sh`
 
+### To run
+```
+$ cd src
+$ ./run.sh
+```
+
 
 ### mapping table
 

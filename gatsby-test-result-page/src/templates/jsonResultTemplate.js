@@ -11,14 +11,12 @@ import TestSuite from '../components/test-suite'
 import TestSuites from '../components/test-suites'
 import TestSuiteResult from '../components/test-suite-result'
 
-
-
 function jsonTemplate(props){
   let page_context = props.pageResources.json.pageContext
 
   let test_result = page_context.testResult
   let test_reports = test_result.reports
-  let test_meta_desc = test_reports.meta.desc
+  let test_meta = test_reports.meta
   let test_suite_name = page_context.testSuiteName
   let testsuites = page_context.testResult.reports.testsuite
 
@@ -37,9 +35,9 @@ function jsonTemplate(props){
 
       <div>
         descriptions:
-        <TestDescription content={test_meta_desc} />
+        <TestDescription content={test_meta} />
         <pre>
-          {JSON.stringify(test_meta_desc, null, 2)}
+          {JSON.stringify(test_meta, null, 2)}
         </pre>
       </div>
 
