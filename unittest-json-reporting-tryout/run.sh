@@ -10,8 +10,8 @@ pipenv run python3 before_test.py
 
 mkdir -p test-reports
 
-pipenv run python3 test/unit/test_unit_meta.py &
-# pipenv run python3 test/integration/test_integration_meta.py &
+pipenv run python3 test/unit/test_unit_run.py &
+pipenv run python3 test/integration/test_integration_run.py &
 # pipenv run python3 test/system/test_system_meta.py &
 # pipenv run python3 test/sanity/test_sanity_meta.py &
 # pipenv run python3 test/smoke/test_smoke_meta.py &
@@ -22,3 +22,5 @@ pipenv run python3 test/unit/test_unit_meta.py &
 wait
 
 pipenv run python3 after_test.py
+pipenv run python3 ./attach_docstring.py
+pipenv run python3 ./attach_reports_meta.py

@@ -5,7 +5,7 @@ import unittest
 import xmlrunner
 
 from integration_suite1 import *
-from integration_suite2 import *
+# from integration_suite2 import *
 
 if __name__ == '__main__':
   with open('test-reports/integration.xml', 'w') as output:

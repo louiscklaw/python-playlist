@@ -7,13 +7,17 @@ import json
 from jsonpath_ng import jsonpath
 from jsonpath_ng.ext import parse
 
+REPORT_DIRECTORY= os.path.dirname(os.path.abspath(__file__))+'/'+'test-reports'
+
 sys.path.append('/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/test')
 
 test_types = []
 
 # from unit import *
-import unit
+import unit, integration
+# acceptance, integration, interface, regression, sanity, smoke, system,
 test_types.append(('unit', unit))
+test_types.append(('integration', integration))
 
 # print(Test_unit_suite1.__doc__)
 # print(list(filter(lambda x: x.find("test_") > -1, dir(Test_unit_suite1) )))
@@ -71,6 +75,9 @@ def extractFromTestType(testtype):
   for txt_suite in txt_suites:
     output.append((txt_suite, eval('{}.{}'.format(testtype.__name__,txt_suite))))
 
+  print(dir(testtype))
+
+
   # [ ('unit_suite1', unit.unit_suite1) ]
   return output
 
@@ -90,6 +97,7 @@ def grepAddressAndObjFromUnittest(testtype):
         output.append((txt, cls_testcase))
 
   return output
+
 def grepDocStrings(testtype):
   txt_obj_testcases = grepAddressAndObjFromUnittest(testtype)
 
@@ -123,28 +131,47 @@ def getTestcaseResultFromJson(test_type, json_data):
     , x
     ), list_testcase))
 
-JSON_RESULT_FILE="/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/test-reports/unit.json"
+
+def listJsonFileInDirectory(dir_in):
+  output_json_filelist = []
+  for root, dirs, files in os.walk(dir_in):
+    for file in filter(lambda x: x.find('.json') > -1, files):
+      output_json_filelist.append(file)
+  return output_json_filelist
 
 
 def main():
-  # extract docstring from testcases py file
-  test_docstring_pool =  grepDocStrings(unit)
+  json_file_list = listJsonFileInDirectory(REPORT_DIRECTORY)
+  json_file_paths = map(lambda filename: os.path.join(REPORT_DIRECTORY, filename), json_file_list)
 
-  # load test_result json
-  json_data = readJSONFile(JSON_RESULT_FILE)
-  json_result_testtype = os.path.basename(JSON_RESULT_FILE).replace('.json','')
-  json_result_testcase_list = getTestcaseResultFromJson(json_result_testtype,json_data)
+  for json_file_path in json_file_paths:
+    json_data = readJSONFile(json_file_path)
+    json_result_testtype = os.path.basename(json_file_path).replace('.json','')
+    curr_testtype = eval(json_result_testtype)
 
-  for test_result_path, test_result_obj in json_result_testcase_list:
-    # test_result_obj.value['hello123'] = 'world123'
-    if (test_result_path in test_docstring_pool.keys()):
-      test_result_obj.value['doc_string'] = test_docstring_pool[test_result_path]
+    # extract docstring from testcases py file
+    test_docstring_pool =  grepDocStrings(curr_testtype)
+    # test_docstring_pool =  grepDocStrings(integration)
 
-  f_out = open('test_output.json','w')
-  json.dump(json_data, f_out, sort_keys=True, indent=2)
+    # load test_result json
+    json_result_testcase_list = getTestcaseResultFromJson(json_result_testtype,json_data)
 
-  # merge docstring according to test address
-  # testaddress is something like `unit.unit_suite1.Test_unit_suite1.test_helloworld`
+    for test_result_path, test_result_obj in json_result_testcase_list:
+      # test_result_obj.value['hello123'] = 'world123'
+
+      pprint(test_docstring_pool.keys())
+      pprint(test_result_path)
+      # sys.exit()
+
+      if (test_result_path in test_docstring_pool.keys()):
+        test_result_obj.value['doc_string'] = test_docstring_pool[test_result_path]
+
+    f_out = open(json_file_path,'w')
+    json.dump(json_data, f_out, sort_keys=True, indent=2)
+
+    # merge docstring according to test address
+    # testaddress is something like `unit.unit_suite1.Test_unit_suite1.test_helloworld`
 
 if __name__=="__main__":
+
   main()

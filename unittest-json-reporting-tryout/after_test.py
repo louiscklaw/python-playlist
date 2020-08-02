@@ -77,7 +77,7 @@ def convertXmlToJson():
       raw_xml = f_xml.read().replace('<?xml version="1.0" ?>','')
 
       tuned_xml = t_open+raw_xml+t_close
-      print(tuned_xml)
+      # print(tuned_xml)
 
       data_dict = xmltodict.parse(tuned_xml)
       f_xml.close()
