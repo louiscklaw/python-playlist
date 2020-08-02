@@ -9,6 +9,7 @@ verify_ssl = true
 unittest-xml-reporting = "*"
 xmlrunner = "*"
 xmltodict = "*"
+jsonpath-ng = "*"
 
 [requires]
 python_version = "3"
