@@ -22,5 +22,9 @@ pipenv run python3 test/integration/test_integration_run.py &
 wait
 
 pipenv run python3 after_test.py
+
 pipenv run python3 ./attach_docstring.py
+
+pipenv run python3 ./attach_testsuite_docstring.py
+
 pipenv run python3 ./attach_reports_meta.py
