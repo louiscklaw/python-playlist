@@ -5,6 +5,8 @@ https://github.com/xmlrunner/unittest-xml-reporting
 - markdown tried best to follow github markdown spec.
 https://github.com/rexxars/react-markdown
 
+- meta of test type is defined in `src/reports_meta/{test_type}/desc.md`
+
 ### to generate testcases
 
 `scripts/gen_tests/run.sh`

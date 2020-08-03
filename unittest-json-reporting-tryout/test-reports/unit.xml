@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<testsuite errors="0" failures="0" name="unit_suite1.Test_unit_suite1-20200803015441" tests="2" time="0.000">
+<testsuite errors="0" failures="0" name="unit_suite1.Test_unit_suite1-20200803105950" tests="2" time="0.000">
 	<testcase classname="unit_suite1.Test_unit_suite1" name="test_helloworld" time="0.000"/>
 	<testcase classname="unit_suite1.Test_unit_suite1" name="test_no_doc_string" time="0.000"/>
 	<system-out>
@@ -10,7 +10,7 @@ no_doc_string
 <![CDATA[]]>	</system-err>
 </testsuite>
 <?xml version="1.0" ?>
-<testsuite errors="21" failures="0" name="unit_suite3.Test_unit_suite3-20200803015441" tests="74" time="0.006">
+<testsuite errors="21" failures="0" name="unit_suite3.Test_unit_suite3-20200803105950" tests="74" time="0.006">
 	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_1" time="0.000"/>
 	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_10" time="0.000"/>
 	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_11" time="0.000"/>
@@ -246,7 +246,7 @@ no_doc_string
 <![CDATA[]]>	</system-err>
 </testsuite>
 <?xml version="1.0" ?>
-<testsuite errors="1" failures="0" name="unit_suite2.Test_unit_suite2-20200803015441" tests="1" time="0.000">
+<testsuite errors="1" failures="0" name="unit_suite2.Test_unit_suite2-20200803105950" tests="1" time="0.000">
 	<testcase classname="unit_suite2.Test_unit_suite2" name="test_sample_0" time="0.000">
 		<error message="shouldn't happen" type="AssertionError">
 <![CDATA[Traceback (most recent call last):

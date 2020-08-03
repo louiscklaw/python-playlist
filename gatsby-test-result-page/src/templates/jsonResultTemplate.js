@@ -36,9 +36,6 @@ function jsonTemplate(props){
       <div>
         descriptions:
         <TestDescription content={test_meta} />
-        <pre>
-          {JSON.stringify(test_meta, null, 2)}
-        </pre>
       </div>
 
       <div>
