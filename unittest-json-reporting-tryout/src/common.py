@@ -23,3 +23,27 @@ def checkIfYamlWithFrontmatter(parse_result):
 
 def helloCommon():
   print('helloCommon')
+
+def openJsonFile(json_filepath):
+  f_json_in = open(json_filepath,'r')
+  return json.load(f_json_in)
+
+def readJSONFile(filepath):
+  f_json = open(filepath,'r')
+
+  json_string = "".join(f_json.readlines())
+
+  json_data = json.loads(json_string)
+  return json_data
+
+def dumpJsonToFile(json_file_path, json_obj ):
+  f_out = open(json_file_path,'w')
+  json.dump(json_obj, f_out, sort_keys=True, indent=2)
+  f_out.close()
+
+def listJsonFileInDirectory(dir_in):
+  output_json_filelist = []
+  for root, dirs, files in os.walk(dir_in):
+    for file in filter(lambda x: x.find('.json') > -1, files):
+      output_json_filelist.append(file)
+  return output_json_filelist

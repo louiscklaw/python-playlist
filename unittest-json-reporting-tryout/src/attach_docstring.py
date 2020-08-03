@@ -97,14 +97,6 @@ def grepDocStrings(testtype):
 
   return txt_doc_testcases
 
-def readJSONFile(filepath):
-  f_json = open(filepath,'r')
-
-  json_string = "".join(f_json.readlines())
-
-  json_data = json.loads(json_string)
-  return json_data
-
 def appendDocString(testresult_json, clasd):
   print('helloworld')
 
@@ -135,12 +127,6 @@ def listJsonFileInDirectory(dir_in):
   except Exception as e:
     printError('cannot find json file to load')
     raise e
-
-def dumpJsonToFile(json_file_path, json_obj ):
-  f_out = open(json_file_path,'w')
-  json.dump(json_obj, f_out, sort_keys=True, indent=2)
-  f_out.close()
-
 
 def main():
   json_file_list = listJsonFileInDirectory(REPORT_DIRECTORY)
@@ -176,14 +162,33 @@ def main():
           test_result_obj.value['doc_string'] = ''
 
         else:
+          # try_parse_yaml = parseYaml(temp)
+          # if checkIfYamlWithFrontmatter(try_parse_yaml):
+          #   parsed_yaml = try_parse_yaml
+          #   test_result_obj.value['title'] = parsed_yaml[0]['Title']
+          #   test_result_obj.value['doc_string'] = parsed_yaml[1]
+
+          # else:
+          #   test_result_obj.value['doc_string'] = temp
+
+
           try_parse_yaml = parseYaml(temp)
           if checkIfYamlWithFrontmatter(try_parse_yaml):
             parsed_yaml = try_parse_yaml
-            test_result_obj.value['title'] = parsed_yaml[0]['Title']
+
+            keys = parsed_yaml[0].keys()
+
+            for key in keys:
+              lowered_key = key.lower()
+              value = parsed_yaml[0][key]
+              test_result_obj.value[lowered_key] = value
+
             test_result_obj.value['doc_string'] = parsed_yaml[1]
+            pass
 
           else:
             test_result_obj.value['doc_string'] = temp
+
 
     # f_out = open(json_file_path,'w')
     # json.dump(json_data, f_out, sort_keys=True, indent=2)

@@ -16,10 +16,6 @@ def getMetaFilepath(result_file_in):
     META_DIRECTORY,result_file_in.replace('.json',''),'desc.md'
   )
 
-def openJsonFile(json_filepath):
-  f_json_in = open(json_filepath,'r')
-  return json.load(f_json_in)
-
 def writeJsonFile(json_obj_in, filepath):
   f_json_out = open(filepath, 'r+')
   f_json_out.truncate(0)

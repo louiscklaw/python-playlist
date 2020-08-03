@@ -8,28 +8,11 @@ from config import *
 sys.path.append(TEST_SRC_DIR)
 import unit, integration
 
-def listJsonFileInDirectory(dir_in):
-  output_json_filelist = []
-  for root, dirs, files in os.walk(dir_in):
-    for file in filter(lambda x: x.find('.json') > -1, files):
-      output_json_filelist.append(file)
-  return output_json_filelist
-
-
-def openJsonFile(json_filepath):
-  f_json_in = open(json_filepath,'r')
-  return json.load(f_json_in)
-
-
 def writeJsonFile(json_obj_in, filepath):
   f_json_out = open(filepath, 'r+')
   f_json_out.truncate(0)
   json.dump(json_obj_in, f_json_out, indent=2, sort_keys=True)
 
-
-def parseUnittestFile(testtype):
-
-  pass
 
 def listTestSuiteInJson(testtype, json_data):
   jsonpath_expression = parse("$.reports.testsuite[*]")
@@ -50,7 +33,14 @@ def listTestSuiteInJson(testtype, json_data):
         try_parse_yaml = parseYaml(temp)
         if checkIfYamlWithFrontmatter(try_parse_yaml):
           parsed_yaml = try_parse_yaml
-          testsuite.value['title'] = parsed_yaml[0]['Title']
+
+          keys = parsed_yaml[0].keys()
+
+          for key in keys:
+            lowered_key = key.lower()
+            value = parsed_yaml[0][key]
+            testsuite.value[lowered_key] = value
+
           testsuite.value['doc_string'] = parsed_yaml[1]
           pass
 

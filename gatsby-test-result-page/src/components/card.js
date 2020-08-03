@@ -50,16 +50,17 @@ function Card(props){
   let testsuite_tests = testsuite['@tests']
   let testsuite_time = testsuite['@time']
 
-
+  let card_title = props.title ? props.title : testsuite_classname
 
   return(
     <div className={style.resultCard}>
       <div className={style.card}>
         <header className={style.cardHeader}>
-        <h3 className={style.cardHeaderTitle}>{testsuite_classname}</h3>
+        <h3 className={style.cardHeaderTitle}>{card_title}</h3>
         </header>
 
         <div className={style.cardContent}>
+
           {/* result tile */}
           <div className={style.resultTile}>
             <div className={style.resultGridWrapper}>
