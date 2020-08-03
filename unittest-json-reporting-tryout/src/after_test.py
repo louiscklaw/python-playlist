@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-
 from py_imports import *
 from common import *
 from config import *
+
+# to translate xml to json
+# to add meta from meta directory e.g. src/reports_meta/unit/desc.md
 
 def listXmlFiles():
   return filter(
