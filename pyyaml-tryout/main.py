@@ -16,16 +16,41 @@ import yaml
 #     print(content)
 
 
-test="""
+yaml_sample="""
+# h1
+## h2
+### h3
+
+helloworld paragraph
+
+1. hello1
+1. hello2
+1. hello3
+"""
+
+yaml_with_frontmatter="""
 ---
 Title: John
 Description: helloworld
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-laboris nisi ut aliquip ex ea commodo consequat.
-"""
+""" + yaml_sample
 
-pprint(list(yaml.load_all(test, Loader=yaml.FullLoader))[:2])
+
+def parseYaml(string_in):
+  return list(yaml.load_all(string_in, Loader=yaml.FullLoader))[:2]
+
+
+def checkIfYamlWithFrontmatter(string_in):
+  parse_result = parseYaml(string_in)
+
+  if len(parse_result) > 1:
+    frontmatter_check = parse_result[0]
+    return type(frontmatter_check) == type({})
+  else:
+    return False
+
+print(yaml_with_frontmatter)
+
+assert True == checkIfYamlWithFrontmatter(yaml_with_frontmatter), 'test with frontmatter'
+assert False == checkIfYamlWithFrontmatter(yaml_sample), 'test without frontmatter'
