@@ -11,3 +11,5 @@ from jsonpath_ng import jsonpath
 from jsonpath_ng.ext import parse
 
 import chalk
+
+import yaml

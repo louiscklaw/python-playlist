@@ -141,6 +141,7 @@ def dumpJsonToFile(json_file_path, json_obj ):
   json.dump(json_obj, f_out, sort_keys=True, indent=2)
   f_out.close()
 
+
 def main():
   json_file_list = listJsonFileInDirectory(REPORT_DIRECTORY)
   json_file_paths = map(lambda filename: os.path.join(REPORT_DIRECTORY, filename), json_file_list)
@@ -165,7 +166,24 @@ def main():
       # sys.exit()
 
       if (test_result_path in test_docstring_pool.keys()):
-        test_result_obj.value['doc_string'] = test_docstring_pool[test_result_path]
+        # consider 2 scenario
+        # 1. this is a yaml (frontmatter + content)
+        # 2. this is a markdown only (markdown content)
+
+        temp = test_docstring_pool[test_result_path]
+
+        if temp == None:
+          test_result_obj.value['doc_string'] = ''
+
+        else:
+          try_parse_yaml = parseYaml(temp)
+          if checkIfYamlWithFrontmatter(try_parse_yaml):
+            parsed_yaml = try_parse_yaml
+            test_result_obj.value['title'] = parsed_yaml[0]['Title']
+            test_result_obj.value['doc_string'] = parsed_yaml[1]
+
+          else:
+            test_result_obj.value['doc_string'] = temp
 
     # f_out = open(json_file_path,'w')
     # json.dump(json_data, f_out, sort_keys=True, indent=2)

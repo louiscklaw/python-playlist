@@ -5,6 +5,9 @@
     },
     {
       "path": "../unittest-json-reporting-tryout"
+    },
+    {
+      "path": "../pyyaml-tryout"
     }
   ],
   "settings": {}

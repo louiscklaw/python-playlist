@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<testsuite errors="0" failures="0" name="unit_suite1.Test_unit_suite1-20200803105950" tests="2" time="0.000">
+<testsuite errors="0" failures="0" name="unit_suite1.Test_unit_suite1-20200803173746" tests="2" time="0.000">
 	<testcase classname="unit_suite1.Test_unit_suite1" name="test_helloworld" time="0.000"/>
 	<testcase classname="unit_suite1.Test_unit_suite1" name="test_no_doc_string" time="0.000"/>
 	<system-out>
@@ -10,233 +10,15 @@ no_doc_string
 <![CDATA[]]>	</system-err>
 </testsuite>
 <?xml version="1.0" ?>
-<testsuite errors="21" failures="0" name="unit_suite3.Test_unit_suite3-20200803105950" tests="74" time="0.006">
+<testsuite errors="1" failures="0" name="unit_suite3.Test_unit_suite3-20200803173746" tests="2" time="0.000">
 	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_1" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_10" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_11" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_12" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_13" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_14" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_15" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_16" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_2" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_20" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_22" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_24" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_25" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_26" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_27" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_29" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_30" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_31" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_34" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_35" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_36" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_37" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_4" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_40" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_42" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_44" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_45" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_48" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_49" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_5" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_50" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_51" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_52" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_53" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_54" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_55" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_56" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_6" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_60" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_61" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_62" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_63" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_66" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_69" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_7" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_70" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_71" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_72" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_8" time="0.000"/>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_9" time="0.000"/>
 	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_0" time="0.000">
 		<error message="shouldn't happen" type="AssertionError">
 <![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 33, in test_sample_0
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 13, in test_sample_0
     self.fail("shouldn't happen")
 AssertionError: shouldn't happen
 ]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_17" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 101, in test_sample_17
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_18" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 105, in test_sample_18
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_19" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 109, in test_sample_19
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_21" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 117, in test_sample_21
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_23" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 125, in test_sample_23
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_28" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 145, in test_sample_28
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_3" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 45, in test_sample_3
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_32" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 161, in test_sample_32
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_33" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 165, in test_sample_33
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_38" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 185, in test_sample_38
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_39" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 189, in test_sample_39
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_41" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 197, in test_sample_41
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_43" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 205, in test_sample_43
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_46" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 217, in test_sample_46
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_47" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 221, in test_sample_47
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_58" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 266, in test_sample_58
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_64" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 291, in test_sample_64
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_65" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 295, in test_sample_65
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_67" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 303, in test_sample_67
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_68" time="0.000">
-		<error message="shouldn't happen" type="AssertionError">
-<![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py", line 307, in test_sample_68
-    self.fail("shouldn't happen")
-AssertionError: shouldn't happen
-]]>		</error>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_57" time="0.000">
-		<skipped message="demonstrating skipping" type="skip"/>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_59" time="0.000">
-		<skipped message="demonstrating skipping" type="skip"/>
-	</testcase>
-	<testcase classname="unit_suite3.Test_unit_suite3" name="test_sample_73" time="0.000">
-		<skipped message="demonstrating skipping" type="skip"/>
 	</testcase>
 	<system-out>
 <![CDATA[hellworld
@@ -246,11 +28,11 @@ no_doc_string
 <![CDATA[]]>	</system-err>
 </testsuite>
 <?xml version="1.0" ?>
-<testsuite errors="1" failures="0" name="unit_suite2.Test_unit_suite2-20200803105950" tests="1" time="0.000">
+<testsuite errors="1" failures="0" name="unit_suite2.Test_unit_suite2-20200803173746" tests="1" time="0.000">
 	<testcase classname="unit_suite2.Test_unit_suite2" name="test_sample_0" time="0.000">
 		<error message="shouldn't happen" type="AssertionError">
 <![CDATA[Traceback (most recent call last):
-  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite2.py", line 33, in test_sample_0
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite2.py", line 13, in test_sample_0
     self.fail("shouldn't happen")
 AssertionError: shouldn't happen
 ]]>		</error>

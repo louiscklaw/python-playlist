@@ -11,6 +11,7 @@ xmlrunner = "*"
 xmltodict = "*"
 jsonpath-ng = "*"
 pychalk = "*"
+pyyaml = "*"
 
 [requires]
 python_version = "3"

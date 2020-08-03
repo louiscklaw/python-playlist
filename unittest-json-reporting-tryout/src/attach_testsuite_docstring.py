@@ -40,7 +40,28 @@ def listTestSuiteInJson(testtype, json_data):
   for testsuite in testsuites:
     testsuite_name = testsuite.value['@name'].split('-')[0]
     testsuite_obj = eval('{}.{}'.format(testtype_name,testsuite_name))
-    testsuite.value['doc_string'] = grepDocStringFromTestsuite(testsuite_obj)
+
+    temp = grepDocStringFromTestsuite(testsuite_obj)
+    if temp == None:
+      testsuite.value['doc_string'] = ''
+
+    else:
+      try:
+        try_parse_yaml = parseYaml(temp)
+        if checkIfYamlWithFrontmatter(try_parse_yaml):
+          parsed_yaml = try_parse_yaml
+          testsuite.value['title'] = parsed_yaml[0]['Title']
+          testsuite.value['doc_string'] = parsed_yaml[1]
+          pass
+
+        else:
+          testsuite.value['doc_string'] = temp
+
+      except Exception as e:
+        pprint(temp)
+        pprint(try_parse_yaml)
+        raise e
+
 
   return 'hellooworld'
 
