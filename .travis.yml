@@ -40,7 +40,7 @@ jobs:
 
       script:
         - cd unittest-xmlrunner-tryout
-
+        - mkdir -p test-reports
         - pipenv sync
         - pipenv run python3 test/unit/test_unit.py
         - pipenv run python3 test/integration/test_integration.py
