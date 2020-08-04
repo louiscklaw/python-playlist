@@ -17,15 +17,17 @@ const getTestSuiteName = json_filename => json_filename.match(/(\w+)\.json/)[1]
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
 
-  let files_in_content_dir = fs.readdirSync('./content').sort()
+  let all_files_in_content_dir = fs.readdirSync('./content').sort()
 
-  let content_urls = files_in_content_dir.map(x => `./content/${x}`)
+  let content_urls = all_files_in_content_dir.map(x => `./content/${x}`)
 
   let result_json_file = content_urls.filter( x => isTestResultJson(x) )
 
   // for navbar
-  let json_files = files_in_content_dir.filter( filename => filename.search(/\.json/) > -1)
+  let json_files = all_files_in_content_dir.filter( filename => filename.search(/\.json/) > -1)
   let test_types = json_files.map( filename => filename.replace(/\.json/,''))
+
+  console.log('test_types',test_types)
 
   if (result_json_file.length < 1)  {
     console.log('content_urls',content_urls)
@@ -49,7 +51,7 @@ exports.createPages = ({ actions }) => {
             testResult: JSON.parse(json_content),
             testSuiteName: getTestSuiteName(json_file_fullpath),
             json_files,
-            test_types
+            test_types: test_types
           }
         })
 

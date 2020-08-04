@@ -1,19 +1,18 @@
+
 import React from "react"
-import {Link} from 'gatsby'
+import {Link, navigate} from 'gatsby'
 
 import style from '../scss/style.module.scss'
-import Navbar from "../components/nav"
 
 function IndexPage(props){
+
+  React.useEffect(()=>{
+    navigate("/content/unit")
+  },[])
+
   return (
     <>
-      <Navbar />
-      <h1>Sourcing content from YAML</h1>
-      <ul>
-        <li>
-          <Link to="/json-test-result">json-test-result</Link>
-        </li>
-      </ul>
+      please click here if page doesn't redirect's you
     </>
   )
 }

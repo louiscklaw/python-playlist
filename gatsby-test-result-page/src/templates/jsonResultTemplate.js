@@ -11,6 +11,18 @@ import TestSuite from '../components/test-suite'
 import TestSuites from '../components/test-suites'
 import TestSuiteResult from '../components/test-suite-result'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faCoffee,
+  faAddressBook,
+  faAirFreshener,
+  faAmbulance,
+  faAtom,
+  faBus,
+  faCoins,
+  faDice,
+} from '@fortawesome/free-solid-svg-icons'
+
 function jsonTemplate(props){
   let page_context = props.pageResources.json.pageContext
 
@@ -28,6 +40,7 @@ function jsonTemplate(props){
   return(
     <>
       {/* <Navbar nav_items={page_context.result_category}/> */}
+      {/* page_context.test_types */}
       <Navbar nav_items={page_context.test_types}/>
 
       <section className={style.section, style.appendReportSection}>

@@ -3,9 +3,15 @@ import {Link} from 'gatsby'
 
 import style from '../../scss/style.module.scss'
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 const combineStyle = (styles) => styles.join(' ')
 
 function Navbar(props){
+  let nav_items = props.nav_items
+
   return(
     <nav className={style.navbar} role="navigation" aria-label="main navigation">
       <div className={style.navbarBrand}>
@@ -30,32 +36,32 @@ function Navbar(props){
         <Link to="/statistics" className={style.navbarItem}> Statistics </Link>
 
         {
-          props.nav_items.map( nav_item => {
+          nav_items.map( nav_item => {
             return(
               <Link to={`/content/${nav_item}`} className={style.navbarItem}> {nav_item} </Link>
             )
           })
         }
 
-          <div className={combineStyle([style.navbarItem, style.hasDropdown, style.isHoverable])}>
-            <a className={style.navbarLink}>
-              More
-            </a>
+        <div className={combineStyle([style.navbarItem, style.hasDropdown, style.isHoverable])}>
+          <a className={style.navbarLink}>
+            More
+          </a>
 
-            <div className={style.navbarDropdown}>
-              <a className={style.navbarItem}> About </a>
-              <a className={style.navbarItem}> Documentation </a>
-              <a className={style.navbarItem}> Report an issue </a>
-            </div>
-
+          <div className={style.navbarDropdown}>
+            <a className={style.navbarItem}> About </a>
+            <a className={style.navbarItem}> Documentation </a>
+            <a className={style.navbarItem}> Report an issue </a>
           </div>
+
         </div>
+      </div>
 
         <div className={style.navbarEnd}>
           <div className={style.navbarItem}>
             <div className={style.buttons}>
-              <a className={combineStyle([style.button, style.isPrimary])}>
-                <i class="fab fa-github-square"></i>
+              <a className={combineStyle([style.button, style.isPrimary])} href="https://www.github.com/louiscklaw/python-playlist">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </div>
           </div>
