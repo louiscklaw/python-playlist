@@ -121,6 +121,7 @@ jobs:
       name: generate gatsby test result page (by gatsby-test-result-page)
 
       if: branch == 'test/unittest-json-reporting-tryout'
+      if: branch == 'test/adding-google-fonts'
       if: branch == 'pre-merge-master'
 
       env:
