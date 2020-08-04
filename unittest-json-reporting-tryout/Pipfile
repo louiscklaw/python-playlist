@@ -6,13 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-unittest-xml-reporting = "*"
-xmlrunner = "*"
-xmltodict = "*"
-jsonpath-ng = "*"
-pychalk = "*"
-pyyaml = "*"
 python-frontmatter = "*"
 
 [requires]
-python_version = "3"
+python_version = "3.6"

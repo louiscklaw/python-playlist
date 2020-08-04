@@ -16,7 +16,9 @@ function TestSuites(props){
     <>
       <div className={style.cardWrapper}>
         {
-          Object.keys(testsuites_array).map(idx => <Card {...testsuites_array[idx]} key={`card_${idx}`}/> )
+          Object.keys(testsuites_array)
+            .sort()
+            .map(idx => <Card {...testsuites_array[idx]} key={`card_${idx}`}/> )
         }
       </div>
     </>

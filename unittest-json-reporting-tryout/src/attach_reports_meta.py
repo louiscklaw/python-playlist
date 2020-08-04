@@ -32,8 +32,24 @@ def main():
 
     json_data = openJsonFile(json_result_filepath)
     jsonpath_expression = parse("$.reports")
+
     reports = jsonpath_expression.find(json_data)
-    reports[0].value['meta'] = md_file_content
+    reports_node = reports[0]
+
+    try_parse_yaml = parseMd(md_file_content)
+    if checkMdWithFrontmatter(try_parse_yaml):
+      parsed_yaml = try_parse_yaml
+      parsed_yaml_frontmatter = parsed_yaml[0]
+      parsed_yaml_content = parsed_yaml[1]
+
+      for key in parsed_yaml_frontmatter.keys():
+        lowered_key = key.lower()
+        value = parsed_yaml_frontmatter[key]
+        reports_node.value[lowered_key] = value
+
+      reports_node.value['meta'] = parsed_yaml_content
+
+      reports_node.value['doc_string_added_by'] = 'attach_reports_meta.py'
 
     writeJsonFile(json_data, json_result_filepath)
 

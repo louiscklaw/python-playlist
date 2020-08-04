@@ -50,7 +50,7 @@ function Card(props){
   let testsuite_tests = testsuite['@tests']
   let testsuite_time = testsuite['@time']
 
-  let card_title = props.title ? props.title : testsuite_classname
+  let card_title = props.title ? props.title : testsuite_classname.split('.')[1]
 
   return(
     <div className={style.resultCard}>

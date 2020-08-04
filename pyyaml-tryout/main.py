@@ -17,6 +17,7 @@ import yaml
 
 
 yaml_sample="""
+
 # h1
 ## h2
 ### h3
@@ -50,7 +51,11 @@ def checkIfYamlWithFrontmatter(string_in):
   else:
     return False
 
-print(yaml_with_frontmatter)
+def testExtractByYaml(string_in):
+  pprint(list(yaml.load_all(string_in, Loader=yaml.FullLoader))[:2])
 
 assert True == checkIfYamlWithFrontmatter(yaml_with_frontmatter), 'test with frontmatter'
 assert False == checkIfYamlWithFrontmatter(yaml_sample), 'test without frontmatter'
+
+
+testExtractByYaml(yaml_with_frontmatter)

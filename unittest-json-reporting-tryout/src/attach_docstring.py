@@ -13,6 +13,7 @@ for root, dirs, files in os.walk(TEST_SRC_DIR):
     exec('import {}'.format(dirname))
 
 
+
 def listSuiteInsideClass(class_in):
   return filter(lambda x: x.find('Test_') > -1, dir(class_in))
 
@@ -158,32 +159,26 @@ def main():
 
         temp = test_docstring_pool[test_result_path]
 
+
+        test_result_obj.value['doc_string_added_by'] = 'attach_docstring.py'
         if temp == None:
           test_result_obj.value['doc_string'] = ''
 
         else:
-          # try_parse_yaml = parseYaml(temp)
-          # if checkIfYamlWithFrontmatter(try_parse_yaml):
-          #   parsed_yaml = try_parse_yaml
-          #   test_result_obj.value['title'] = parsed_yaml[0]['Title']
-          #   test_result_obj.value['doc_string'] = parsed_yaml[1]
+          parsed_yaml = parseMd(temp)
 
-          # else:
-          #   test_result_obj.value['doc_string'] = temp
+          parsed_yaml_frontmatter = parsed_yaml[0]
+          parsed_yaml_content = parsed_yaml[1]
 
+          if checkMdWithFrontmatter(parsed_yaml):
 
-          try_parse_yaml = parseYaml(temp)
-          if checkIfYamlWithFrontmatter(try_parse_yaml):
-            parsed_yaml = try_parse_yaml
-
-            keys = parsed_yaml[0].keys()
-
-            for key in keys:
+            for key in parsed_yaml_frontmatter.keys():
               lowered_key = key.lower()
-              value = parsed_yaml[0][key]
+              value = parsed_yaml_frontmatter[key]
               test_result_obj.value[lowered_key] = value
 
-            test_result_obj.value['doc_string'] = parsed_yaml[1]
+            test_result_obj.value['doc_string'] = parsed_yaml_content
+
             pass
 
           else:

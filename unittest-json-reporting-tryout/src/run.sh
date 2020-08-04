@@ -32,3 +32,12 @@ pipenv run python3 ./attach_docstring.py
 pipenv run python3 ./attach_testsuite_docstring.py
 
 pipenv run python3 ./attach_reports_meta.py
+
+
+# below is the code for report generation
+# IDEA: it shouldn't be here, but currently no anywhere better than here.
+# NOTE: related to /home/logic/_workspace/python-playlist/gatsby-test-result-page
+OWD=$PWD
+cd ../../gatsby-test-result-page
+  ./regen_test_result.sh
+cd $OWD

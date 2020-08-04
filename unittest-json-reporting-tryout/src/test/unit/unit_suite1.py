@@ -3,19 +3,13 @@ import random
 
 class Test_unit_suite1(unittest.TestCase):
   """
----
-Title: basic interface test
-Explain: this is basic interface test explain
----
-# h1
-## h2
-### h3
+  ---
+  Title: basic interface test(Test_unit_suite1)
+  Explain: this is basic interface test explain
+  ---
+  UNIT TESTING is a level of software testing where individual units/ components of a software are tested. The purpose is to validate that each unit of the software performs as designed. A unit is the smallest testable part of any software. It usually has one or a few inputs and usually a single output.
 
-helloworld paragraph
-
-1. hello1
-1. hello2
-1. hello3
+  可以降低日後的維護成本；對於會TDD (Test-Driven Development)的工程師來說，甚至是加快開發速度。 程式碼品質. 程式碼的品質最主要的
   """
 
   def test_no_doc_string(self):
@@ -26,12 +20,15 @@ helloworld paragraph
 ---
 Title: test_helloworld
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-laboris nisi ut aliquip ex ea commodo consequat.
+# h1
+## h2
+### h3
 
-### basic interface test
+helloworld paragraph
+
+1. hello1
+1. hello2
+1. hello3
     """
 
     print('hellworld')

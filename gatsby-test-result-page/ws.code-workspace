@@ -8,6 +8,9 @@
     },
     {
       "path": "../pyyaml-tryout"
+    },
+    {
+      "path": "../python-frontmatter-tryout"
     }
   ],
   "settings": {}

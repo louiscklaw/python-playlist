@@ -1,5 +1,7 @@
 # regenerate test result
 
+generate the test result by directory `/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout`
+
 `$ ./regen_test_result.sh`
 
 ### To run

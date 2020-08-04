@@ -25,27 +25,29 @@ def listTestSuiteInJson(testtype, json_data):
     testsuite_obj = eval('{}.{}'.format(testtype_name,testsuite_name))
 
     temp = grepDocStringFromTestsuite(testsuite_obj)
-    if temp == None:
-      testsuite.value['doc_string'] = ''
 
+    testsuite.value['doc_string'] = ''
+    testsuite.value['doc_string_added_by'] = 'attach_testsuite_docstring.py'
+
+    if temp == None:
+      pass
     else:
       try:
-        try_parse_yaml = parseYaml(temp)
-        if checkIfYamlWithFrontmatter(try_parse_yaml):
-          parsed_yaml = try_parse_yaml
+        try_parse_yaml = parseMd(temp)
+        parsed_yaml_frontmatter = try_parse_yaml[0]
+        parsed_yaml_content = try_parse_yaml[1]
 
-          keys = parsed_yaml[0].keys()
+        if checkMdWithFrontmatter(try_parse_yaml):
 
-          for key in keys:
+          for key in parsed_yaml_frontmatter.keys():
             lowered_key = key.lower()
-            value = parsed_yaml[0][key]
+            value = parsed_yaml_frontmatter[key]
             testsuite.value[lowered_key] = value
 
-          testsuite.value['doc_string'] = parsed_yaml[1]
-          pass
+          testsuite.value['doc_string'] = parsed_yaml_content
 
         else:
-          testsuite.value['doc_string'] = temp
+          testsuite.value['doc_string'] = parsed_yaml_content
 
       except Exception as e:
         pprint(temp)

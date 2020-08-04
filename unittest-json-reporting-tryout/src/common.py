@@ -11,8 +11,18 @@ def printError(error_text):
 def printDone():
   print(chalk.green(__file__ + ' Done'))
 
-def parseYaml(string_in):
+def parseMd(string_in):
+  return frontmatter.parse(string_in)
+
+def checkMdWithFrontmatter(obj_in):
+  return len(obj_in[0].keys()) > 0
+
+def parseYaml1(string_in):
   return list(yaml.load_all(string_in, Loader=yaml.FullLoader))[:2]
+
+def parseYaml(string_in):
+  return frontmatter.parse(string_in)
+
 
 def checkIfYamlWithFrontmatter(parse_result):
   if len(parse_result) > 1:
