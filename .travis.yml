@@ -68,7 +68,7 @@ jobs:
         - cd ..
 
     - stage: Unit_Test
-      name: test unittest-json-reporting-tryout
+      name: test (unittest-json-reporting-tryout)
 
       env:
         _ WKDIR=$HOME/unittest-json-reporting-tryout/src
@@ -89,19 +89,62 @@ jobs:
         - pipenv sync
         - pipenv run python3 before_test.py
         # accept failed test case as demo case
-        - pipenv run python3 main.py || true
+        - pipenv run python3 test/unit/test_unit_run.py
+        - pipenv run python3 test/integration/test_integration_run.py
+        - pipenv run python3 test/sanity/test_sanity_run.py
+        - pipenv run python3 test/smoke/test_smoke_run.py
+        - pipenv run python3 test/interface/test_interface_run.py
+        - pipenv run python3 test/regression/test_regression_run.py
+        - pipenv run python3 test/acceptance/test_acceptance_run.py
+
         - pipenv run python3 after_test.py
+        - pipenv run python3 ./attach_docstring.py
+        - pipenv run python3 ./attach_testsuite_docstring.py
+        - pipenv run python3 ./attach_reports_meta.py
 
         - cd ../..
 
     - stage: Publish_Result
-      name: generate gatsby test result page
+      name: generate gatsby test result page (by gatsby-test-result-page)
+
+      before_script:
+        - cd unittest-json-reporting-tryout/src
+
+        - mkdir -p $REPORT_DIR
+        - pipenv sync
+        - pipenv run python3 before_test.py
+        # accept failed test case as demo case
+        - pipenv run python3 test/unit/test_unit_run.py
+        - pipenv run python3 test/integration/test_integration_run.py
+        - pipenv run python3 test/sanity/test_sanity_run.py
+        - pipenv run python3 test/smoke/test_smoke_run.py
+        - pipenv run python3 test/interface/test_interface_run.py
+        - pipenv run python3 test/regression/test_regression_run.py
+        - pipenv run python3 test/acceptance/test_acceptance_run.py
+
+        - pipenv run python3 after_test.py
+        - pipenv run python3 ./attach_docstring.py
+        - pipenv run python3 ./attach_testsuite_docstring.py
+        - pipenv run python3 ./attach_reports_meta.py
+
+        - cd ../..
 
       script:
         - cd gatsby-test-result-page
+
+        # copy result json files from (unittest-json-reporting-tryout)
+        - ./regen_test_result.sh
+
         - yarn
         - yarn build
+
         - cd ..
+
+      deploy:
+        - provider: pages
+          skip_cleanup: true
+          local_dir: gh-pages
+          github_token: $GITHUB_TOKEN
 
 
     - stage: Merge
