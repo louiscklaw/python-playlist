@@ -111,6 +111,8 @@ jobs:
 
     - stage: Unit_Test
       name: generate gatsby test result page (by gatsby-test-result-page)
+      if: branch == 'test/unittest-json-reporting-tryout'
+      if: branch == 'test/adding-google-fonts'
 
       env:
         - WKDIR=$HOME/unittest-json-reporting-tryout/src
