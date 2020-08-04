@@ -2,10 +2,11 @@
 
 ![](readme_docs/screenshot.png)
 
-### Background
+## Background
+
 this is a page powered by gatsby to present the test result by python's xmlrunner
 
-### To run
+## To run
 ```bash
 # 1. run the tests (python part)
 # python execute the tests -> xml generated -> post process to convert into json
@@ -25,15 +26,18 @@ $ ./build.sh
 $ ./dev.sh
 ```
 
+## TODO:
 
-## Some design notes
+- [ ] show the test result in the page(probably on mouse over)
+
+## Some design notes:
 
 ### project involved:
 
 - unittest: python-playlist/unittest-json-reporting-tryout
 - report page: python-playlist/gatsby-test-result-page
 
-### mapping table
+### test result and the web page mapping table:
 
 | unittest      | report page |
 | ------------- | ------------- |
