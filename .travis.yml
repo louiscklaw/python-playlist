@@ -157,6 +157,7 @@ jobs:
         -   yarn build
 
         - cd ..
+        - pwd
 
       deploy:
         - provider: pages
