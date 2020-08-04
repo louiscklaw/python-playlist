@@ -10,7 +10,11 @@ function Navbar(props){
     <nav className={style.navbar} role="navigation" aria-label="main navigation">
       <div className={style.navbarBrand}>
         <a className={style.navbarItem} href="https://louiscklaw.github.io">
-          <div style="font-family:Noto Sans TC, sans-serif;font-size:x-large">Travis dashboard</div>
+
+          <div style={{ fontFamily: 'Indie Flower', fontSize:'x-large' }}>
+            Test report
+          </div>
+
         </a>
 
         <a role="button" className={[style.navbarBurger, style.burger]} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">

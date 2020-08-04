@@ -12,6 +12,7 @@ def listJsonFileInDirectory(dir_in):
   return output_json_filelist
 
 def getMetaFilepath(result_file_in):
+  # test-reports/unit.json -> src/reports_meta/unit/desc.md
   return os.path.join(
     META_DIRECTORY,result_file_in.replace('.json',''),'desc.md'
   )
