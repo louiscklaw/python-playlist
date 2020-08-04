@@ -149,7 +149,7 @@ jobs:
       deploy:
         - provider: pages
           skip_cleanup: true
-          local_dir: gh-pages
+          local_dir: gatsby-test-result-page/public
           github_token: $GITHUB_TOKEN
 
 
