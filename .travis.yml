@@ -143,10 +143,9 @@ jobs:
         - cd gatsby-test-result-page
 
         # copy result json files from (unittest-json-reporting-tryout)
-        - ./regen_test_result.sh
-
-        - yarn
-        - yarn build
+        -   ./regen_test_result.sh
+        -   yarn
+        -   yarn build
 
         - cd ..
 
