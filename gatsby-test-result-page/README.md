@@ -1,20 +1,39 @@
-# regenerate test result
+# gatsby-test-result-page
 
-generate the test result by directory `/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout`
+![](readme_docs/screenshot.png)
 
-`$ ./regen_test_result.sh`
+### Background
+this is a page powered by gatsby to present the test result by python's xmlrunner
 
 ### To run
-```
-$ cd src
+```bash
+# 1. run the tests (python part)
+# python execute the tests -> xml generated -> post process to convert into json
+$ cd unittest-json-reporting-tryout
 $ ./run.sh
+
+# 2. optional, to sync the results json to the gatsby src/content directory
+$ cd ../../gatsby-test-result-page
+$ ./regen_test_result.sh
+
+# 3. to generate the gatsby test result page
+$ cd gatsby-test-result-page
+
+# depends
+$ ./build.sh
+
+$ ./dev.sh
 ```
 
 
-### mapping table
+## Some design notes
+
+### project involved:
 
 - unittest: python-playlist/unittest-json-reporting-tryout
 - report page: python-playlist/gatsby-test-result-page
+
+### mapping table
 
 | unittest      | report page |
 | ------------- | ------------- |
@@ -23,13 +42,8 @@ $ ./run.sh
 | testsuite  |  card.js (好多粒 status 走出黎) |
 | testcase[1,2,3...] | icon-status.js / result-details.js |
 
-### dev:
-to regenerate the test result
-`regen_test_result.sh`
 
-## Background information for tests:
-
-### Functional Testing types include:
+### Functional Testing types include (test_type):
 
 - Unit
 - Integration
@@ -38,7 +52,7 @@ to regenerate the test result
 - Smoke
 - Interface
 - Regression
-- Beta/Acceptance
+- Acceptance
 
 ### Non-functional Testing types include:
 
