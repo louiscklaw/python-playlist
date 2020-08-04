@@ -104,7 +104,7 @@ jobs:
 
         - cd ../..
 
-    - stage: Publish_Result
+    - stage: Unit_Test
       name: generate gatsby test result page (by gatsby-test-result-page)
 
       before_script:
