@@ -84,6 +84,7 @@ jobs:
 
       script:
         - cd unittest-json-reporting-tryout/src
+        - mkdir -p $REPORT_DIR
         - pipenv sync
         - pipenv run python3 before_test.py
         # accept failed test case as demo case
