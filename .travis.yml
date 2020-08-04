@@ -18,6 +18,7 @@ jobs:
   include:
     - stage: Unit_Test
       name: unittest-helloworld
+      if: branch == 'test/unittest-helloworld'
 
       before_script:
         - sudo apt update
@@ -30,8 +31,10 @@ jobs:
         - pipenv run python3 main.py
         - cd ..
 
+
     - stage: Unit_Test
       name: unittest-xmlrunner-tryout
+      if: branch == 'test/unittest-xmlrunner-tryout'
 
       before_script:
         - sudo apt update
@@ -55,6 +58,7 @@ jobs:
 
     - stage: Unit_Test
       name: test unittest-html-test-runner-helloworld
+      if: branch == 'test/unittest-html-test-runner-helloworld'
 
       before_script:
         - sudo apt update
@@ -69,6 +73,7 @@ jobs:
 
     - stage: Unit_Test
       name: test (unittest-json-reporting-tryout)
+      if: branch == 'test/unittest-json-reporting-tryout'
 
       env:
         _ WKDIR=$HOME/unittest-json-reporting-tryout/src
