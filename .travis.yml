@@ -111,7 +111,7 @@ jobs:
         _ WKDIR=$HOME/unittest-json-reporting-tryout/src
         - SRC_DIR=$WKDIR
         - PROJ_HOME=$WKDIR/..
-        - REPORT_DIR=$WKDIR/test-reports
+        - REPORT_DIR=$PROJ_HOME/test-reports
 
       before_script:
         - sudo apt update
