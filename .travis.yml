@@ -72,11 +72,9 @@ jobs:
       name: test (unittest-json-reporting-tryout)
 
       env:
-        _ WKDIR=$HOME/unittest-json-reporting-tryout/src
-        - SRC_DIR=$WKDIR
-        - PROJ_HOME=$WKDIR/..
-        - REPORT_DIR=$PROJ_HOME/test-reports
-
+        - SRC_DIR=$HOME/unittest-json-reporting-tryout/src
+        - PROJ_HOME=$HOME/unittest-json-reporting-tryout
+        - REPORT_DIR=$HOME/unittest-json-reporting-tryout/src/test-reports
 
       before_script:
         - sudo apt update
@@ -109,10 +107,9 @@ jobs:
       name: generate gatsby test result page (by gatsby-test-result-page)
 
       env:
-        - WKDIR=$HOME/unittest-json-reporting-tryout/src
-        - SRC_DIR=$WKDIR
-        - PROJ_HOME=$WKDIR/..
-        - REPORT_DIR=$PROJ_HOME/test-reports
+        - SRC_DIR=$HOME/unittest-json-reporting-tryout/src
+        - PROJ_HOME=$HOME/unittest-json-reporting-tryout
+        - REPORT_DIR=$HOME/unittest-json-reporting-tryout/src/test-reports
 
       before_script:
         - sudo apt update
