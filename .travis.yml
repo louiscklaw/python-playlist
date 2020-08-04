@@ -18,7 +18,9 @@ jobs:
   include:
     - stage: Unit_Test
       name: unittest-helloworld
+
       if: branch == 'test/unittest-helloworld'
+      if: branch == 'pre-merge-master'
 
       before_script:
         - sudo apt update
@@ -34,7 +36,9 @@ jobs:
 
     - stage: Unit_Test
       name: unittest-xmlrunner-tryout
+
       if: branch == 'test/unittest-xmlrunner-tryout'
+      if: branch == 'pre-merge-master'
 
       before_script:
         - sudo apt update
@@ -58,7 +62,9 @@ jobs:
 
     - stage: Unit_Test
       name: test unittest-html-test-runner-helloworld
+
       if: branch == 'test/unittest-html-test-runner-helloworld'
+      if: branch == 'pre-merge-master'
 
       before_script:
         - sudo apt update
@@ -73,7 +79,9 @@ jobs:
 
     - stage: Unit_Test
       name: test (unittest-json-reporting-tryout)
+
       if: branch == 'test/unittest-json-reporting-tryout'
+      if: branch == 'pre-merge-master'
 
       env:
         _ WKDIR=$HOME/unittest-json-reporting-tryout/src
@@ -111,8 +119,9 @@ jobs:
 
     - stage: Unit_Test
       name: generate gatsby test result page (by gatsby-test-result-page)
+
       if: branch == 'test/unittest-json-reporting-tryout'
-      if: branch == 'test/adding-google-fonts'
+      if: branch == 'pre-merge-master'
 
       env:
         - WKDIR=$HOME/unittest-json-reporting-tryout/src
