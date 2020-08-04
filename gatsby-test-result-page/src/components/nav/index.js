@@ -55,7 +55,7 @@ function Navbar(props){
           <div className={style.navbarItem}>
             <div className={style.buttons}>
               <a className={combineStyle([style.button, style.isPrimary])}>
-                source code
+                <i class="fab fa-github-square"></i>
               </a>
             </div>
           </div>
