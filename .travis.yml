@@ -141,7 +141,7 @@ jobs:
         - pwd
 
 
-        - ls -l unittest-json-reporting-tryout/test-reports
+        - ls -l $REPORT_DIR
 
         - cd gatsby-test-result-page
         # copy result json files from (unittest-json-reporting-tryout)
