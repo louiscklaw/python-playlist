@@ -6,9 +6,6 @@
 
 // You can delete this file if you're not using it
 const fs = require(`fs`)
-const yaml = require(`js-yaml`)
-
-const path = require(`path`)
 
 const getPath = (json_filename) => json_filename.replace(/.json$/,'').replace(/^\.\//,'')
 
@@ -18,13 +15,19 @@ const getTestSuiteName = json_filename => json_filename.match(/(\w+)\.json/)[1]
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
-  let files_in_content = fs.readdirSync('./content').map(x => `./content/${x}`)
 
-  console.log(files_in_content)
+  let files_in_content_dir = fs.readdirSync('./content').sort()
 
-  files_in_content
+  let content_urls = files_in_content_dir.map(x => `./content/${x}`)
+
+  // for navbar
+  let json_files = files_in_content_dir.filter( filename => filename.search(/\.json/) > -1)
+  let result_category = json_files.map( filename => filename.replace(/\.json/,''))
+
+  content_urls
     .filter( x => isTestResultJson(x) )
     .forEach( json_file_fullpath => {
+
       if(json_file_fullpath.search(/\.json$/) > -1){
         let json_content = fs.readFileSync(json_file_fullpath,{encoding:'utf-8'})
         let page_path = getPath(json_file_fullpath)
@@ -36,12 +39,12 @@ exports.createPages = ({ actions }) => {
           component: require.resolve(`./src/templates/jsonResultTemplate.js`),
           context:{
             testResult: JSON.parse(json_content),
-            testSuiteName: getTestSuiteName(json_file_fullpath)
+            testSuiteName: getTestSuiteName(json_file_fullpath),
+            json_files,
+            result_category
           }
         })
 
-      }else{
-        // console.log(`skipping generate page as not json file ${json_file_fullpath}`)
       }
     })
 

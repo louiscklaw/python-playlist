@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<testsuite errors="0" failures="0" name="integration_suite1.Test_integration_suite1-20200804153447" tests="2" time="0.000">
+<testsuite errors="0" failures="0" name="integration_suite1.Test_integration_suite1-20200804162425" tests="2" time="0.000">
 	<testcase classname="integration_suite1.Test_integration_suite1" name="test_sample_0" time="0.000"/>
 	<testcase classname="integration_suite1.Test_integration_suite1" name="test_sample_1" time="0.000"/>
 	<system-out>
@@ -8,7 +8,7 @@
 <![CDATA[]]>	</system-err>
 </testsuite>
 <?xml version="1.0" ?>
-<testsuite errors="25" failures="0" name="integration_suite2.Test_integration_suite2-20200804153447" tests="102" time="0.004">
+<testsuite errors="25" failures="0" name="integration_suite2.Test_integration_suite2-20200804162425" tests="102" time="0.005">
 	<testcase classname="integration_suite2.Test_integration_suite2" name="test_sample_10" time="0.000"/>
 	<testcase classname="integration_suite2.Test_integration_suite2" name="test_sample_101" time="0.000"/>
 	<testcase classname="integration_suite2.Test_integration_suite2" name="test_sample_12" time="0.000"/>

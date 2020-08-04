@@ -6,7 +6,10 @@ from config import *
 
 # import unit, integration
 sys.path.append(TEST_SRC_DIR)
-import unit, integration
+for root, dirs, files in os.walk(TEST_SRC_DIR):
+  for dirname in dirs:
+    exec('import {}'.format(dirname))
+
 
 def writeJsonFile(json_obj_in, filepath):
   f_json_out = open(filepath, 'r+')
@@ -15,6 +18,8 @@ def writeJsonFile(json_obj_in, filepath):
 
 
 def listTestSuiteInJson(testtype, json_data):
+  ERR_CANNOT_EVAL_TESTSUITE_OBJ = "cannot evaluate testsuite object"
+
   jsonpath_expression = parse("$.reports.testsuite[*]")
   testsuites = jsonpath_expression.find(json_data)
 
@@ -22,7 +27,15 @@ def listTestSuiteInJson(testtype, json_data):
 
   for testsuite in testsuites:
     testsuite_name = testsuite.value['@name'].split('-')[0]
-    testsuite_obj = eval('{}.{}'.format(testtype_name,testsuite_name))
+
+    try:
+      testsuite_obj = eval('{}.{}'.format(testtype_name,testsuite_name))
+
+    except Exception as e:
+      pprint(testtype_name)
+      pprint(testsuite_name)
+      raise ERR_CANNOT_EVAL_TESTSUITE_OBJ
+
 
     temp = grepDocStringFromTestsuite(testsuite_obj)
 

@@ -20,23 +20,26 @@ function jsonTemplate(props){
   let test_suite_name = page_context.testSuiteName
   let testsuites = page_context.testResult.reports.testsuite
 
-
-
   return(
     <>
-      <Navbar />
+      <Navbar nav_items={page_context.result_category}/>
 
 
       <section className={style.section}>
 
         <div className={style.container}>
-          <div className={combineStyle([style.title, style['is-6']])}>
-            {test_suite_name} test <Link to={`/`}>Back</Link>
+          <div className={combineStyle([style.title, style.is4])}>
+            {test_suite_name} test
           </div>
 
           <div>
-            descriptions:
-            <TestDescription content={test_meta} />
+            <div className={combineStyle([style.title, style.is5])}>
+              descriptions:
+            </div>
+
+            <div className={combineStyle([style.is6])}>
+              <TestDescription content={test_meta} />
+            </div>
           </div>
 
           <div>

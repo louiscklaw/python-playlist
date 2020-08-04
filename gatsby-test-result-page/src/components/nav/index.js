@@ -23,16 +23,16 @@ function Navbar(props){
       <div id="navbarBasicExample" className={style.navbarMenu}>
         <div className={style.navbarStart}>
 
-        <Link to="/content/unit" className={style.navbarItem}> Unit </Link>
-        <Link to="/content/integration" className={style.navbarItem}> Integration </Link>
-        <Link to="/content/system" className={style.navbarItem}> System </Link>
-        <Link to="/content/sanity" className={style.navbarItem}> Sanity </Link>
-        <Link to="/content/smoke" className={style.navbarItem}> Smoke </Link>
-        <Link to="/content/interface" className={style.navbarItem}> Interface </Link>
-        <Link to="/content/regression" className={style.navbarItem}> Regression </Link>
-        <Link to="/content/acceptance" className={style.navbarItem}> Acceptance </Link>
-
         <Link to="/statistics" className={style.navbarItem}> Statistics </Link>
+
+        {
+          props.nav_items.map( nav_item => {
+            return(
+              <Link to={`/content/${nav_item}`} className={style.navbarItem}> {nav_item} </Link>
+            )
+          })
+        }
+
 
           <div className={combineStyle([style.navbarItem, style.hasDropdown, style.isHoverable])}>
             <a className={style.navbarLink}>

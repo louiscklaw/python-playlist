@@ -1,0 +1,1681 @@
+<?xml version="1.0" ?>
+<testsuite errors="64" failures="0" name="smoke_suite1.Test_smoke_suite1-20200804162425" tests="269" time="0.012">
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_0" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_10" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_101" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_102" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_103" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_104" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_105" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_106" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_107" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_108" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_109" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_11" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_111" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_112" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_114" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_116" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_117" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_118" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_119" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_12" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_121" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_122" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_123" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_124" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_125" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_126" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_13" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_130" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_133" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_134" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_137" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_14" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_142" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_144" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_145" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_146" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_148" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_149" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_15" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_151" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_154" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_155" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_156" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_157" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_158" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_159" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_160" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_161" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_163" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_166" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_17" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_172" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_173" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_175" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_177" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_178" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_179" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_180" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_182" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_185" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_186" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_187" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_189" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_19" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_190" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_191" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_192" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_194" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_195" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_196" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_197" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_199" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_200" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_201" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_202" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_203" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_204" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_205" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_206" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_207" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_208" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_210" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_212" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_213" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_214" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_215" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_217" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_218" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_219" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_22" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_221" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_224" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_225" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_227" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_229" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_230" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_231" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_233" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_234" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_235" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_239" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_24" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_240" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_241" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_244" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_246" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_247" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_248" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_25" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_250" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_251" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_252" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_253" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_254" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_255" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_257" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_258" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_260" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_262" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_263" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_265" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_267" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_268" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_27" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_28" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_29" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_3" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_30" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_31" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_32" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_33" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_34" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_35" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_38" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_39" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_4" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_41" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_42" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_43" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_47" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_48" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_50" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_51" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_53" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_55" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_56" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_57" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_61" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_62" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_63" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_65" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_66" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_67" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_68" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_69" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_7" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_70" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_71" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_73" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_74" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_75" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_76" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_77" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_78" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_79" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_81" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_82" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_83" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_85" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_86" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_88" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_9" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_90" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_91" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_92" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_93" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_94" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_95" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_96" time="0.000"/>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_100" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 443, in test_sample_100
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_110" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 483, in test_sample_110
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_113" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 495, in test_sample_113
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_115" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 503, in test_sample_115
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_120" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 523, in test_sample_120
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_128" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 556, in test_sample_128
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_129" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 560, in test_sample_129
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_132" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 573, in test_sample_132
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_135" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 585, in test_sample_135
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_139" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 603, in test_sample_139
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_140" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 607, in test_sample_140
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_143" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 620, in test_sample_143
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_150" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 649, in test_sample_150
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_152" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 657, in test_sample_152
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_153" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 661, in test_sample_153
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_16" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 98, in test_sample_16
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_162" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 697, in test_sample_162
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_164" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 705, in test_sample_164
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_165" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 709, in test_sample_165
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_169" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 727, in test_sample_169
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_170" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 731, in test_sample_170
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_171" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 735, in test_sample_171
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_176" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 756, in test_sample_176
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_184" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 790, in test_sample_184
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_188" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 806, in test_sample_188
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_198" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 847, in test_sample_198
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_2" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 42, in test_sample_2
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_20" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 115, in test_sample_20
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_209" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 891, in test_sample_209
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_21" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 119, in test_sample_21
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_216" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 920, in test_sample_216
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_220" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 936, in test_sample_220
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_222" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 944, in test_sample_222
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_226" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 961, in test_sample_226
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_228" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 969, in test_sample_228
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_23" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 127, in test_sample_23
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_236" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1002, in test_sample_236
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_237" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1006, in test_sample_237
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_238" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1010, in test_sample_238
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_242" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1026, in test_sample_242
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_243" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1030, in test_sample_243
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_249" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1055, in test_sample_249
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_256" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1083, in test_sample_256
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_259" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1095, in test_sample_259
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_261" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1103, in test_sample_261
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_264" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1115, in test_sample_264
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_266" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 1123, in test_sample_266
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_36" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 180, in test_sample_36
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_44" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 214, in test_sample_44
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_46" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 223, in test_sample_46
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_5" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 54, in test_sample_5
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_52" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 248, in test_sample_52
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_54" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 256, in test_sample_54
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_58" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 272, in test_sample_58
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_59" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 276, in test_sample_59
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_6" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 58, in test_sample_6
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_72" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 330, in test_sample_72
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_8" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 66, in test_sample_8
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_80" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 362, in test_sample_80
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_84" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 378, in test_sample_84
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_87" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 390, in test_sample_87
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_89" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 398, in test_sample_89
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_97" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 430, in test_sample_97
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_98" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite1.py", line 434, in test_sample_98
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_1" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_127" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_131" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_136" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_138" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_141" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_147" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_167" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_168" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_174" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_18" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_181" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_183" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_193" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_211" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_223" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_232" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_245" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_26" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_37" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_40" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_45" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_49" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_60" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_64" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite1.Test_smoke_suite1" name="test_sample_99" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
+<?xml version="1.0" ?>
+<testsuite errors="79" failures="0" name="smoke_suite2.Test_smoke_suite2-20200804162425" tests="293" time="0.017">
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_0" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_1" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_10" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_102" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_105" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_106" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_108" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_11" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_110" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_111" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_112" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_113" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_115" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_117" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_118" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_120" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_121" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_123" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_124" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_125" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_126" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_13" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_130" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_132" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_133" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_134" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_136" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_137" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_14" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_142" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_144" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_147" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_148" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_149" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_15" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_151" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_152" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_153" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_154" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_158" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_159" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_160" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_161" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_162" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_163" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_164" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_165" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_166" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_169" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_17" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_170" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_173" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_175" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_176" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_178" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_179" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_180" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_181" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_182" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_184" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_185" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_186" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_187" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_188" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_191" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_193" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_195" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_196" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_197" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_198" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_2" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_20" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_200" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_202" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_203" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_204" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_205" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_206" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_209" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_21" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_213" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_215" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_217" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_218" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_22" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_221" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_223" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_226" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_230" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_231" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_232" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_234" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_235" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_237" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_239" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_24" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_241" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_242" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_243" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_244" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_246" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_247" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_248" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_25" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_250" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_252" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_253" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_254" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_255" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_257" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_258" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_259" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_26" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_261" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_264" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_265" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_267" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_269" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_27" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_270" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_274" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_275" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_277" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_279" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_28" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_280" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_282" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_284" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_285" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_287" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_288" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_289" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_290" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_291" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_30" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_31" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_32" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_33" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_34" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_35" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_38" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_4" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_41" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_43" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_45" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_46" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_47" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_48" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_5" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_50" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_51" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_53" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_54" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_55" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_56" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_57" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_59" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_60" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_62" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_63" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_65" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_67" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_68" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_70" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_71" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_72" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_73" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_74" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_75" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_76" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_77" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_78" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_8" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_80" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_81" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_82" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_84" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_87" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_88" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_89" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_9" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_90" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_91" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_92" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_96" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_97" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_98" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_99" time="0.000"/>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_101" time="0.001">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 444, in test_sample_101
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_107" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 470, in test_sample_107
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_12" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 82, in test_sample_12
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_122" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 534, in test_sample_122
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_127" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 554, in test_sample_127
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_128" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 558, in test_sample_128
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_129" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 562, in test_sample_129
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_131" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 570, in test_sample_131
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_135" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 586, in test_sample_135
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_138" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 598, in test_sample_138
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_139" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 602, in test_sample_139
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_140" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 606, in test_sample_140
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_141" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 610, in test_sample_141
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_143" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 618, in test_sample_143
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_146" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 631, in test_sample_146
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_150" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 647, in test_sample_150
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_155" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 667, in test_sample_155
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_157" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 676, in test_sample_157
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_16" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 98, in test_sample_16
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_167" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 716, in test_sample_167
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_168" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 720, in test_sample_168
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_171" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 732, in test_sample_171
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_172" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 736, in test_sample_172
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_177" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 757, in test_sample_177
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_18" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 106, in test_sample_18
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_183" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 781, in test_sample_183
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_189" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 805, in test_sample_189
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_19" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 110, in test_sample_19
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_190" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 809, in test_sample_190
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_192" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 817, in test_sample_192
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_194" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 825, in test_sample_194
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_199" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 845, in test_sample_199
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_207" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 878, in test_sample_207
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_210" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 891, in test_sample_210
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_212" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 900, in test_sample_212
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_216" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 917, in test_sample_216
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_219" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 929, in test_sample_219
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_220" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 933, in test_sample_220
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_222" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 941, in test_sample_222
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_224" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 949, in test_sample_224
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_225" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 953, in test_sample_225
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_227" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 961, in test_sample_227
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_229" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 970, in test_sample_229
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_23" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 126, in test_sample_23
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_236" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 999, in test_sample_236
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_240" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1016, in test_sample_240
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_245" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1036, in test_sample_245
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_249" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1052, in test_sample_249
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_256" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1081, in test_sample_256
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_260" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1097, in test_sample_260
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_262" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1105, in test_sample_262
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_263" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1109, in test_sample_263
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_266" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1121, in test_sample_266
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_268" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1129, in test_sample_268
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_271" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1141, in test_sample_271
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_272" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1145, in test_sample_272
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_273" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1149, in test_sample_273
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_276" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1161, in test_sample_276
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_278" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1169, in test_sample_278
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_281" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1181, in test_sample_281
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_286" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 1202, in test_sample_286
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_29" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 150, in test_sample_29
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_3" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 45, in test_sample_3
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_37" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 183, in test_sample_37
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_39" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 191, in test_sample_39
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_40" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 195, in test_sample_40
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_42" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 203, in test_sample_42
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_44" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 211, in test_sample_44
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_52" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 244, in test_sample_52
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_58" time="0.001">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 268, in test_sample_58
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_61" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 280, in test_sample_61
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_64" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 292, in test_sample_64
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_7" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 62, in test_sample_7
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_83" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 371, in test_sample_83
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_85" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 379, in test_sample_85
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_86" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 383, in test_sample_86
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_93" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 411, in test_sample_93
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_94" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 415, in test_sample_94
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_95" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/smoke/smoke_suite2.py", line 419, in test_sample_95
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_100" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_103" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_104" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_109" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_114" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_116" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_119" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_145" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_156" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_174" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_201" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_208" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_211" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_214" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_228" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_233" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_238" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_251" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_283" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_292" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_36" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_49" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_6" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_66" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_69" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="smoke_suite2.Test_smoke_suite2" name="test_sample_79" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

@@ -7,9 +7,11 @@ import xmlrunner
 
 CURR_PATH=os.path.dirname(os.path.abspath(__file__))
 sys.path.append(CURR_PATH)
+TEST_TYPE=CURR_PATH.split('/')[-1]
 
 REPORT_DIR = os.getenv('REPORT_DIR')
-XML_REPORT_PATH = os.path.join(REPORT_DIR,'unit.xml')
+
+XML_REPORT_PATH = os.path.join(REPORT_DIR,'{}.xml'.format(TEST_TYPE))
 
 for root, dirs, files in os.walk(CURR_PATH):
   py_files = filter(lambda filename: filename.find('.py') > -1, files)
