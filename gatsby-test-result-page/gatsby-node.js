@@ -7,6 +7,7 @@
 // You can delete this file if you're not using it
 const fs = require(`fs`)
 
+
 const getPath = (json_filename) => json_filename.replace(/.json$/,'').replace(/^\.\//,'')
 
 const isTestResultJson = (json_filename) => json_filename.search(/.json$/) > -1
@@ -20,12 +21,19 @@ exports.createPages = ({ actions }) => {
 
   let content_urls = files_in_content_dir.map(x => `./content/${x}`)
 
+  let result_json_file = content_urls.filter( x => isTestResultJson(x) )
+
   // for navbar
   let json_files = files_in_content_dir.filter( filename => filename.search(/\.json/) > -1)
-  let result_category = json_files.map( filename => filename.replace(/\.json/,''))
+  let test_types = json_files.map( filename => filename.replace(/\.json/,''))
 
-  content_urls
-    .filter( x => isTestResultJson(x) )
+  if (result_json_file.length < 1)  {
+    console.log('content_urls',content_urls)
+    console.log('result_json_file',result_json_file)
+    throw 'cannot find json file in content diretory... '
+  }
+
+  result_json_file
     .forEach( json_file_fullpath => {
 
       if(json_file_fullpath.search(/\.json$/) > -1){
@@ -41,7 +49,7 @@ exports.createPages = ({ actions }) => {
             testResult: JSON.parse(json_content),
             testSuiteName: getTestSuiteName(json_file_fullpath),
             json_files,
-            result_category
+            test_types
           }
         })
 

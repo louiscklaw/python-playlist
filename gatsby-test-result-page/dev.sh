@@ -2,7 +2,8 @@
 
 set -ex
 
+reset
 
-# yarn
+yarn
 
 yarn start

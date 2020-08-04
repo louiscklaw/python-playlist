@@ -9,8 +9,8 @@ function Navbar(props){
   return(
     <nav className={style.navbar} role="navigation" aria-label="main navigation">
       <div className={style.navbarBrand}>
-        <a className={style.navbarItem} href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+        <a className={style.navbarItem} href="https://louiscklaw.github.io">
+          <div style="font-family:Noto Sans TC, sans-serif;font-size:x-large">Travis dashboard</div>
         </a>
 
         <a role="button" className={[style.navbarBurger, style.burger]} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -32,7 +32,6 @@ function Navbar(props){
             )
           })
         }
-
 
           <div className={combineStyle([style.navbarItem, style.hasDropdown, style.isHoverable])}>
             <a className={style.navbarLink}>

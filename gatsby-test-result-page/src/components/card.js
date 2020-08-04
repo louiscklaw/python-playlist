@@ -39,7 +39,7 @@ function Card(props){
   let testsuite = props
   let testcases = testsuite.testcase
 
-  let testcases_array = testcases['0'] ? testcases: [testcases]
+  let testcases_array = testcases['0'] ? testcases : [testcases]
 
   let testsuite_classname = testcases['0'] ? testcases['0']['@classname'] : testcases['@classname']
   let testsuite_errors = testsuite['@errors']
@@ -50,13 +50,22 @@ function Card(props){
   let testsuite_tests = testsuite['@tests']
   let testsuite_time = testsuite['@time']
 
-  let card_title = props.title ? props.title : testsuite_classname.split('.')[1]
+  // let card_title = props.title ? props.title : testsuite_classname.split('.')[1]
+  let card_title = testsuite['title'] ? testsuite['title'] : testsuite_classname.split('.')[1]
+  let card_explain = testsuite['explain'] ? testsuite['explain'] : ''
+
+  console.log('card.js',testsuite)
+
 
   return(
     <div className={style.resultCard}>
       <div className={style.card}>
         <header className={style.cardHeader}>
-        <h3 className={style.cardHeaderTitle}>{card_title}</h3>
+          <div className={style.cardHeaderWrapper}>
+            <p className={style.cardTitle}>{ card_title }</p>
+            <p className={style.cardTitleExplain}>{ card_explain }</p>
+          </div>
+
         </header>
 
         <div className={style.cardContent}>
@@ -72,7 +81,7 @@ function Card(props){
           {/* result tile */}
 
           {/* result description */}
-          <div className={style.content}>
+          <div className={combineStyle([style.content, style.cardContentResultDescription])}>
             <br />
               <ReactMarkdown
                 source={props.doc_string}
