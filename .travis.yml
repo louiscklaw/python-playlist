@@ -76,13 +76,13 @@ jobs:
         - python3 -m pip install pipenv
 
       script:
-        - cd unittest-json-reporting-tryout
+        - cd unittest-json-reporting-tryout/src
         - pipenv sync
         - pipenv run python3 before_test.py
         # accept failed test case as demo case
         - pipenv run python3 main.py || true
         - pipenv run python3 after_test.py
-        - cd ..
+        - cd ../..
 
     - stage: Publish_Result
       name: generate gatsby test result page
