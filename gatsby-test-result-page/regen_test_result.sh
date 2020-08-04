@@ -2,7 +2,7 @@
 
 set -ex
 
-PROJ_HOME='/home/logic/_workspace/python-playlist'
+PROJ_HOME=$PWD/..
 
 # /home/logic/_workspace/python-playlist/gatsby-test-result-page
 # find /home/logic/_workspace/python-playlist/unittest-json-reporting-tryout |entr -c -s "./regen_test_result.sh"
