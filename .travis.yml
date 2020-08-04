@@ -107,6 +107,12 @@ jobs:
     - stage: Unit_Test
       name: generate gatsby test result page (by gatsby-test-result-page)
 
+      env:
+        _ WKDIR=$HOME/unittest-json-reporting-tryout/src
+        - SRC_DIR=$WKDIR
+        - PROJ_HOME=$WKDIR/..
+        - REPORT_DIR=$WKDIR/test-reports
+
       before_script:
         - cd unittest-json-reporting-tryout/src
 
