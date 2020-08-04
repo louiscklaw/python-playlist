@@ -72,9 +72,9 @@ jobs:
       name: test (unittest-json-reporting-tryout)
 
       env:
-        - SRC_DIR=$HOME/unittest-json-reporting-tryout/src
-        - PROJ_HOME=$HOME/unittest-json-reporting-tryout
-        - REPORT_DIR=$HOME/unittest-json-reporting-tryout/src/test-reports
+        - SRC_DIR=$TRAVIS_BUILD_DIR/unittest-json-reporting-tryout/src
+        - PROJ_HOME=$TRAVIS_BUILD_DIR/unittest-json-reporting-tryout
+        - REPORT_DIR=$TRAVIS_BUILD_DIR/unittest-json-reporting-tryout/src/test-reports
 
       before_script:
         - sudo apt update
@@ -107,9 +107,10 @@ jobs:
       name: generate gatsby test result page (by gatsby-test-result-page)
 
       env:
-        - SRC_DIR=$HOME/unittest-json-reporting-tryout/src
-        - PROJ_HOME=$HOME/unittest-json-reporting-tryout
-        - REPORT_DIR=$HOME/unittest-json-reporting-tryout/src/test-reports
+        - SRC_DIR=$TRAVIS_BUILD_DIR/unittest-json-reporting-tryout/src
+        - PROJ_HOME=$TRAVIS_BUILD_DIR/unittest-json-reporting-tryout
+        - REPORT_DIR=$TRAVIS_BUILD_DIR/unittest-json-reporting-tryout/src/test-reports
+        - CONTENT_DIR=$TRAVIS_BUILD_DIR/gatsby-test-result-page/content
 
       before_script:
         - sudo apt update
@@ -145,7 +146,7 @@ jobs:
 
         - cd gatsby-test-result-page
         # copy result json files from (unittest-json-reporting-tryout)
-        -   ./regen_test_result.sh
+        -   rsync -avzh $REPORT_DIR/*.json $CONTENT_DIR/
         -   ls -l content
         -   yarn
         -   yarn build
