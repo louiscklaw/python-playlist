@@ -1,0 +1,17 @@
+{
+	"folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../unittest-json-reporting-tryout"
+    },
+    {
+      "path": "../pyyaml-tryout"
+    },
+    {
+      "path": "../python-frontmatter-tryout"
+    }
+  ],
+  "settings": {}
+}
