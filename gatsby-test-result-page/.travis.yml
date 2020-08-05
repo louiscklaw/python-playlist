@@ -1,0 +1,30 @@
+jobs:
+  include:
+    - stage: Test
+      name: test (gatsby-json-hosting-on-github-tryout)
+
+      script:
+        - cd gatsby-json-hosting-on-github-tryout
+        -   yarn
+        -   yarn build
+        - cd -
+
+    - stage: Deploy
+      name: deploy (gatsby-json-hosting-on-github-tryout)
+      script:
+        - cd gatsby-json-hosting-on-github-tryout
+        -   yarn
+        -   yarn build
+        - cd -
+
+      deploy:
+        - provider: pages
+          skip_cleanup: true
+          local_dir: gatsby-json-hosting-on-github-tryout/public
+          github_token: $GITHUB_TOKEN
+          on:
+            branch: master
+
+      after_failure:
+        - node -v
+        - ls -l gatsby-json-hosting-on-github-tryout/public

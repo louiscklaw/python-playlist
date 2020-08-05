@@ -1,20 +1,27 @@
-
 import React from "react"
-import {Link, navigate} from 'gatsby'
+
+import { Link, navigate } from "gatsby"
+import Navbar from '../components/navbar'
+import PreJson from '../components/pre-json'
 
 import style from '../scss/style.module.scss'
+import {combineStyle} from '../utils/common'
 
-function IndexPage(props){
+function IndexPage() {
 
   React.useEffect(()=>{
-    navigate("/content/unit")
+    navigate('/unit')
   },[])
 
+
   return (
-    <>
-      please click here if page doesn't redirect's you
-    </>
+    <div>
+      <Navbar />
+      update
+      <PreJson />
+    </div>
   )
+
 }
 
 export default IndexPage
