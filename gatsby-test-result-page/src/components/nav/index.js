@@ -1,15 +1,26 @@
 import React from 'react'
 import {Link} from 'gatsby'
 
-import style from '../../scss/style.module.scss'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+import style from '~scss/style.module.scss'
+
+import GlobalContext from '~contexts/global'
+
 const combineStyle = (styles) => styles.join(' ')
 
+
 function Navbar(props){
-  let nav_items = props.nav_items
+  const { python_test_result } = React.useContext(GlobalContext)
+
+  let [test_type, setTestType] = React.useState([])
+
+  React.useEffect(()=>{
+
+    setTestType(Object.keys(python_test_result))
+
+  },[python_test_result])
 
   return(
     <>
@@ -41,7 +52,7 @@ function Navbar(props){
             <Link to="/statistics" className={style.navbarItem}> Statistics </Link>
 
             {
-              ['unit'].map( nav_item => {
+              test_type.map( nav_item => {
                 return(
                   <Link to={`/content/${nav_item}`} className={style.navbarItem}> {nav_item} </Link>
                 )

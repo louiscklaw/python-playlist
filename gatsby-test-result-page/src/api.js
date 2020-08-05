@@ -1,12 +1,12 @@
 import axios from 'axios'
 
-const API_ENDPOINT="https://raw.githubusercontent.com/louiscklaw/python-playlist/gh-pages"
+const API_ENDPOINT=process.env.API_ENDPOINT
 
 const JSON_ENDPOINT=[API_ENDPOINT,'json'].join('/')
 
 const HELLOWORLD_JSON=[JSON_ENDPOINT,'hello.json'].join('/')
 const UNITTEST_RESULT=[JSON_ENDPOINT,'unit.json'].join('/')
-
+const PYTHON_TEST_RESULT=[JSON_ENDPOINT, 'python_test_result.json'].join('/')
 
 function getData(resource_url){
   return   axios({
@@ -21,9 +21,18 @@ function getData(resource_url){
 })
 }
 
+function getAllPythonTestResult(){
+  return getData(PYTHON_TEST_RESULT)
+}
+
+function getUnittestResult(){
+  return getData(UNITTEST_RESULT)
+}
+
+function getHelloworld(){
+  return getData(HELLOWORLD_JSON)
+}
+
 export default {
-  getHelloworld: () => getData(HELLOWORLD_JSON),
-
-  getUnittestResult: () =>  getData(UNITTEST_RESULT)
-
+  getHelloworld, getUnittestResult, getAllPythonTestResult
 }
