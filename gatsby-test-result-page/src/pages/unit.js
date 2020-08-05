@@ -13,7 +13,7 @@ function UnitTestResultPage(props){
   return(
     <>
       <Navbar />
-      {/* <PreUnittest /> */}
+      Add client only route here
       {JSON.stringify(global_context.python_test_result, null, 2)}
     </>
   )
