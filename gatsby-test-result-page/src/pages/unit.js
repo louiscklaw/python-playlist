@@ -12,11 +12,7 @@ function UnitTestResultPage(props){
 
   return(
     <>
-      {global_context.hello}
-      unittest result page
       <Navbar />
-      update 123321
-
       {/* <PreUnittest /> */}
       {JSON.stringify(global_context.python_test_result, null, 2)}
     </>
