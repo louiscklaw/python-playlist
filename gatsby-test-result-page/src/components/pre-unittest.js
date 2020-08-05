@@ -2,7 +2,7 @@ import React from 'react'
 
 import api from '../api'
 
-function PreJson(props){
+function PreUnittest(props){
   let [ responseData, setResponseData ] = React.useState( 'loading' )
 
   React.useEffect( () => {
@@ -13,7 +13,7 @@ function PreJson(props){
   const fetchData = ( ) => {
     // e.preventDefault()
 
-    api.getHelloworld()
+    api.getUnittestResult()
       .then( ( response ) => {
         // setResponseData(response.data)
         console.log( response )
@@ -35,4 +35,4 @@ function PreJson(props){
   )
 }
 
-export default PreJson
+export default PreUnittest

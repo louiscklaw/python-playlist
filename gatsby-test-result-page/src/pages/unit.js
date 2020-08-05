@@ -1,7 +1,9 @@
 import React from 'react'
 
-import Navbar from '../components/navbar'
+import Navbar from '../components/nav'
+
 import PreJson from '../components/pre-json'
+import PreUnittest from '../components/pre-unittest'
 
 
 function UnitTestResultPage(props){
@@ -11,10 +13,9 @@ function UnitTestResultPage(props){
       <Navbar />
       update
 
-      <PreJson />
+      <PreUnittest />
     </>
   )
 }
-
 
 export default UnitTestResultPage
