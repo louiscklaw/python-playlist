@@ -74,6 +74,14 @@ function Navbar(props){
             </div>
             {/* navbar->more */}
 
+            <div className={combineStyle([style.navbarItem])}>
+              <div className={style.select}>
+                <select>
+                  <option>version select</option>
+                  <option>to be implemented</option>
+                </select>
+              </div>
+            </div>
 
           </div>
 
