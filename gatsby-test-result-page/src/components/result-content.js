@@ -2,6 +2,7 @@ import React from 'react'
 
 import PreJson from '~components/pre-json'
 import PreUnittest from '~components/pre-unittest'
+import TestSuites from '~components/test-suites'
 
 import GlobalContext from '~contexts/global'
 
@@ -10,6 +11,12 @@ function Loading(){
     <>
       Loading
     </>
+  )
+}
+
+function showTestSuite(props){
+  return(
+    <TestSuites {...props}/>
   )
 }
 
@@ -29,7 +36,7 @@ function ResultContent(props){
     if (test_type_found){
       // grep the specific result by test type
       let test_type_result_json = python_test_result[test_type_in_report]
-      setTestResultShowHere(JSON.stringify(test_type_result_json, null, 2))
+      setTestResultShowHere(showTestSuite(test_type_result_json))
     }else{
       setTestResultShowHere( 'the wanted test type not found'+JSON.stringify({}) )
     }
