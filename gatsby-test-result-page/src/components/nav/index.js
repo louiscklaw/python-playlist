@@ -17,7 +17,7 @@ function Navbar(props){
   let [test_type, setTestType] = React.useState([])
 
   React.useEffect(()=>{
-
+    console.log('python_test_result.keys',python_test_result)
     setTestType(Object.keys(python_test_result))
 
   },[python_test_result])
