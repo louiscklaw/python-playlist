@@ -46,5 +46,5 @@ pipenv run python3 ./merge_to_one.py
 
 OWD=$PWD
 cd ../../gatsby-test-result-page
-  ./scripts/regen_test_result.sh
+  ./scripts/sync_test_result.sh
 cd $OWD

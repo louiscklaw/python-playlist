@@ -14,9 +14,9 @@ function Loading(){
   )
 }
 
-function showTestSuite(props){
+function showTestSuite(result_json){
   return(
-    <TestSuites {...props}/>
+    <TestSuites {...result_json}/>
   )
 }
 
@@ -44,7 +44,7 @@ function ResultContent(props){
     console.log(props.test_type)
     console.log(python_test_result[test_type])
 
-  },[python_test_result])
+  },[python_test_result, props.test_type])
 
 
   return(

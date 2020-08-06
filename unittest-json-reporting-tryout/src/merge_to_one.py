@@ -11,7 +11,7 @@ def main():
   for json_report_filepath in JSON_REPORT_FILE_FULLPATH:
     test_type = os.path.basename(json_report_filepath).replace('.json','')
     try:
-      python_test_result_content[test_type] = openJsonFile(json_report_filepath)
+      python_test_result_content[test_type+'_test'] = openJsonFile(json_report_filepath)
 
     except Exception as e:
       print('error opening json file {}'.format(json_report_filepath))

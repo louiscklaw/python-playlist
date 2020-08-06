@@ -13,7 +13,6 @@ function TestSuites(props){
   let testsuites_array = typeof(testsuites[0])=='undefined' ? {"0": testsuites} : testsuites
 
   return(
-
     <div className={style.cardWrapper}>
       {
         Object.keys(testsuites_array)
@@ -21,7 +20,6 @@ function TestSuites(props){
         .map(idx => <Card {...testsuites_array[idx]} key={`card_${idx}`}/> )
       }
     </div>
-
   )
 }
 

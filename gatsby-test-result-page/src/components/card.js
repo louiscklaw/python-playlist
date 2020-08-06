@@ -85,9 +85,8 @@ function Card(props){
 
             {/* result description */}
             <div className={combineStyle([style.content, style.cardContentResultDescription])}>
-              {JSON.stringify(props.doc_string, null , 2)}
               <ReactMarkdown
-                source={`props.doc_string`}
+                source={props.doc_string}
                 escapeHtml={false}
                 renderers={{
                   heading: props => custHeaderStyle(props.level, props)
