@@ -27,8 +27,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-
       <Navbar />
 
       <main>{children}</main>

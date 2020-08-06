@@ -2,6 +2,9 @@ import React from "react"
 
 import { Link, navigate } from "gatsby"
 
+import { Router } from "@reach/router"
+import ResultContent from '~components/result-content'
+
 import Navbar from '~components/nav'
 
 import PreJson from '~components/pre-json'
@@ -12,14 +15,10 @@ import {combineStyle} from '~utils/common'
 
 function IndexPage() {
 
-  React.useEffect(()=>{
-    navigate('/unit')
-  },[])
-
-
   return (
     <>
-      Please enable javascript for page working ...
+      index.js
+      <Link to="/app">app page</Link>
     </>
   )
 
