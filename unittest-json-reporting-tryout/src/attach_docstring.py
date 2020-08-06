@@ -130,10 +130,10 @@ def listJsonFileInDirectory(dir_in):
     raise e
 
 def main():
-  json_file_list = listJsonFileInDirectory(REPORT_DIRECTORY)
-  json_file_paths = map(lambda filename: os.path.join(REPORT_DIRECTORY, filename), json_file_list)
+  # json_file_list = listJsonFileInDirectory(REPORT_DIRECTORY)
+  # json_file_paths = map(lambda filename: os.path.join(REPORT_DIRECTORY, filename), json_file_list)
 
-  for json_file_path in json_file_paths:
+  for json_file_path in JSON_REPORT_FILE_FULLPATH:
     json_data = readJSONFile(json_file_path)
     json_result_testtype = os.path.basename(json_file_path).replace('.json','')
     curr_testtype = eval(json_result_testtype)

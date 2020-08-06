@@ -6,6 +6,9 @@ import TestSuites from '~components/test-suites'
 
 import GlobalContext from '~contexts/global'
 
+import style from '~scss/style.module.scss'
+import {combineStyle} from '~utils/common'
+
 function Loading(){
   return(
     <>

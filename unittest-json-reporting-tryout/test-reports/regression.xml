@@ -1,0 +1,248 @@
+<?xml version="1.0" ?>
+<testsuite errors="23" failures="0" name="regression_suite1.Test_regression_suite1-20200806201554" tests="76" time="0.004">
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_0" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_1" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_13" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_14" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_16" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_2" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_20" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_23" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_26" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_27" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_28" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_29" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_3" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_31" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_32" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_33" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_35" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_36" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_38" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_39" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_4" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_40" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_41" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_43" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_46" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_47" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_48" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_5" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_50" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_53" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_55" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_56" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_57" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_59" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_6" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_60" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_61" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_62" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_63" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_64" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_65" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_67" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_68" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_69" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_7" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_70" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_73" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_74" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_75" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_8" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_9" time="0.000"/>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_10" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 73, in test_sample_10
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_11" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 77, in test_sample_11
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_12" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 81, in test_sample_12
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_15" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 93, in test_sample_15
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_17" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 101, in test_sample_17
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_18" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 105, in test_sample_18
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_19" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 109, in test_sample_19
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_21" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 117, in test_sample_21
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_22" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 121, in test_sample_22
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_24" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 129, in test_sample_24
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_25" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 133, in test_sample_25
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_30" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 153, in test_sample_30
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_34" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 169, in test_sample_34
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_37" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 181, in test_sample_37
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_42" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 201, in test_sample_42
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_45" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 214, in test_sample_45
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_49" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 230, in test_sample_49
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_51" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 238, in test_sample_51
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_52" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 242, in test_sample_52
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_54" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 250, in test_sample_54
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_58" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 266, in test_sample_58
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_71" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 319, in test_sample_71
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_72" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/regression/regression_suite1.py", line 323, in test_sample_72
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_44" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="regression_suite1.Test_regression_suite1" name="test_sample_66" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

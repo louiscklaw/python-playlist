@@ -10,21 +10,22 @@ export REPORT_DIR=$PROJ_HOME/test-reports
 
 # pipenv run python3 before_test.py
 
-# mkdir -p $REPORT_DIR
+mkdir -p $REPORT_DIR
 
-# pipenv run python3 test/unit/test_unit_run.py
+pipenv run python3 test/unit/test_unit_run.py
 pipenv run python3 test/integration/test_integration_run.py
-
-# pipenv run python3 test/sanity/test_sanity_run.py
-# pipenv run python3 test/smoke/test_smoke_run.py
-# pipenv run python3 test/interface/test_interface_run.py
-# pipenv run python3 test/regression/test_regression_run.py
-# pipenv run python3 test/acceptance/test_acceptance_run.py
+pipenv run python3 test/sanity/test_sanity_run.py
+pipenv run python3 test/smoke/test_smoke_run.py
+pipenv run python3 test/interface/test_interface_run.py
+pipenv run python3 test/regression/test_regression_run.py
+pipenv run python3 test/acceptance/test_acceptance_run.py
 
 set -ex
 
 rm -rf $REPORT_DIR/*.json
 
+
+touch $REPORT_DIR/python_test_result.json
 # convert xmls to jsons
 pipenv run python3 after_test.py
 
@@ -39,6 +40,7 @@ pipenv run python3 ./attach_reports_meta.py
 
 # form a python_test_result.json
 pipenv run python3 ./merge_to_one.py
+
 
 # below is the code for report generation
 # IDEA: it shouldn't be here, but currently no anywhere better than here.

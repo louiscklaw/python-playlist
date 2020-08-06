@@ -1,0 +1,586 @@
+<?xml version="1.0" ?>
+<testsuite errors="48" failures="0" name="interface_suite1.Test_interface_suite1-20200806201554" tests="197" time="0.008">
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_0" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_10" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_101" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_103" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_107" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_108" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_109" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_11" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_110" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_111" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_112" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_114" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_115" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_116" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_118" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_119" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_12" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_120" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_121" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_122" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_123" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_124" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_125" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_129" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_131" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_132" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_133" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_134" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_135" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_136" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_14" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_140" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_141" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_142" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_144" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_145" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_148" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_15" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_150" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_151" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_152" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_153" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_156" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_157" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_158" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_16" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_160" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_161" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_164" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_169" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_170" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_171" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_175" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_176" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_178" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_180" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_181" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_182" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_184" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_185" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_187" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_188" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_189" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_19" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_191" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_192" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_193" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_194" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_195" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_196" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_2" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_20" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_22" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_24" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_26" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_29" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_3" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_30" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_31" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_34" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_35" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_37" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_39" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_4" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_40" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_44" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_45" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_47" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_48" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_49" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_5" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_52" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_53" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_54" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_56" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_59" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_6" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_61" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_63" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_64" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_65" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_66" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_67" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_69" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_7" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_70" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_72" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_73" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_74" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_76" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_77" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_78" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_79" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_8" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_81" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_82" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_83" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_85" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_87" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_88" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_89" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_90" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_91" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_93" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_98" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_99" time="0.000"/>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_1" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 37, in test_sample_1
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_100" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 445, in test_sample_100
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_102" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 453, in test_sample_102
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_104" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 461, in test_sample_104
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_106" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 470, in test_sample_106
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_126" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 552, in test_sample_126
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_127" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 556, in test_sample_127
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_128" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 560, in test_sample_128
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_130" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 568, in test_sample_130
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_138" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 601, in test_sample_138
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_139" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 605, in test_sample_139
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_143" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 621, in test_sample_143
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_147" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 638, in test_sample_147
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_149" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 646, in test_sample_149
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_154" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 666, in test_sample_154
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_155" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 670, in test_sample_155
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_163" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 704, in test_sample_163
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_165" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 712, in test_sample_165
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_168" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 726, in test_sample_168
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_17" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 103, in test_sample_17
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_172" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 742, in test_sample_172
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_173" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 746, in test_sample_173
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_174" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 750, in test_sample_174
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_179" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 771, in test_sample_179
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_186" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 800, in test_sample_186
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_190" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 816, in test_sample_190
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_21" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 120, in test_sample_21
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_27" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 146, in test_sample_27
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_28" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 150, in test_sample_28
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_33" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 171, in test_sample_33
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_36" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 183, in test_sample_36
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_38" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 191, in test_sample_38
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_41" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 203, in test_sample_41
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_42" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 207, in test_sample_42
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_43" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 211, in test_sample_43
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_46" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 223, in test_sample_46
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_50" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 239, in test_sample_50
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_51" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 243, in test_sample_51
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_57" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 268, in test_sample_57
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_58" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 272, in test_sample_58
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_60" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 280, in test_sample_60
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_62" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 288, in test_sample_62
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_71" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 325, in test_sample_71
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_75" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 341, in test_sample_75
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_80" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 361, in test_sample_80
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_84" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 377, in test_sample_84
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_94" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 419, in test_sample_94
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_95" time="0.000">
+		<error message="shouldn't happen" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/interface/interface_suite1.py", line 423, in test_sample_95
+    self.fail("shouldn't happen")
+AssertionError: shouldn't happen
+]]>		</error>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_105" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_113" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_117" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_13" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_137" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_146" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_159" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_162" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_166" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_167" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_177" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_18" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_183" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_23" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_25" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_32" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_55" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_68" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_86" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_9" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_92" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_96" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<testcase classname="interface_suite1.Test_interface_suite1" name="test_sample_97" time="0.000">
+		<skipped message="demonstrating skipping" type="skip"/>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

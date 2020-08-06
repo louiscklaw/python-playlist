@@ -17,7 +17,8 @@ REPORT_DIR = os.getenv('REPORT_DIR')
 REPORT_DIRECTORY= os.getenv('REPORT_DIR')
 PYTHON_REPORT_FILE= os.path.join(REPORT_DIR,'python_test_result.json')
 
-JSON_REPORT_FILE_IN_DIRECTORY = listJsonFileInDirectory(REPORT_DIRECTORY)
+JSON_REPORT_FILE_IN_DIRECTORY = list(filter(lambda x: x not in ['python_test_result.json'], listJsonFileInDirectory(REPORT_DIRECTORY)))
+
 JSON_REPORT_FILE_FULLPATH=map(lambda x: os.path.join(REPORT_DIRECTORY,x), JSON_REPORT_FILE_IN_DIRECTORY)
 
 # ['unit', 'integration'.... etc.]

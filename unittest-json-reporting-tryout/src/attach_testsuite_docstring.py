@@ -74,10 +74,10 @@ def grepDocStringFromTestsuite(testsuite):
   return testsuite.__doc__
 
 def main():
-  json_file_list = listJsonFileInDirectory(REPORT_DIRECTORY)
-  json_file_paths = map(lambda filename: os.path.join(REPORT_DIRECTORY, filename), json_file_list)
+  # json_file_list = listJsonFileInDirectory(REPORT_DIRECTORY)
+  # json_file_paths = map(lambda filename: os.path.join(REPORT_DIRECTORY, filename), json_file_list)
 
-  for json_file_path in json_file_paths:
+  for json_file_path in JSON_REPORT_FILE_FULLPATH:
     json_filename = os.path.basename(json_file_path)
     testtype = json_filename.replace('.json','')
     testtype_obj = eval(testtype)
