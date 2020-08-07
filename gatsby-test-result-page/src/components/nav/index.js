@@ -106,7 +106,7 @@ function Navbar(props){
               </a>
 
               <div className={style.navbarDropdown}>
-                <a className={style.navbarItem}> About </a>
+                <Link to='/about' className={style.navbarItem}>About</Link>
                 <a className={style.navbarItem}> Documentation </a>
                 <a className={style.navbarItem}> Report an issue </a>
               </div>
