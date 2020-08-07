@@ -50,7 +50,10 @@ function ResultContent(props){
 
   return(
     <>
-      <Navbar active_test_type={props.test_type} />
+      <Navbar
+        active_test_type={props.test_type}
+        current_report_version={props.report_version}
+        />
       <section className={style.section} >
         { test_result_show_here }
       </section>

@@ -2,7 +2,11 @@ import React from 'react'
 import {Link} from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faSun} from '@fortawesome/free-solid-svg-icons'
+import { faMoon} from '@fortawesome/free-solid-svg-icons'
+
 
 import SelectReportVersions from '~components/select-report-versions'
 
@@ -14,10 +18,10 @@ const combineStyle = (styles) => styles.join(' ')
 
 const findInArray = (ele, items) => items.indexOf(ele) > -1
 
-function NavTestItems({test_type}){
+function TopNavList({test_types}){
   const items_order = ['smoke_test','unit_test','integration_test']
 
-  let items_in_report = test_type
+  let items_in_report = test_types
 
   return(
     <>
@@ -52,12 +56,16 @@ function NavTestItems({test_type}){
 function Navbar(props){
   const { python_test_result } = React.useContext(GlobalContext)
 
-  let [test_type, setTestType] = React.useState([])
+  let [test_types, setTestTypes] = React.useState([])
+
+  let {active_test_type, current_report_version} = props
+
+  // console.log('active_test_type', active_test_type)
+  // console.log('current_report_version',current_report_version)
 
   React.useEffect(()=>{
     console.log('python_test_result.keys',python_test_result)
-    setTestType(Object.keys(python_test_result))
-
+    setTestTypes(Object.keys(python_test_result))
   },[python_test_result])
 
   return(
@@ -89,7 +97,7 @@ function Navbar(props){
           <div className={style.navbarStart}>
             <Link to="/statistics" className={style.navbarItem}> Statistics </Link>
 
-            <NavTestItems test_type={test_type} />
+            <TopNavList test_types={test_types} />
 
             {/* navbar->more */}
             <div className={combineStyle([style.navbarItem, style.hasDropdown, style.isHoverable])}>
@@ -114,7 +122,10 @@ function Navbar(props){
             {/* AUT version select */}
             <div className={style.navbarItem}>
               <div style={{width:"200px"}}>
-                <SelectReportVersions />
+                <SelectReportVersions
+                  test_type={active_test_type}
+                  current_report_version={current_report_version}
+                  />
               </div>
             </div>
             {/* AUT version select */}
@@ -122,6 +133,8 @@ function Navbar(props){
             {/* github source link */}
             <div className={style.navbarItem}>
               <a className={style.isPrimary}>
+                <FontAwesomeIcon icon={faSun} size="2x" />
+                <FontAwesomeIcon icon={faMoon} size="2x" />
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </div>

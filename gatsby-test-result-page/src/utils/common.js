@@ -21,7 +21,7 @@ function helloworld() {
   return 'helloworld'
 }
 
-const getResultVersionLink = (test_type, report_ver) => `${report_ver}/${test_type}`
+const getResultVersionLink = (test_type, report_ver) => `/content/${test_type}/${report_ver}`
 
 export {
   helloworld,

@@ -10,6 +10,7 @@ const App = () => {
     <Layout>
       <Router basepath="/">
         <ResultContent path="/content/:test_type" />
+        <ResultContent path="/content/:test_type/:report_version" />
       </Router>
     </Layout>
   )
