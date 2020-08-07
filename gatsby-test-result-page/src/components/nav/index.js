@@ -103,6 +103,13 @@ function Navbar(props){
             </div>
             {/* navbar->more */}
 
+
+          </div>
+
+          {/* navbarEnd */}
+          <div className={style.navbarEnd}>
+
+            {/* AUT version select */}
             <div className={combineStyle([style.navbarItem])}>
               <div className={style.select}>
                 <select>
@@ -111,18 +118,16 @@ function Navbar(props){
                 </select>
               </div>
             </div>
+            {/* AUT version select */}
 
-          </div>
-
-          {/* navbarEnd */}
-          <div className={style.navbarEnd}>
+            {/* github source link */}
             <div className={style.navbarItem}>
-              <div className={style.buttons}>
-                <a className={combineStyle([style.button, style.isPrimary])} href="https://www.github.com/louiscklaw/python-playlist">
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
-                </a>
-              </div>
+              <a className={style.isPrimary}>
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
             </div>
+            {/* github source link */}
+
           </div>
           {/* navbarEnd */}
 
