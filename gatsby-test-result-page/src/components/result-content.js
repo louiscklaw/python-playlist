@@ -1,13 +1,11 @@
 import React from 'react'
 
-import PreJson from '~components/pre-json'
-import PreUnittest from '~components/pre-unittest'
 import TestSuites from '~components/test-suites'
-
-import GlobalContext from '~contexts/global'
+import Navbar from '~components/nav'
 
 import style from '~scss/style.module.scss'
-import {combineStyle} from '~utils/common'
+
+import GlobalContext from '~contexts/global'
 
 function Loading(){
   return(
@@ -17,9 +15,9 @@ function Loading(){
   )
 }
 
-function showTestSuite(result_json){
+function showTestSuite(result_json, props){
   return(
-    <TestSuites {...result_json}/>
+    <TestSuites {...result_json} {...props} />
   )
 }
 
@@ -39,7 +37,7 @@ function ResultContent(props){
     if (test_type_found){
       // grep the specific result by test type
       let test_type_result_json = python_test_result[test_type_in_report]
-      setTestResultShowHere(showTestSuite(test_type_result_json))
+      setTestResultShowHere(showTestSuite(test_type_result_json, props))
     }else{
       setTestResultShowHere( 'the wanted test type not found'+JSON.stringify({}) )
     }
@@ -52,7 +50,10 @@ function ResultContent(props){
 
   return(
     <>
-      { test_result_show_here }
+      <Navbar active_test_type={props.test_type} />
+      <section className={style.section} >
+        { test_result_show_here }
+      </section>
     </>
   )
 }

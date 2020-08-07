@@ -21,10 +21,14 @@ function helloworld() {
   return 'helloworld'
 }
 
+const getReportVersionLink = (test_type, report_ver) => `${report_ver}/${test_type}`
+
 export {
   helloworld,
   checkTestPassed,
   checkTestError,
   checkTestSkipped,
-  combineStyle
+  combineStyle,
+
+  getReportVersionLink
 }

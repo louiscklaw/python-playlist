@@ -27,7 +27,5 @@ exports.onCreatePage = async ({ page, actions }) => {
 
     // Update the page.
     createPage(page)
-
-    console.log('findme')
   }
 }
