@@ -19,6 +19,7 @@ function GlobalContextProvider(props){
       .then( ( response ) => {
         // setResponseData(response.data)
         console.log( response )
+        console.log('typeof response', typeof(response))
         setPythonTestResult(response.data)
       } )
       .catch( ( error ) => {
