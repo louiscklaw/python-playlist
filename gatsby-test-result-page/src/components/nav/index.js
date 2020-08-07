@@ -10,6 +10,42 @@ import GlobalContext from '~contexts/global'
 
 const combineStyle = (styles) => styles.join(' ')
 
+const findInArray = (ele, items) => items.indexOf(ele) > -1
+
+function NavTestItems({test_type}){
+  const items_order = ['smoke_test','unit_test','integration_test']
+
+  let items_in_report = test_type
+
+  return(
+    <>
+    {
+      // list the items with order configured
+      items_order.map( nav_item => {
+        if (findInArray(nav_item, items_in_report)) {
+          items_in_report = items_in_report.filter( x => x != nav_item)
+          return(
+            <Link to={`/content/${nav_item}`} className={style.navbarItem}>
+              {nav_item}
+            </Link>
+          )
+        }
+      })
+    }
+
+    {
+      items_in_report.map( nav_item => {
+        return(
+          <Link to={`/content/${nav_item}`} className={style.navbarItem}>
+            {nav_item}
+          </Link>
+        )
+      })
+    }
+    </>
+  )
+}
+
 
 function Navbar(props){
   const { python_test_result } = React.useContext(GlobalContext)
@@ -51,14 +87,7 @@ function Navbar(props){
           <div className={style.navbarStart}>
             <Link to="/statistics" className={style.navbarItem}> Statistics </Link>
 
-            {
-              test_type.map( nav_item => {
-                return(
-                  <Link to={`/content/${nav_item}`} className={style.navbarItem}> {nav_item} </Link>
-                )
-              })
-            }
-
+            <NavTestItems test_type={test_type} />
 
             {/* navbar->more */}
             <div className={combineStyle([style.navbarItem, style.hasDropdown, style.isHoverable])}>
