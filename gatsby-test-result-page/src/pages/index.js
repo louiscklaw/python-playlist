@@ -15,6 +15,10 @@ import {combineStyle} from '~utils/common'
 
 function IndexPage() {
 
+  React.useEffect(()=>{
+    navigate('content/unit_test')
+  },[])
+
   return (
     <>
       index.js

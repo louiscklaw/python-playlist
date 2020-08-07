@@ -4,6 +4,8 @@ import {Link} from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+import SelectReportVersions from '~components/select-report-versions'
+
 import style from '~scss/style.module.scss'
 
 import GlobalContext from '~contexts/global'
@@ -110,12 +112,9 @@ function Navbar(props){
           <div className={style.navbarEnd}>
 
             {/* AUT version select */}
-            <div className={combineStyle([style.navbarItem])}>
-              <div className={style.select}>
-                <select>
-                  <option>version select</option>
-                  <option>to be implemented</option>
-                </select>
+            <div className={style.navbarItem}>
+              <div style={{width:"200px"}}>
+                <SelectReportVersions />
               </div>
             </div>
             {/* AUT version select */}

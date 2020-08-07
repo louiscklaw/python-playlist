@@ -6,7 +6,9 @@ const JSON_ENDPOINT=[API_ENDPOINT,'json'].join('/')
 
 const HELLOWORLD_JSON=[JSON_ENDPOINT,'hello.json'].join('/')
 const UNITTEST_RESULT=[JSON_ENDPOINT,'unit.json'].join('/')
+
 const PYTHON_TEST_RESULT=[JSON_ENDPOINT, 'python_test_result.json'].join('/')
+const ALL_REPORT_VERSIONS=[JSON_ENDPOINT,'report_version_catalogue.json'].join('/')
 
 function getData(resource_url){
   return   axios({
@@ -19,6 +21,10 @@ function getData(resource_url){
     //     'search':'parameter',
     // },
 })
+}
+
+function getAppReportVersions(){
+  return getData(ALL_REPORT_VERSIONS)
 }
 
 function getAllPythonTestResult(){
@@ -34,5 +40,5 @@ function getHelloworld(){
 }
 
 export default {
-  getHelloworld, getUnittestResult, getAllPythonTestResult
+  getHelloworld, getUnittestResult, getAllPythonTestResult, getAppReportVersions
 }
