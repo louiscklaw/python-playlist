@@ -21,7 +21,7 @@ function helloworld() {
   return 'helloworld'
 }
 
-const getReportVersionLink = (test_type, report_ver) => `${report_ver}/${test_type}`
+const getResultVersionLink = (test_type, report_ver) => `${report_ver}/${test_type}`
 
 export {
   helloworld,
@@ -30,5 +30,5 @@ export {
   checkTestSkipped,
   combineStyle,
 
-  getReportVersionLink
+  getResultVersionLink
 }

@@ -5,7 +5,7 @@ import Select from 'react-select'
 
 import GlobalContext from '~contexts/global'
 
-import {getReportVersionLink} from '~utils/common'
+import {getResultVersionLink} from '~utils/common'
 
 const options = [
   { value: 'chocolate', label: 'Chocolate' },
@@ -19,7 +19,7 @@ function showLoading(){
 
 function handleSelectionChange(selected_item){
   console.log(selected_item)
-  // navigate(getReportVersionLink())
+  navigate(getResultVersionLink())
 }
 
 function SelectReportVersions()
