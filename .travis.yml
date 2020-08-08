@@ -160,12 +160,6 @@ jobs:
           local_dir: gatsby-test-result-page/public
           github_token: $GITHUB_TOKEN
 
-
-    - stage: Merge
-      script:
-        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
-        - bash merge_if_success.sh
-
     - stage: Publish_Result
       name: test publish result
 
@@ -195,15 +189,8 @@ jobs:
         - ls -l unittest-html-test-runner-helloworld/reports
         - cat /home/travis/.npm/_logs/*.log
 
-stages:
-  - Unit_test
-  - Test
-  - Build
-  - Deploy
-  - Integration_to_other_repo
-  - Publish_dashboard
-  - Merge
-  - Publish_Result
-
 import:
   - credentials.yml
+  - .travis-merger.yml
+  - .travis-stages.yml
+  - react-helloworld-tryout/.travis.yml
