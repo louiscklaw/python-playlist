@@ -1,6 +1,11 @@
 @charset "utf-8";
 @import "bulma/bulma.sass";
 
+.test-result-header{
+  // background-color: red;
+  margin: 2rem 1rem;
+}
+
 .card-content-result-description {
   font-size: small;
 }

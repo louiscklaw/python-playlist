@@ -30,28 +30,29 @@ function TestSuites(props){
 
       {/* container */}
       <div className={style.container}>
-        <div className={combineStyle([style.title, style.is6])}>
-          {test_result_title}
-        </div>
-        <div className={combineStyle([style.subTitle, style.is6])}>
-          {test_result_explain}
+        <div className={style.testResultHeader}>
+          <div className={combineStyle([style.title, style.is6])}>
+            {test_result_title}
+          </div>
+          <div className={combineStyle([style.subTitle, style.is6])}>
+            {test_result_explain}
+          </div>
         </div>
       </div>
       {/* container */}
 
 
-
       {/* container */}
       <div className={style.container}>
+        <div className={style.testResultHeader}>
+          <div className={combineStyle([style.title, style.is6])}>
+            Descriptions:
+          </div>
 
-        <div className={combineStyle([style.title, style.is6])}>
-          Descriptions:
+          <div className={combineStyle([style.is6])}>
+            <TestDescription content={test_result_meta} />
+          </div>
         </div>
-
-        <div className={combineStyle([style.is6])}>
-          <TestDescription content={test_result_meta} />
-        </div>
-
       </div>
       {/* container */}
 
