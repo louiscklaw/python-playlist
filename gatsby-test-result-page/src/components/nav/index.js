@@ -4,9 +4,7 @@ import {Link} from 'gatsby'
 import style from '../../scss/style.module.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import { faGithub, faBug } from '@fortawesome/free-brands-svg-icons'
-
 
 const combineStyle = (styles) => styles.join(' ')
 

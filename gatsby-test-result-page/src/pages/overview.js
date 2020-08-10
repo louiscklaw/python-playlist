@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import style from '../scss/style.module.scss'
 
 import Card from '../components/card'
+import Footer from '../components/footer'
 
 const combineStyle = (styles_in) => styles_in.join(' ')
 
@@ -63,7 +64,7 @@ const OverviewPage = () => (
     </section>
 
 
-
+    <Footer />
 
   </Layout>
 )
