@@ -29,22 +29,36 @@ const OverviewPage = () => (
 
     <section className={style.section} style={{paddingTop: '0.5rem', fontSize:'small'}}>
       <div className={style.container}>
+
         <div className={combineStyle([style.columns, style.isDesktop])}>
-          <div className={style.column}>
-            <Card />
-          </div>
-
-          <div className={style.column}>
-            <Card />
-          </div>
-          <div className={style.column}>
-            <Card />
-          </div>
-
-          <div className={style.column}>
-            <Card />
-          </div>
+          {
+            [0,1,2,3].map(x => {
+              return(
+                <div className={style.column}>
+                  <Card />
+                </div>
+              )
+            })
+          }
         </div>
+
+        <div className={combineStyle([style.columns, style.isDesktop])}>
+          {
+            [0,1,2].map(x => {
+              return(
+                <div className={style.column}>
+                  <Card />
+                </div>
+              )
+            })
+          }
+
+          <div className={style.column}>
+            <Card />
+          </div>
+
+        </div>
+
       </div>
     </section>
 

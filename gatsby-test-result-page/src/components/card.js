@@ -4,6 +4,9 @@ import style from '../scss/style.module.scss'
 
 import {combineStyle} from '../../utils/common'
 
+import TestDonghnut from './donghnut';
+import TestBubble from './bubble';
+
 function Card(props){
   return(
 
@@ -12,9 +15,7 @@ function Card(props){
       {/* card-image */}
       <div className={style.cardImage}>
         <figure className={style.is4by3} style={{textAlign:'center'}}>
-          <div id="canvas-holder" style={{width: '90%', margin: 'auto'}}>
-            <canvas id="chart-area-unit-test"></canvas>
-          </div>
+          <TestDonghnut />
         </figure>
       </div>
       {/* card-image */}
