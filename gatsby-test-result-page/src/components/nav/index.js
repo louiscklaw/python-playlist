@@ -4,11 +4,9 @@ import {Link} from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faSun} from '@fortawesome/free-solid-svg-icons'
-import { faMoon} from '@fortawesome/free-solid-svg-icons'
-
 
 import SelectReportVersions from '~components/select-report-versions'
+import ThemeToggle from '~components/nav/theme-toggle'
 
 import style from '~scss/style.module.scss'
 
@@ -107,8 +105,6 @@ function Navbar(props){
 
               <div className={style.navbarDropdown}>
                 <Link to='/about' className={style.navbarItem}>About</Link>
-                <a className={style.navbarItem}> Documentation </a>
-                <a className={style.navbarItem}> Report an issue </a>
               </div>
             </div>
             {/* navbar->more */}
@@ -132,9 +128,9 @@ function Navbar(props){
 
             {/* github source link */}
             <div className={style.navbarItem}>
+              <ThemeToggle />
+
               <a className={style.isPrimary}>
-                <FontAwesomeIcon icon={faSun} size="2x" />
-                <FontAwesomeIcon icon={faMoon} size="2x" />
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </div>

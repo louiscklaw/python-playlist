@@ -1,42 +1,54 @@
-import React from 'react'
+import React from "react"
 
-import api from '../api'
-
-let default_value = {
-  hello: "world",
-  python_test_result: {}
+const defaultState = {
+  dark: false,
+  toggleDark: () => {},
 }
 
-const GlobalContext = React.createContext(default_value)
+const ThemeContext = React.createContext(defaultState)
 
-function GlobalContextProvider(props){
-  let [hello, setHello] = React.useState(default_value.hello)
-  let [python_test_result, setPythonTestResult] = React.useState(default_value.python_test_result)
+// Getting dark mode information from OS!
+// You need macOS Mojave + Safari Technology Preview Release 68 to test this currently.
+const supportsDarkMode = () =>
+  window.matchMedia("(prefers-color-scheme: dark)").matches === true
 
-  React.useEffect(()=>{
-    console.log('getting python_test_result')
-    api.getAllPythonTestResult()
-      .then( ( response ) => {
-        // setResponseData(response.data)
-        console.log( response )
-        console.log('typeof response', typeof(response))
-        setPythonTestResult(response.data)
-      } )
-      .catch( ( error ) => {
-        console.log( error )
-        setPythonTestResult({error:"error during loading the result json"})
-      } )
-  },[])
+class ThemeProvider extends React.Component {
+  state = {
+    dark: false,
+  }
 
-  return(
-    <GlobalContext.Provider value={{
-      hello, setHello,
-      python_test_result, setPythonTestResult
-    }}>
-      {props.children}
-    </GlobalContext.Provider>
-  )
+  toggleDark = () => {
+    let dark = !this.state.dark
+    localStorage.setItem("dark", JSON.stringify(dark))
+    this.setState({ dark })
+  }
+
+  componentDidMount() {
+    // Getting dark mode value from localStorage!
+    const lsDark = JSON.parse(localStorage.getItem("dark"))
+    if (lsDark) {
+      this.setState({ dark: lsDark })
+    } else if (supportsDarkMode()) {
+      this.setState({ dark: true })
+    }
+  }
+
+  render() {
+    const { children } = this.props
+    const { dark, style, active_style } = this.state
+    return (
+      <ThemeContext.Provider
+        value={{
+          dark,
+          toggleDark: this.toggleDark,
+        }}
+      >
+        {children}
+      </ThemeContext.Provider>
+    )
+  }
 }
 
-export {GlobalContextProvider}
-export default GlobalContext
+export default ThemeContext
+
+export { ThemeProvider }

@@ -8,13 +8,13 @@
 import React from "react"
 
 import { GlobalContextProvider } from "~contexts/global"
-import { UiContextProvider } from "~contexts/ui"
+import {ThemeProvider} from "~contexts/themes"
 
 
 export const wrapRootElement = ({ element }) => (
   <GlobalContextProvider>
-    <UiContextProvider>
+    <ThemeProvider>
       {element}
-    </UiContextProvider>
+    </ThemeProvider>
   </GlobalContextProvider>
 )
