@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="utils.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="dashboard.html">
+        <i class="fas fa-bug"></i>
+        Simple test report
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+
+        <a class="navbar-item" href="dashboard.html">
+          <i class="fas fa-tachometer-alt"></i>
+          Overview
+        </a>
+
+        <a class="navbar-item" href="test-report-content.html">
+          smoke_test </a>
+
+        <a class="navbar-item">
+          unit_test
+        </a>
+        <a class="navbar-item">
+          integration_test
+        </a>
+        <a class="navbar-item">
+          acceptance_test
+        </a>
+        <a class="navbar-item">
+          interface_test
+        </a>
+        <a class="navbar-item">
+          regression_test
+        </a>
+        <a class="navbar-item">
+          sanity_test
+        </a>
+
+        <a class="navbar-item"> Documentation </a>
+
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="chartjs_test.html"> chartjs test </a>
+            <a class="navbar-item" href="roadmap.html"> Roadmap </a>
+            <a class="navbar-item" href="about.html"> About </a>
+          </div>
+
+        </div>
+
+        <div class="navbar-item">
+          <div class="select">
+            <select>
+              <option>Select version</option>
+              <option>options version 1</option>
+              <option>options version 2</option>
+              <option>options version 3</option>
+              <option>options version 4</option>
+              <option>options version 5</option>
+              <option>options version 6</option>
+              <option>options version 7</option>
+              <option>options version 8</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-white" href="https://www.github.com/louiscklaw" target="_blank">
+              <i class="fab fa-github-square fa-2x"></i>
+              <p style="margin: 0 0.3rem">Github source</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- section -->
+  <section class="section" style="padding-top: 1rem; padding-bottom: 1rem;">
+    <div class="container">
+      <p class="title is-4"> Test progress overview </p>
+    </div>
+  </section>
+  <!-- section -->
+
+  <!-- section  -->
+  <section class="section" style="padding-top: 0.5rem">
+    <div class="container">
+
+      <!-- columns -->
+      <div class="columns is-desktop">
+
+        <!-- column -->
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-time_spent"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">total time spent analysis on ver 2</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
+                    <tr>
+                      <td>unit_test</td>
+                      <td>2</td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+        <!-- column -->
+        <div class="column">
+          <canvas id="canvas"></canvas>
+
+        </div>
+        <!-- column -->
+
+      </div>
+
+      <!-- columns -->
+
+
+
+
+    </div>
+  </section>
+  <!-- section  -->
+
+
+
+
+  <script>
+    var randomScalingFactor = function () {
+      return Math.round( Math.random() * 100 );
+    };
+
+    var chart_config = {
+      type: 'doughnut',
+      options: {
+        aspectRatio: 1,
+        responsive: true,
+        legend: {
+          position: 'right',
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        }
+      }
+    };
+
+
+    function get_time_spent_by_test( json_in ) {
+      return Object.keys( json_in ).map( test_name => parseInt( json_in[ test_name ].run_time ) )
+    }
+
+    function get_time_spent_data( json_in ) {
+      return {
+        ...chart_config,
+        options: {
+          ...chart_config.options,
+          aspectRatio: 1,
+          title: {
+            display: true,
+            text: 'test_name result'
+          },
+          legend: {
+            position: 'right'
+          }
+        },
+        data: {
+          datasets: [ {
+            data: [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            backgroundColor: [
+              window.chartColors.green,
+              window.chartColors.red,
+              window.chartColors.yellow,
+              window.chartColors.grey,
+              window.chartColors.blue,
+            ],
+            label: 'Dataset 1'
+          } ],
+          labels: [
+            'unit',
+            'integration',
+            'acceptance',
+            'interface',
+            'regression',
+            'sanity',
+            'smoke'
+          ]
+        }
+      }
+    }
+
+    function plot_time_spent( x ) {
+      var ele = document.querySelector( '#chart-area-time_spent' )
+      var time_spent_by_test = get_time_spent_by_test( x )
+      var time_spent_total = time_spent_by_test.reduce( ( x, y ) => x + y )
+
+      var ctx = document.getElementById( 'chart-area-time_spent' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx, get_time_spent_data() );
+    }
+
+
+    fetch( 'data.json' )
+      .then( resp => resp.json() )
+      .then( ( x ) => {
+
+        // plot_chart( x )
+        plot_time_spent( x )
+
+      } )
+
+
+    fetch( 'time_spent_history.json' )
+      .then( resp => resp.json() )
+      .then( ( fetched_json ) => {
+        // plot_time_spent_history( fetched_json )
+      } )
+
+
+
+
+
+
+
+
+
+    var MONTHS = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
+      'November', 'December'
+    ];
+    var color = Chart.helpers.color;
+    var horizontalBarChartData = {
+      labels: [ 'ver2', 'ver1.4' ],
+      datasets: [ {
+        label: 'Dataset 1',
+        backgroundColor: color( window.chartColors.red ).alpha( 0.5 ).rgbString(),
+        borderColor: window.chartColors.red,
+        borderWidth: 1,
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+        ]
+      }, {
+        label: 'Dataset 2',
+        backgroundColor: color( window.chartColors.blue ).alpha( 0.5 ).rgbString(),
+        borderColor: window.chartColors.blue,
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+        ]
+      } ]
+
+    };
+
+    window.onload = function () {
+      var ctx = document.getElementById( 'canvas' ).getContext( '2d' );
+      window.myHorizontalBar = new Chart( ctx, {
+        type: 'horizontalBar',
+        data: horizontalBarChartData,
+        options: {
+
+          scales:{
+            xAxes: [{
+              stacked: true
+            }],
+            yAxes: [{
+              stacked: true
+            }]
+          },
+          elements: {
+            rectangle: {
+              borderWidth: 2,
+            }
+          },
+          responsive: true,
+          legend: {
+            position: 'right',
+          },
+          title: {
+            display: true,
+            text: 'Chart.js Horizontal Bar Chart'
+          }
+        }
+      } );
+
+    };
+  </script>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <div class="container">
+
+        <p> Simple test report for xxxxx </p>
+
+        <a class="button is-small is-white" href="//www.github.com/louiscklaw" target="_blank">
+          <i class="fab fa-github-square fa-2x"></i>
+          <span style="padding-left: 0.5rem;">www.github.com/louiscklaw</span>
+        </a>
+
+
+        <a class="button is-small is-white" href="//www.facebook.com/louiscklaw" target="_blank">
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <span style="padding-left: 0.5rem;">www.facebook.com/louiscklaw</span>
+        </a>
+
+
+        <a class="button is-small is-white" href="//www.linkedin.com/in/louiscklaw" target="_blank">
+          <i class="fab fa-linkedin fa-2x"></i>
+          <span style="padding-left: 0.5rem;">www.linkedin.com/in/louiscklaw</span>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+</body>
+
+</html>
