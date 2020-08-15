@@ -319,6 +319,145 @@
         </div>
         <!-- column -->
 
+
+
+      </div>
+      <!-- columns -->
+
+      <!-- columns -->
+      <div class="columns">
+
+        <!-- column -->
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-time_spent"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">total time spent analysis</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>test_suite_1</td>
+                      <td>2 (+2)</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite_2</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite_3</td>
+                      <td>2(+5)</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite_4</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+
+
+        <!-- column -->
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-0"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">test case growth history</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>unit_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>integration_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>acceptance_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>interface_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>regression_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>sanity_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>smoke_test</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+
+
+        <div class="column"></div>
+        <div class="column"></div>
+
       </div>
       <!-- columns -->
 
@@ -326,81 +465,197 @@
   </section>
   <!-- section  -->
 
-	<script>
-		var barChartData = {
-			labels: ['past version', 'This version'],
-			datasets: [{
-				label: 'Passed',
-				backgroundColor: window.chartColors.green,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				label: 'Failed',
-				backgroundColor: window.chartColors.red,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				label: 'Error',
-				backgroundColor: window.chartColors.yellow,
-				data: [
-          randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				label: 'In progress',
-				backgroundColor: window.chartColors.grey,
-				data: [
-          randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}]
-
-    };
-
-		function initBarChart(ele_selector) {
-			var ctx = document.getElementById(ele_selector).getContext('2d');
-			window.myBar = new Chart(ctx, {
-				type: 'bar',
-				data: barChartData,
-				options: {
-          aspectRatio:1,
-					title: {
-						display: true,
-						text: 'Chart.js Bar Chart - Stacked'
-					},
-					tooltips: {
-						mode: 'index',
-						intersect: false
-					},
-					responsive: true,
-					scales: {
-						xAxes: [{
-							stacked: true,
-						}],
-						yAxes: [{
-							stacked: true
-						}]
-					}
-				}
-			});
-		};
-
-    window.onload = () => {
-      initBarChart('canvas-test-suite-1')
-      initBarChart('canvas-test-suite-2')
-      initBarChart('canvas-test-suite-3')
-      initBarChart('canvas-test-suite-4')
-    }
+  <script>
+    const test_name = 'unit_test'
+    Promise.all( [
+        fetch( 'test_result.json' ),
+        fetch( 'past_test_result.json' )
+      ] )
+      .then( values => {
+        Promise.all( [
+            values[ 0 ].json(),
+            values[ 1 ].json()
+          ] )
+          .then( values => {
+            const test_result_json = values[ 0 ]
+            const past_test_result_json = values[ 1 ]
+            const canvas_id_list = [
+              'canvas-test-suite-1',
+              'canvas-test-suite-2',
+              'canvas-test-suite-3',
+              'canvas-test-suite-4',
+            ]
 
 
+            canvas_id_list.map( canvas_id => {
+              const idx = canvas_id_list.indexOf( canvas_id )
+
+              const test_results = test_result_json[ test_name ][ idx ].results
+
+              const past_test_results = past_test_result_json[ test_name ][ idx ].results
+
+              var barChartData = {
+                labels: [ 'past version', 'This version' ],
+                datasets: [ {
+                  label: 'Passed',
+                  backgroundColor: window.chartColors.green,
+                  data: [
+                    past_test_results[ 'passed' ],
+                    test_results[ 'passed' ]
+                  ]
+                }, {
+                  label: 'Failed',
+                  backgroundColor: window.chartColors.red,
+                  data: [
+                    past_test_results[ 'failed' ],
+                    test_results[ 'failed' ],
+                  ]
+                }, {
+                  label: 'Error',
+                  backgroundColor: window.chartColors.yellow,
+                  data: [
+                    past_test_results[ 'error' ],
+                    test_results[ 'error' ],
+                  ]
+                }, {
+                  label: 'In progress',
+                  backgroundColor: window.chartColors.grey,
+                  data: [
+                    past_test_results[ 'in_progress' ],
+                    test_results[ 'in_progress' ],
+                  ]
+                } ]
+              };
+
+              var ctx = document.querySelector( '#' + canvas_id ).getContext( '2d' );
+              window.myBar = new Chart( ctx, {
+                type: 'bar',
+                data: barChartData,
+                options: {
+                  aspectRatio: 1,
+                  title: {
+                    display: true,
+                    text: 'test results'
+                  },
+                  tooltips: {
+                    mode: 'index',
+                    intersect: false
+                  },
+                  responsive: true,
+                  scales: {
+                    xAxes: [ {
+                      stacked: true,
+                    } ],
+                    yAxes: [ {
+                      stacked: true
+                    } ]
+                  }
+                }
+              } );
+
+            } )
 
 
 
-	</script>
+
+
+
+
+            var color = Chart.helpers.color;
+            var horizontalBarChartData = {
+              labels: [
+                'this_version',
+                'past_version'
+              ],
+              datasets: [ {
+                label: 'test suite 1',
+                backgroundColor: color( window.chartColors.red ).alpha( 0.5 ).rgbString(),
+                borderColor: window.chartColors.red,
+                borderWidth: 1,
+                data: [
+                  4,
+                  3
+                ]
+              }, {
+                label: 'test suite 2',
+                backgroundColor: color( window.chartColors.orange ).alpha( 0.5 ).rgbString(),
+                borderColor: window.chartColors.orange,
+                data: [
+                  3,
+                  2
+                ]
+              }, {
+                label: 'test suite 3',
+                backgroundColor: color( window.chartColors.yellow ).alpha( 0.5 ).rgbString(),
+                borderColor: window.chartColors.yellow,
+                data: [
+                  2,
+                  1
+                ]
+              }, {
+                label: 'test suite 4',
+                backgroundColor: color( window.chartColors.green ).alpha( 0.5 ).rgbString(),
+                borderColor: window.chartColors.green,
+                data: [
+                  1,
+                  0
+                ]
+              } ]
+
+            };
+
+
+
+            var ctx = document.getElementById( 'chart-area-time_spent' ).getContext( '2d' );
+            window.myHorizontalBar = new Chart( ctx, {
+              type: 'horizontalBar',
+              data: horizontalBarChartData,
+              options: {
+                // Elements options apply to all of the options unless overridden in a dataset
+                // In this case, we are setting the border of each horizontal bar to be 2px wide
+                aspectRatio: 1,
+                scales: {
+                  xAxes: [ {
+                    stacked: true
+                  } ],
+                  yAxes: [ {
+                    stacked: true
+                  } ]
+                },
+                elements: {
+                  rectangle: {
+                    borderWidth: 2,
+                  }
+                },
+                responsive: true,
+                legend: {
+                  position: 'bottom',
+                },
+                title: {
+                  display: true,
+                  text: 'Chart.js Horizontal Bar Chart'
+                }
+              }
+            } );
+
+
+
+
+
+
+
+
+
+
+
+          } )
+      } )
+
+
+
+
+
+  </script>
 
   <!-- footer -->
   <footer class="footer">
