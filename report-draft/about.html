@@ -18,7 +18,8 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="dashboard.html">
-        Test report
+        <i class="fas fa-bug"></i>
+        Simple test report
       </a>
 
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -32,37 +33,77 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
 
-        <a class="navbar-item" href="dashboard.html"> Overview </a>
+        <a class="navbar-item" href="dashboard.html">
+          <i class="fas fa-tachometer-alt"></i>
+          Overview
+        </a>
 
-        <a class="navbar-item"> smoke_test </a>
-        <a class="navbar-item"> unit_test </a>
-        <a class="navbar-item"> integration_test </a>
-        <a class="navbar-item"> acceptance_test </a>
-        <a class="navbar-item"> interface_test </a>
-        <a class="navbar-item"> regression_test </a>
-        <a class="navbar-item"> sanity_test </a>
+        <a class="navbar-item" href="test-report-content.html">
+          smoke_test </a>
+
+        <a class="navbar-item">
+          unit_test
+        </a>
+        <a class="navbar-item">
+          integration_test
+        </a>
+        <a class="navbar-item">
+          acceptance_test
+        </a>
+        <a class="navbar-item">
+          interface_test
+        </a>
+        <a class="navbar-item">
+          regression_test
+        </a>
+        <a class="navbar-item">
+          sanity_test
+        </a>
 
         <a class="navbar-item"> Documentation </a>
+
 
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             More
           </a>
 
+
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="about.html">
-              About
-            </a>
+            <a class="navbar-item" href="time_analysis.html"> time_analysis </a>
+            <a class="navbar-item" href="chartjs_test.html"> chartjs test </a>
+            <a class="navbar-item" href="roadmap.html"> Roadmap </a>
+            <a class="navbar-item" href="about.html"> About </a>
+          </div>
+
+        </div>
+
+        <div class="navbar-item">
+          <div class="select is-small" style="color: #34495e;">
+            <select>
+              <option>Select version</option>
+              <option>options version 1</option>
+              <option>options version 2</option>
+              <option>options version 3</option>
+              <option>options version 4</option>
+              <option>options version 5</option>
+              <option>options version 6</option>
+              <option>options version 7</option>
+              <option>options version 8</option>
+            </select>
           </div>
         </div>
+
       </div>
 
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-white">
-              <i class="fab fa-github-square fa-2x"></i>
-              <p style="padding-left: 1rem">Github source</p>
+            <a class="button is-primary is-inverted is-small" href="https://www.github.com/louiscklaw">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>github source</span>
             </a>
           </div>
         </div>
@@ -74,17 +115,46 @@
   <section class="section">
     <div class="container">
       <p class="title is-4">
-        About page helloworld
+        About
       </p>
+
+      <p class="title is-5">Theme provider</p>
+      <div>
+        <a href="https://jenil.github.io/bulmaswatch/flatly/">
+          https://jenil.github.io/bulmaswatch/flatly/
+        </a>
+      </div>
+
     </div>
   </section>
   <!-- section -->
 
 
+
   <!-- footer -->
   <footer class="footer">
     <div class="content has-text-centered">
-      <p> Test report for xxx </p>
+      <div class="container">
+
+        <p> Simple test report for xxxxx </p>
+
+        <a class="button is-primary is-inverted is-small" href="//www.github.com/louiscklaw" target="_blank">
+          <i class="fab fa-github-square"></i>
+          <span style="padding-left: 0.5rem;">www.github.com/louiscklaw</span>
+        </a>
+
+
+        <a class="button is-primary is-inverted is-small" href="//www.facebook.com/louiscklaw" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+          <span style="padding-left: 0.5rem;">www.facebook.com/louiscklaw</span>
+        </a>
+
+        <a class="button is-primary is-inverted is-small" href="//www.linkedin.com/in/louiscklaw" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span style="padding-left: 0.5rem;">www.linkedin.com/in/louiscklaw</span>
+        </a>
+
+      </div>
     </div>
   </footer>
   <!-- footer -->
