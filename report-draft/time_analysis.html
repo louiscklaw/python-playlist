@@ -11,6 +11,9 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="utils.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/roughjs@3.1.0/dist/rough.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-rough@0.2.0"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -287,11 +290,37 @@
                       <td>test name</td>
                       <td>time used (min)</td>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>unit_test</td>
                       <td>2</td>
                     </tr>
-                  </thead>
+                    <tr>
+                      <td>integration_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>acceptance_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>interface_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>regression_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>sanity_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>smoke_test</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -373,6 +402,7 @@
             position: 'right'
           }
         },
+        plugins: [ ChartRough ],
         data: {
           datasets: [ {
             data: [
@@ -385,12 +415,24 @@
               7
             ],
             backgroundColor: [
-              window.chartColors.green,
-              window.chartColors.red,
-              window.chartColors.yellow,
-              window.chartColors.grey,
-              window.chartColors.blue,
-            ],
+              'unit_test',
+              'integration_test',
+              'acceptance_test',
+              'interface_test',
+              'regression_test',
+              'sanity_test',
+              'smoke_test'
+            ].map( test_name => basic_color_config[ test_name ] ),
+            borderColor: [
+              'unit_test',
+              'integration_test',
+              'acceptance_test',
+              'interface_test',
+              'regression_test',
+              'sanity_test',
+              'smoke_test'
+            ].map( test_name => color_config[ test_name ] ),
+
             label: 'Dataset 1'
           } ],
           labels: [
@@ -463,6 +505,7 @@
       window.myHorizontalBar = new Chart( ctx, {
         type: 'horizontalBar',
         data: horizontalBarChartData,
+        plugins: [ ChartRough ],
         options: {
           aspectRatio: 1,
           scales: {
@@ -491,12 +534,80 @@
 
     }
 
+    function plot_test_case_growth( json_in ) {
+      const test_history = json_in.reverse()
+
+      const versions_in_history = test_history.map( history_item => history_item.version )
+
+      const versions_from_old_to_new = test_history.map( history_item => history_item.version )
+
+      // expecting ver2
+      const latest_test_version = versions_in_history[ 0 ]
+      const latest_test_version_info = test_history[ 0 ].info
+
+      const test_names = Object.keys( latest_test_version_info )
+      const length_of_history = test_history.length
+
+      const get_time_spent_by_test_name = ( test_name ) => {
+
+        const time_spent_by_test_history = test_history.map( past_test => past_test.info[ test_name ].time_spent )
+        return time_spent_by_test_history
+      }
+
+
+      var horizontalBarChartData = {
+        labels: versions_from_old_to_new,
+        datasets: test_names.map( test_name => {
+          return {
+            label: test_name,
+            backgroundColor: color_config[ test_name ],
+            borderColor: basic_color_config[ test_name ],
+            borderWidth: 1,
+            data: get_time_spent_by_test_name( test_name )
+          }
+        } )
+      };
+
+
+      var ctx = document.getElementById( 'canvas-test-case-growth' ).getContext( '2d' );
+      window.myHorizontalBar = new Chart( ctx, {
+        type: 'bar',
+        data: horizontalBarChartData,
+        plugins: [ ChartRough ],
+        options: {
+          aspectRatio: 1,
+          scales: {
+            xAxes: [ {
+              stacked: true
+            } ],
+            yAxes: [ {
+              stacked: true
+            } ]
+          },
+          elements: {
+            rectangle: {
+              borderWidth: 2,
+            }
+          },
+          responsive: true,
+          legend: {
+            position: 'bottom',
+          },
+          title: {
+            display: true,
+            text: 'Time spent historical'
+          }
+        }
+      } );
+
+    }
 
 
     fetch( 'test_history.json' )
       .then( resp => resp.json() )
       .then( ( fetched_json ) => {
         plot_time_spent_historical( fetched_json )
+        plot_test_case_growth( fetched_json )
       } )
   </script>
 
