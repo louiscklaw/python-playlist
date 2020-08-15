@@ -504,19 +504,19 @@
                   x[ test_name ].in_prog.value,
                 ],
                 backgroundColor: [
-                  window.chartColors.red,
-                  window.chartColors.orange,
-                  window.chartColors.yellow,
                   window.chartColors.green,
+                  window.chartColors.red,
+                  window.chartColors.yellow,
+                  window.chartColors.grey,
                   window.chartColors.blue,
                 ],
                 label: 'Dataset 1'
               } ],
               labels: [
+                'Passed',
                 'Failed',
-                'In Progress',
                 'Error',
-                'Passed'
+                'In Progress'
               ]
             }
           }
@@ -531,6 +531,7 @@
           'sanity_test',
           'smoke_test'
         ].forEach( test_name => {
+          // fill chart data
           var ctx = document.getElementById( 'chart-area-'+test_name ).getContext( '2d' );
           window.myDoughnut = new Chart( ctx, get_chart_data( test_name ) );
         })
