@@ -416,31 +416,19 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>unit_test</td>
+                      <td>test_suite1</td>
                       <td>2</td>
                     </tr>
                     <tr>
-                      <td>integration_test</td>
+                      <td>test_suite2</td>
                       <td>2</td>
                     </tr>
                     <tr>
-                      <td>acceptance_test</td>
+                      <td>test_suite3</td>
                       <td>2</td>
                     </tr>
                     <tr>
-                      <td>interface_test</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>regression_test</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>sanity_test</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>smoke_test</td>
+                      <td>test_suite4</td>
                       <td>2</td>
                     </tr>
                   </tbody>
@@ -453,9 +441,6 @@
         </div>
         <!-- column -->
 
-
-
-        <div class="column"></div>
         <div class="column"></div>
 
       </div>
@@ -653,6 +638,65 @@
 
 
 
+
+
+
+    var barChartData = {
+      labels: [ 'last version', 'this version' ],
+      datasets: [ {
+        label: 'test_suite 1',
+        backgroundColor: window.chartColors.red,
+        data: [ 1, 2 ]
+      }, {
+        label: 'test_suite 2',
+        backgroundColor: window.chartColors.blue,
+        data: [ 1, 2 ]
+      }, {
+        label: 'test_suite 3',
+        backgroundColor: window.chartColors.green,
+        data: [ 1, 2 ]
+      },
+      {
+        label: 'test_suite 4',
+        backgroundColor: window.chartColors.green,
+        data: [ 1, 2 ]
+      },
+
+
+
+       ]
+
+    };
+    window.onload = function () {
+      var ctx = document.getElementById( 'chart-0' ).getContext( '2d' );
+      window.myBar = new Chart( ctx, {
+        type: 'bar',
+        data: barChartData,
+        options: {
+          aspectRatio: 1,
+          legend:{
+            position: 'right'
+          },
+          title: {
+            display: true,
+            text: 'Chart.js Bar Chart - Stacked'
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false
+          },
+          responsive: true,
+          scales: {
+            xAxes: [ {
+              stacked: true,
+            } ],
+            yAxes: [ {
+              stacked: true
+            } ]
+          }
+        }
+      } );
+    };
 
 
   </script>
