@@ -70,6 +70,7 @@
 
 
           <div class="navbar-dropdown">
+            <a class="navbar-item" href="time_analysis.html"> time_analysis </a>
             <a class="navbar-item" href="chartjs_test.html"> chartjs test </a>
             <a class="navbar-item" href="roadmap.html"> Roadmap </a>
             <a class="navbar-item" href="about.html"> About </a>
@@ -141,9 +142,7 @@
               </div>
 
               <div class="content">
-                <p class="test_description_unit_test">
-
-                </p>
+                <p class="test_description_unit_test"></p>
                 <table class="table">
                   <thead>
                     <tr>
@@ -160,6 +159,7 @@
                     </tr>
                   </thead>
                 </table>
+                <p>time spent: 1hr30min</p>
               </div>
             </div>
           </div>
@@ -185,9 +185,7 @@
               </div>
 
               <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
+                <p class="test_description_integration_test">
                 </p>
                 <table>
                   <thead>
@@ -210,10 +208,8 @@
           </div>
           <!-- card -->
 
-
-
-
         </div>
+
         <div class="column">
 
           <!-- card -->
@@ -233,9 +229,7 @@
               </div>
 
               <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
+                <p class="test_description_acceptance_test">
                 </p>
                 <table>
                   <thead>
@@ -279,9 +273,7 @@
               </div>
 
               <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
+                <p class="test_description_interface_test"></p>
                 </p>
                 <table>
                   <thead>
@@ -332,9 +324,7 @@
               </div>
 
               <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
+                <p class="test_description_regression_test">
                 </p>
                 <table>
                   <thead>
@@ -378,9 +368,7 @@
               </div>
 
               <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
+                <p class="test_description_sanity_test">
                 </p>
                 <table>
                   <thead>
@@ -404,6 +392,8 @@
           <!-- card -->
 
         </div>
+
+        <!-- column -->
         <div class="column">
 
 
@@ -424,9 +414,7 @@
               </div>
 
               <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
+                <p class="test_description_smoke_test">
                 </p>
                 <table>
                   <thead>
@@ -450,9 +438,50 @@
           <!-- card -->
 
         </div>
+        <!-- column -->
+
+        <!-- column -->
         <div class="column">
 
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-time_spent"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">total time spent analysis</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
+                    <tr>
+                      <td>unit_test</td>
+                      <td>2</td>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
         </div>
+        <!-- column -->
+
       </div>
 
       <!-- columns -->
@@ -469,75 +498,150 @@
       return Math.round( Math.random() * 100 );
     };
 
+    var chart_config = {
+      type: 'doughnut',
+      options: {
+        aspectRatio: 1,
+        responsive: true,
+        legend: {
+          position: 'right',
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        }
+      }
+    };
+
+
+    function plot_chart( x ) {
+
+      const get_chart_data = ( test_name ) => {
+        return {
+          ...chart_config,
+          options: {
+            ...chart_config.options,
+            title: {
+              display: true,
+              text: test_name + ' result'
+            }
+          },
+          data: {
+            datasets: [ {
+              data: [
+                x[ test_name ].passed.value,
+                x[ test_name ].failed.value,
+                x[ test_name ].error.value,
+                x[ test_name ].in_prog.value,
+              ],
+              backgroundColor: [
+                window.chartColors.green,
+                window.chartColors.red,
+                window.chartColors.yellow,
+                window.chartColors.grey,
+                window.chartColors.blue,
+              ],
+              label: 'Dataset 1'
+            } ],
+            labels: [
+              'Passed',
+              'Failed',
+              'Error',
+              'In Progress'
+            ]
+          }
+        }
+      }
+
+      [
+        'unit_test',
+        'integration_test',
+        'acceptance_test',
+        'interface_test',
+        'regression_test',
+        'sanity_test',
+        'smoke_test'
+      ].forEach( test_name => {
+
+        // fill chart data
+        var ctx = document.getElementById( 'chart-area-' + test_name ).getContext( '2d' );
+        window.myDoughnut = new Chart( ctx, get_chart_data( test_name ) );
+
+        // fill chart description
+        var ele = document.querySelector( '.test_description_' + test_name )
+        ele.innerHTML = x[ test_name ].test_description
+      } )
+
+    }
+
+    function get_time_spent_by_test( json_in ) {
+      return Object.keys( json_in ).map( test_name => parseInt( json_in[ test_name ].run_time ) )
+    }
+
+    function get_time_spent_data( json_in ) {
+      return {
+        ...chart_config,
+        options: {
+          ...chart_config.options,
+          aspectRatio: 1,
+          title: {
+            display: true,
+            text: 'test_name result'
+          },
+          legend:{
+            position: 'right'
+          }
+        },
+        data: {
+          datasets: [ {
+            data: [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            backgroundColor: [
+              window.chartColors.green,
+              window.chartColors.red,
+              window.chartColors.yellow,
+              window.chartColors.grey,
+              window.chartColors.blue,
+            ],
+            label: 'Dataset 1'
+          } ],
+          labels: [
+            'unit',
+            'integration',
+            'acceptance',
+            'interface',
+            'regression',
+            'sanity',
+            'smoke'
+          ]
+        }
+      }
+    }
+
+    function plot_time_spent( x ) {
+      var ele = document.querySelector( '#chart-area-time_spent' )
+      var time_spent_by_test = get_time_spent_by_test( x )
+      var time_spent_total = time_spent_by_test.reduce( ( x, y ) => x + y )
+
+      var ctx = document.getElementById( 'chart-area-time_spent' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx, get_time_spent_data() );
+    }
+
     fetch( 'data.json' )
       .then( resp => resp.json() )
       .then( ( x ) => {
 
-        var chart_config = {
-          type: 'doughnut',
-          options: {
-            aspectRatio: 1.5,
-            responsive: true,
-            legend: {
-              position: 'right',
-            },
-            title: {
-              display: true,
-              text: 'unittest chart'
-            },
-            animation: {
-              animateScale: true,
-              animateRotate: true
-            }
-          }
-        };
-
-        const get_chart_data = ( test_name ) => {
-          return {
-            ...chart_config,
-            data: {
-              datasets: [ {
-                data: [
-                  x[ test_name ].passed.value,
-                  x[ test_name ].failed.value,
-                  x[ test_name ].error.value,
-                  x[ test_name ].in_prog.value,
-                ],
-                backgroundColor: [
-                  window.chartColors.green,
-                  window.chartColors.red,
-                  window.chartColors.yellow,
-                  window.chartColors.grey,
-                  window.chartColors.blue,
-                ],
-                label: 'Dataset 1'
-              } ],
-              labels: [
-                'Passed',
-                'Failed',
-                'Error',
-                'In Progress'
-              ]
-            }
-          }
-        }
-
-        [
-          'unit_test',
-          'integration_test',
-          'acceptance_test',
-          'interface_test',
-          'regression_test',
-          'sanity_test',
-          'smoke_test'
-        ].forEach( test_name => {
-          // fill chart data
-          var ctx = document.getElementById( 'chart-area-'+test_name ).getContext( '2d' );
-          window.myDoughnut = new Chart( ctx, get_chart_data( test_name ) );
-        })
+        plot_chart( x )
+        plot_time_spent( x )
 
       } )
-
   </script>
 
 
