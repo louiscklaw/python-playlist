@@ -129,7 +129,7 @@
             <div class="card-image">
               <figure class="is-4by3" style="text-align:center;">
                 <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-unit-test"></canvas>
+                  <canvas id="chart-area-unit_test"></canvas>
                 </div>
               </figure>
             </div>
@@ -141,9 +141,8 @@
               </div>
 
               <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
+                <p class="test_description_unit_test">
+
                 </p>
                 <table class="table">
                   <thead>
@@ -174,7 +173,7 @@
             <div class="card-image">
               <figure class="is-4by3" style="text-align:center;">
                 <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-integration-test"></canvas>
+                  <canvas id="chart-area-integration_test"></canvas>
                 </div>
               </figure>
             </div>
@@ -222,7 +221,7 @@
             <div class="card-image">
               <figure class="is-4by3" style="text-align:center;">
                 <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-acceptance-test"></canvas>
+                  <canvas id="chart-area-acceptance_test"></canvas>
                 </div>
               </figure>
             </div>
@@ -268,7 +267,7 @@
             <div class="card-image">
               <figure class="is-4by3" style="text-align:center;">
                 <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-interface-test"></canvas>
+                  <canvas id="chart-area-interface_test"></canvas>
                 </div>
               </figure>
             </div>
@@ -312,7 +311,7 @@
 
 
       <!-- columns -->
-      <div class="columns">
+      <div class="columns is-desktop">
         <div class="column">
 
 
@@ -321,7 +320,7 @@
             <div class="card-image">
               <figure class="is-4by3" style="text-align:center;">
                 <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-regression-test"></canvas>
+                  <canvas id="chart-area-regression_test"></canvas>
                 </div>
               </figure>
             </div>
@@ -367,7 +366,7 @@
             <div class="card-image">
               <figure class="is-4by3" style="text-align:center;">
                 <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-sanity-test"></canvas>
+                  <canvas id="chart-area-sanity_test"></canvas>
                 </div>
               </figure>
             </div>
@@ -413,7 +412,7 @@
             <div class="card-image">
               <figure class="is-4by3" style="text-align:center;">
                 <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-smoke-test"></canvas>
+                  <canvas id="chart-area-smoke_test"></canvas>
                 </div>
               </figure>
             </div>
@@ -470,82 +469,133 @@
       return Math.round( Math.random() * 100 );
     };
 
-    var config = {
-      type: 'doughnut',
-      data: {
-        datasets: [ {
-          data: [
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-          ],
-          backgroundColor: [
-            window.chartColors.red,
-            window.chartColors.orange,
-            window.chartColors.yellow,
-            window.chartColors.green,
-            window.chartColors.blue,
-          ],
-          label: 'Dataset 1'
-        } ],
-        labels: [
-          'Failed',
-          'In Progress',
-          'Error',
-          'Passed',
-          'Blue'
-        ]
-      },
-      options: {
-        aspectRatio: 1.5,
-        responsive: true,
-        legend: {
-          position: 'right',
-        },
-        title: {
-          display: true,
-          text: 'unittest chart'
-        },
-        animation: {
-          animateScale: true,
-          animateRotate: true
+    fetch( 'data.json' )
+      .then( resp => resp.json() )
+      .then( ( x ) => {
+        console.log( x.unit_test )
+        var chart_config = {
+          type: 'doughnut',
+          options: {
+            aspectRatio: 1.5,
+            responsive: true,
+            legend: {
+              position: 'right',
+            },
+            title: {
+              display: true,
+              text: 'unittest chart'
+            },
+            animation: {
+              animateScale: true,
+              animateRotate: true
+            }
+          }
+        };
+        var config = {
+          ...chart_config,
+          data: {
+            datasets: [ {
+              data: [
+                x.unit_test.passed.value,
+                x.unit_test.failed.value,
+                x.unit_test.error.value,
+                x.unit_test.in_prog.value,
+              ],
+              backgroundColor: [
+                window.chartColors.red,
+                window.chartColors.orange,
+                window.chartColors.yellow,
+                window.chartColors.green,
+                window.chartColors.blue,
+              ],
+              label: 'Dataset 1'
+            } ],
+            labels: [
+              'Failed',
+              'In Progress',
+              'Error',
+              'Passed'
+            ]
+          }
         }
-      }
-    };
 
-    window.onload = function () {
+        const get_chart_data = ( test_name ) => {
+          return {
+            ...chart_config,
+            data: {
+              datasets: [ {
+                data: [
+                  x[ test_name ].passed.value,
+                  x[ test_name ].failed.value,
+                  x[ test_name ].error.value,
+                  x[ test_name ].in_prog.value,
+                ],
+                backgroundColor: [
+                  window.chartColors.red,
+                  window.chartColors.orange,
+                  window.chartColors.yellow,
+                  window.chartColors.green,
+                  window.chartColors.blue,
+                ],
+                label: 'Dataset 1'
+              } ],
+              labels: [
+                'Failed',
+                'In Progress',
+                'Error',
+                'Passed'
+              ]
+            }
+          }
+        }
 
-      // chart-area-unit-test
-      var ctx_unittest = document.getElementById( 'chart-area-unit-test' ).getContext( '2d' );
-      window.myDoughnut = new Chart( ctx_unittest, config );
+        // chart-area-unit-test
 
-      // chart-area-integration-test
-      var ctx_integrationtest = document.getElementById( 'chart-area-integration-test' ).getContext( '2d' );
-      window.myDoughnut = new Chart( ctx_integrationtest, config );
 
-      // chart-area-acceptance-test
-      var ctx_integrationtest = document.getElementById( 'chart-area-acceptance-test' ).getContext( '2d' );
-      window.myDoughnut = new Chart( ctx_integrationtest, config );
+        [
+          'unit_test',
+          'integration_test',
+          'acceptance_test',
+          'interface_test',
+          'regression_test',
+          'sanity_test',
+          'smoke_test'
+        ].forEach( test_name => {
+          var ctx = document.getElementById( 'chart-area-'+test_name ).getContext( '2d' );
+          window.myDoughnut = new Chart( ctx, get_chart_data( test_name ) );
+        })
 
-      // chart-area-interface-test
-      var ctx_integrationtest = document.getElementById( 'chart-area-interface-test' ).getContext( '2d' );
-      window.myDoughnut = new Chart( ctx_integrationtest, config );
+        // // chart-area-integration-test
+        // var ctx_integrationtest = document.getElementById( 'chart-area-integration-test' ).getContext( '2d' );
+        // window.myDoughnut = new Chart( ctx_integrationtest, config );
 
-      // chart-area-regression-test
-      var ctx_integrationtest = document.getElementById( 'chart-area-regression-test' ).getContext( '2d' );
-      window.myDoughnut = new Chart( ctx_integrationtest, config );
+        // // chart-area-acceptance-test
+        // var ctx_integrationtest = document.getElementById( 'chart-area-acceptance-test' ).getContext( '2d' );
+        // window.myDoughnut = new Chart( ctx_integrationtest, config );
 
-      // chart-area-sanity-test
-      var ctx_integrationtest = document.getElementById( 'chart-area-sanity-test' ).getContext( '2d' );
-      window.myDoughnut = new Chart( ctx_integrationtest, config );
+        // // chart-area-interface-test
+        // var ctx_integrationtest = document.getElementById( 'chart-area-interface-test' ).getContext( '2d' );
+        // window.myDoughnut = new Chart( ctx_integrationtest, config );
 
-      // chart-area-smoke-test
-      var ctx_integrationtest = document.getElementById( 'chart-area-smoke-test' ).getContext( '2d' );
-      window.myDoughnut = new Chart( ctx_integrationtest, config );
+        // // chart-area-regression-test
+        // var ctx_integrationtest = document.getElementById( 'chart-area-regression-test' ).getContext( '2d' );
+        // window.myDoughnut = new Chart( ctx_integrationtest, config );
 
-    };
+        // // chart-area-sanity-test
+        // var ctx_integrationtest = document.getElementById( 'chart-area-sanity-test' ).getContext( '2d' );
+        // window.myDoughnut = new Chart( ctx_integrationtest, config );
+
+        // // chart-area-smoke-test
+        // var ctx_integrationtest = document.getElementById( 'chart-area-smoke-test' ).getContext( '2d' );
+        // window.myDoughnut = new Chart( ctx_integrationtest, config );
+
+      } )
+
+
+
+    // window.onload = function () {
+
+    // };
   </script>
 
 
