@@ -491,33 +491,6 @@
             }
           }
         };
-        var config = {
-          ...chart_config,
-          data: {
-            datasets: [ {
-              data: [
-                x.unit_test.passed.value,
-                x.unit_test.failed.value,
-                x.unit_test.error.value,
-                x.unit_test.in_prog.value,
-              ],
-              backgroundColor: [
-                window.chartColors.red,
-                window.chartColors.orange,
-                window.chartColors.yellow,
-                window.chartColors.green,
-                window.chartColors.blue,
-              ],
-              label: 'Dataset 1'
-            } ],
-            labels: [
-              'Failed',
-              'In Progress',
-              'Error',
-              'Passed'
-            ]
-          }
-        }
 
         const get_chart_data = ( test_name ) => {
           return {
@@ -549,9 +522,6 @@
           }
         }
 
-        // chart-area-unit-test
-
-
         [
           'unit_test',
           'integration_test',
@@ -565,37 +535,8 @@
           window.myDoughnut = new Chart( ctx, get_chart_data( test_name ) );
         })
 
-        // // chart-area-integration-test
-        // var ctx_integrationtest = document.getElementById( 'chart-area-integration-test' ).getContext( '2d' );
-        // window.myDoughnut = new Chart( ctx_integrationtest, config );
-
-        // // chart-area-acceptance-test
-        // var ctx_integrationtest = document.getElementById( 'chart-area-acceptance-test' ).getContext( '2d' );
-        // window.myDoughnut = new Chart( ctx_integrationtest, config );
-
-        // // chart-area-interface-test
-        // var ctx_integrationtest = document.getElementById( 'chart-area-interface-test' ).getContext( '2d' );
-        // window.myDoughnut = new Chart( ctx_integrationtest, config );
-
-        // // chart-area-regression-test
-        // var ctx_integrationtest = document.getElementById( 'chart-area-regression-test' ).getContext( '2d' );
-        // window.myDoughnut = new Chart( ctx_integrationtest, config );
-
-        // // chart-area-sanity-test
-        // var ctx_integrationtest = document.getElementById( 'chart-area-sanity-test' ).getContext( '2d' );
-        // window.myDoughnut = new Chart( ctx_integrationtest, config );
-
-        // // chart-area-smoke-test
-        // var ctx_integrationtest = document.getElementById( 'chart-area-smoke-test' ).getContext( '2d' );
-        // window.myDoughnut = new Chart( ctx_integrationtest, config );
-
       } )
 
-
-
-    // window.onload = function () {
-
-    // };
   </script>
 
 
