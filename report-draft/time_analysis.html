@@ -111,7 +111,7 @@
   <!-- section -->
   <section class="section" style="padding-top: 1rem; padding-bottom: 1rem;">
     <div class="container">
-      <p class="title is-4"> Test progress overview </p>
+      <p class="title is-4"> Time spent overview </p>
     </div>
   </section>
   <!-- section -->
@@ -151,6 +151,142 @@
                       <td>test name</td>
                       <td>time used (min)</td>
                     </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>unit_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>integration_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>acceptance_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>interface_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>regression_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>sanity_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>smoke_test</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+        <!-- column -->
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="canvas-total-time-spent"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">total time spent analysis on ver 2</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>unit_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>integration_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>acceptance_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>interface_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>regression_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>sanity_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>smoke_test</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+        <!-- column -->
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="canvas-test-case-growth"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">test case growth history</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
                     <tr>
                       <td>unit_test</td>
                       <td>2</td>
@@ -165,15 +301,7 @@
         </div>
         <!-- column -->
 
-        <!-- column -->
-        <div class="column">
-          <canvas id="canvas"></canvas>
-
-        </div>
-        <!-- column -->
-
       </div>
-
       <!-- columns -->
 
 
@@ -187,6 +315,26 @@
 
 
   <script>
+    const color = Chart.helpers.color;
+    const basic_color_config = {
+      'unit_test': color( window.chartColors.red ).rgbString(),
+      'integration_test': color( window.chartColors.yellow ).rgbString(),
+      'acceptance_test': color( window.chartColors.blue ).rgbString(),
+      'interface_test': color( window.chartColors.green ).rgbString(),
+      'regression_test': color( window.chartColors.orange ).rgbString(),
+      'sanity_test': color( window.chartColors.pink ).rgbString(),
+      'smoke_test': color( window.chartColors.purple ).rgbString()
+    }
+    const color_config = {
+      'unit_test': color( window.chartColors.red ).alpha( 0.5 ).rgbString(),
+      'integration_test': color( window.chartColors.yellow ).alpha( 0.5 ).rgbString(),
+      'acceptance_test': color( window.chartColors.blue ).alpha( 0.5 ).rgbString(),
+      'interface_test': color( window.chartColors.green ).alpha( 0.5 ).rgbString(),
+      'regression_test': color( window.chartColors.orange ).alpha( 0.5 ).rgbString(),
+      'sanity_test': color( window.chartColors.pink ).alpha( 0.5 ).rgbString(),
+      'smoke_test': color( window.chartColors.purple ).alpha( 0.5 ).rgbString()
+    }
+
     var randomScalingFactor = function () {
       return Math.round( Math.random() * 100 );
     };
@@ -277,62 +425,53 @@
 
       } )
 
-
-    fetch( 'time_spent_history.json' )
-      .then( resp => resp.json() )
-      .then( ( fetched_json ) => {
-        // plot_time_spent_history( fetched_json )
-      } )
+    function plot_time_spent_historical( json_in ) {
+      test_history = json_in
 
 
+      const versions_in_history = test_history.map( history_item => history_item.version )
+
+      // expecting ver2
+      const latest_test_version = versions_in_history[ 0 ]
+      const latest_test_version_info = test_history[ 0 ].info
+
+      const test_names = Object.keys( latest_test_version_info )
+      const length_of_history = test_history.length
+
+      const get_time_spent_by_test_name = ( test_name ) => {
+
+        const time_spent_by_test_history = test_history.map( past_test => past_test.info[ test_name ].time_spent )
+        return time_spent_by_test_history
+      }
 
 
+      var horizontalBarChartData = {
+        labels: versions_in_history,
+        datasets: test_names.map( test_name => {
+          return {
+            label: test_name,
+            backgroundColor: color_config[ test_name ],
+            borderColor: basic_color_config[ test_name ],
+            borderWidth: 1,
+            data: get_time_spent_by_test_name( test_name )
+          }
+        } )
+      };
 
 
-
-
-
-    var MONTHS = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
-      'November', 'December'
-    ];
-    var color = Chart.helpers.color;
-    var horizontalBarChartData = {
-      labels: [ 'ver2', 'ver1.4' ],
-      datasets: [ {
-        label: 'Dataset 1',
-        backgroundColor: color( window.chartColors.red ).alpha( 0.5 ).rgbString(),
-        borderColor: window.chartColors.red,
-        borderWidth: 1,
-        data: [
-          randomScalingFactor(),
-          randomScalingFactor(),
-        ]
-      }, {
-        label: 'Dataset 2',
-        backgroundColor: color( window.chartColors.blue ).alpha( 0.5 ).rgbString(),
-        borderColor: window.chartColors.blue,
-        data: [
-          randomScalingFactor(),
-          randomScalingFactor(),
-        ]
-      } ]
-
-    };
-
-    window.onload = function () {
-      var ctx = document.getElementById( 'canvas' ).getContext( '2d' );
+      var ctx = document.getElementById( 'canvas-total-time-spent' ).getContext( '2d' );
       window.myHorizontalBar = new Chart( ctx, {
         type: 'horizontalBar',
         data: horizontalBarChartData,
         options: {
-
-          scales:{
-            xAxes: [{
+          aspectRatio: 1,
+          scales: {
+            xAxes: [ {
               stacked: true
-            }],
-            yAxes: [{
+            } ],
+            yAxes: [ {
               stacked: true
-            }]
+            } ]
           },
           elements: {
             rectangle: {
@@ -345,12 +484,20 @@
           },
           title: {
             display: true,
-            text: 'Chart.js Horizontal Bar Chart'
+            text: 'Time spent historical'
           }
         }
       } );
 
-    };
+    }
+
+
+
+    fetch( 'test_history.json' )
+      .then( resp => resp.json() )
+      .then( ( fetched_json ) => {
+        plot_time_spent_historical( fetched_json )
+      } )
   </script>
 
 
