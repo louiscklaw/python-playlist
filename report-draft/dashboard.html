@@ -58,31 +58,92 @@
           sanity_test
         </a>
 
-        <a class="navbar-item"> Documentation </a>
-
-
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             More
           </a>
 
-
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="time_analysis.html">
-              <i class="far fa-clock"></i>
-              time_analysis
-            </a>
-            <a class="navbar-item" href="chartjs_test.html">
-              <i class="fas fa-code-branch"></i>
-              chartjs test
-            </a>
-            <a class="navbar-item" href="roadmap.html">
-              <i class="fas fa-road"></i>
-              Roadmap
-            </a>
-            <a class="navbar-item" href="about.html">
-              <i class="fas fa-question-circle"></i>
-              About
+            <!-- navbar-item -->
+            <a href="time_analysis.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-book"></i>
+                      <strong>Documentation</strong>
+                      <br />
+                      <small>time used for the tests</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="time_analysis.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-clock"></i>
+                      <strong>time analysis</strong>
+                      <br />
+                      <small>time used for the tests</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="chartjs_test.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-code-branch"></i>
+                      <strong>chartjs test</strong>
+                      <br />
+                      <small>back stage to test chartjs api</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="roadmap.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-road"></i>
+                      <strong>Roadmap</strong>
+                      <br />
+                      <small>simple plan of this test report</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="about.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-question-circle"></i>
+                      <strong>About this page</strong>
+                      <br />
+                      <small>Side projects to enhance Bulma</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <!-- navbar-item -->
+
             </a>
           </div>
 
@@ -126,7 +187,9 @@
   <section class="section" id="content">
     <div class="container">
       <div class="columns is-desktop">
-        <div class="column">
+
+        <!-- column -->
+        <div class="column is-one-third">
           <h1 class="title"> Test progress overview </h1>
           <nav class="breadcrumb">
             <ul>
@@ -139,6 +202,36 @@
             <p> showing the overall test status </p>
           </div>
         </div>
+        <!-- column -->
+
+        <!-- column -->
+        <div class="column"
+          style="display: flex; align-content: center; text-align: center;"
+        >
+          <div class="level" style="width: 100%">
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Testing passing</p>
+                <p class="title">3,456</p>
+              </div>
+            </div>
+
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Test failing</p>
+                <p class="title">3,456</p>
+              </div>
+            </div>
+
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Test in-progress / error</p>
+                <p class="title">3,456</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- column -->
 
       </div>
 
