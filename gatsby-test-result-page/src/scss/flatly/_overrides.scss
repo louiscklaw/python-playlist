@@ -3,16 +3,16 @@
   @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic&display=swap");
 }
 
-hr {
+.main hr {
   height: $border-width;
 }
 
-h6 {
+.main h6 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-a {
+.main a {
   transition: all 200ms ease;
 }
 

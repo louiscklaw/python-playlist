@@ -3,6 +3,10 @@
 @import "bulma/bulma.sass";
 @import "overrides";
 
+.main {
+  font-family: $family-sans-serif
+}
+
 .navbar {
-  border-radius: 0em;
+  border-radius: unset
 }

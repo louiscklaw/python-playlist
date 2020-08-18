@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../report-draft"
+		},
+		{
+			"path": "../../gatsbyjs-playlist/conv-to-components"
 		}
 	],
 	"settings": {

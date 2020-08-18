@@ -13,9 +13,9 @@ import {
   faCodeBranch,
   faClock,
   faBook,
-  faBug
+  faBug,
+  faLanguage
 } from '@fortawesome/free-solid-svg-icons'
-
 
 import ThemeContext from '../../contexts/ThemeContext'
 
@@ -167,6 +167,19 @@ function NavIndex(props){
     <div className={active_style.navbarEnd}>
       <div className={active_style.navbarItem}>
         <div className={active_style.buttons}>
+          {/* navbar-item */}
+          <a href="about.html" className={active_style.navbarItem}>
+            <div className={combineStyles([active_style.level, active_style.isMobile])}>
+              <div className={active_style.levelLeft}>
+                <div className={active_style.levelItem}>
+                  <p>
+                    <FontAwesomeIcon icon={faLanguage} />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          {/* navbar-item */}
           {/* navbar-item */}
           <a href="about.html" className={active_style.navbarItem}>
             <div className={combineStyles([active_style.level, active_style.isMobile])}>
