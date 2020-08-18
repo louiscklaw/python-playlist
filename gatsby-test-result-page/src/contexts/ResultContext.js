@@ -1,7 +1,8 @@
 import React from 'react'
 
 const default_value ={
-  hello:'world'
+  hello:'world',
+  getResultByTestName: () => {}
 }
 const ResultContext = React.createContext(default_value)
 
@@ -124,11 +125,21 @@ function ResultContextProvider(props){
   let {children} = props
   const [hello, setHello] = React.useState(null)
 
+  const getResultByTestName = (test_name) => {
+    let test_result = tests_result[test_name]
+    return {
+      ...test_result,
+      name: test_name,
+      description: test_result.test_description
+    }
+  }
+
   return(
     <>
       <ResultContext.Provider value={{
         hello, setHello,
-        tests_result
+        tests_result,
+        getResultByTestName
       }}>
         {children}
       </ResultContext.Provider>

@@ -18,7 +18,11 @@ function DoughnutResultCard(props){
 
   const {chart_config, chart_colors} = React.useContext(ConfigContext)
 
-  const {test_result_to_show, result_name} = props
+  const {
+    test_result_to_show,
+    result_name,
+    test_description_unit_test
+  } = props
 
   const [chart_data, setChartData] = React.useState({
     passed: 4,
@@ -101,7 +105,9 @@ function DoughnutResultCard(props){
       </div>
     </div>
     <div className={active_style.content}>
-      <p className={active_style.test_description_unit_test} />
+      <p className={active_style.test_description_unit_test} >
+        {test_description_unit_test}
+      </p>
       <table>
         <thead>
           <tr>

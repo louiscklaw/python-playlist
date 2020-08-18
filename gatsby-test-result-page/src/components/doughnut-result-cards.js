@@ -15,10 +15,14 @@ function DoughnutResultCards(props){
 
     <>
       {
-        card_configs.map( ({result_to_show, result_name}) => {
+        card_configs.map( ({result_to_show, result_name, result_description}) => {
           return (
             <div className={active_style.column}>
-              <DoughnutResultCard test_result_to_show={result_to_show} result_name={result_name} />
+              <DoughnutResultCard
+                test_result_to_show={result_to_show}
+                result_name={result_name}
+                test_description_unit_test={result_description}
+                />
             </div>
           )
         })
