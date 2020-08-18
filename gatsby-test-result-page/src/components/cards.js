@@ -13,16 +13,28 @@ function Cards(props){
   return(
     <div className={combineStyles([active_style.columns, active_style.isDesktop])}>
       <div className={active_style.column}>
-        <Card test_result_to_show={tests_result.unit_test}/>
+        <Card
+          test_result_to_show={tests_result.unit_test}
+          result_name="unit test1"
+          />
       </div>
       <div className={active_style.column}>
-        <Card test_result_to_show={tests_result.unit_test}/>
+        <Card
+          test_result_to_show={tests_result.unit_test}
+          result_name="unit test2"
+        />
       </div>
       <div className={active_style.column}>
-        <Card test_result_to_show={tests_result.unit_test}/>
+        <Card
+          test_result_to_show={tests_result.unit_test}
+          result_name="unit test3"
+        />
       </div>
       <div className={active_style.column}>
-        <Card test_result_to_show={tests_result.unit_test}/>
+        <Card
+          test_result_to_show={tests_result.unit_test}
+          result_name="unit test4"
+        />
       </div>
     </div>
   )

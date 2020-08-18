@@ -3,14 +3,18 @@
 @import "bulma/bulma.sass";
 @import "overrides";
 
+.card td {
+  text-align: center !important;
+}
+
+.main .card{
+  font-size: 0.8em;
+}
+
 .main {
-  font-family: $family-sans-serif
+  font-family: $family-sans-serif;
 }
 
 .navbar {
   border-radius: unset
-}
-
-body{
-  font-size: 0.8em;
 }

@@ -26,9 +26,16 @@ function ResultCard(props){
 
   const {chart_config, chart_colors} = React.useContext(ConfigContext)
 
-  const {test_result_to_show} = props
+  const {test_result_to_show, result_name} = props
 
-  const [chart_data, setChartData] = React.useState(null)
+  const [chart_data, setChartData] = React.useState({
+    passed: 4,
+    failed: 1,
+    error: 3,
+    in_prog: 2
+  })
+  const [chart_values, setChartValues] = React.useState([])
+  const [table_chart_values, setTableChartValues] = React.useState([])
 
   const getTestResultToShow = (chart_config, result_data) => {
     // result_data
@@ -40,16 +47,23 @@ function ResultCard(props){
     // console.log('card.js','helloworld')
 
     let chart_labels = ['passed','failed','error','in_prog']
-    let chart_values = chart_labels.map(chart_label => test_result_to_show[chart_label].value)
 
-    console.log('labels',chart_labels)
-    console.log('values', chart_values)
-    console.log('colors', chart_colors)
+    setTableChartValues({
+      passed: test_result_to_show['passed'].value,
+      failed: test_result_to_show['failed'].value,
+      error: test_result_to_show['error'].value,
+      in_prog: test_result_to_show['in_prog'].value
+    })
+
+    console.log('chart_labels',chart_labels)
+    console.log('test_result_to_show', test_result_to_show.passed)
+    console.log('chart_values', chart_values)
+    console.log('chart_colors', chart_colors)
 
     setChartData( {
       labels: chart_labels,
       datasets: [{
-        data: chart_values,
+        data: [4,1,3,2],
         backgroundColor: chart_colors,
         hoverBackgroundColor: [
         '#FF6384',
@@ -58,7 +72,7 @@ function ResultCard(props){
         ]
       }]
     })
-  },[chart_config, test_result_to_show])
+  },[])
 
   return(
     <>
@@ -70,7 +84,7 @@ function ResultCard(props){
         <Doughnut data={chart_data} options={{
           title: {
             display: true,
-            text: `test_name` + ' result'
+            text: result_name + ' result'
           },
           aspectRatio: 1,
           responsive: true,
@@ -89,7 +103,7 @@ function ResultCard(props){
     <div className={active_style.media}>
       <div className={active_style.mediaContent}>
         <p className={combineStyles([active_style.title, active_style.is4])}>
-          Unit test
+          {result_name}
           <FontAwesomeIcon icon={faPaste} />
         </p>
       </div>
@@ -101,16 +115,16 @@ function ResultCard(props){
           <tr>
             <td>Passed</td>
             <td>Failed</td>
-            <td>In progress</td>
             <td>Error</td>
+            <td>In progress</td>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>10</td>
-            <td>2</td>
-            <td>13</td>
-            <td>1</td>
+            <td>{table_chart_values.passed}</td>
+            <td>{table_chart_values.failed}</td>
+            <td>{table_chart_values.error}</td>
+            <td>{table_chart_values.in_prog}</td>
           </tr>
         </tbody>
       </table>
