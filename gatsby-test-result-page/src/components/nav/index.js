@@ -3,15 +3,19 @@ import {Link} from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  fabGithub,
-  fasBug,
-  fasPalette,
-  fasQuestionCircle,
-  fasRoad,
-  fasCodeBranch,
-  fasClock,
-  fasBook
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons'
+
+import {
+  faPalette,
+  faQuestionCircle,
+  faRoad,
+  faCodeBranch,
+  faClock,
+  faBook,
+  faBug
+} from '@fortawesome/free-solid-svg-icons'
+
 
 import ThemeContext from '../../contexts/ThemeContext'
 
@@ -68,7 +72,7 @@ function NavIndex(props){
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={fasBook} />
+                    <FontAwesomeIcon icon={faBook} />
                     <strong>Documentation</strong>
                     <br />
                     <small>time used for the tests</small>
@@ -84,7 +88,7 @@ function NavIndex(props){
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={fasClock} />
+                    <FontAwesomeIcon icon={faClock} />
                     <strong>time analysis</strong>
                     <br />
                     <small>time used for the tests</small>
@@ -100,7 +104,7 @@ function NavIndex(props){
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={fasCodeBranch} />
+                    <FontAwesomeIcon icon={faCodeBranch} />
                     <strong>chartjs test</strong>
                     <br />
                     <small>back stage to test chartjs api</small>
@@ -116,7 +120,7 @@ function NavIndex(props){
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={fasRoad} />
+                    <FontAwesomeIcon icon={faRoad} />
                     <strong>Roadmap</strong>
                     <br />
                     <small>simple plan of this test report</small>
@@ -132,7 +136,7 @@ function NavIndex(props){
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={fasQuestionCircle} />
+                    <FontAwesomeIcon icon={faQuestionCircle} />
                     <strong>About this page</strong>
                     <br />
                     <small>Side projects to enhance Bulma</small>
@@ -169,7 +173,7 @@ function NavIndex(props){
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={fasPalette} />
+                    <FontAwesomeIcon icon={faPalette} />
                   </p>
                 </div>
               </div>
@@ -182,7 +186,7 @@ function NavIndex(props){
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={fasBug} />
+                    <FontAwesomeIcon icon={faBug} />
                   </p>
                 </div>
               </div>
@@ -195,7 +199,7 @@ function NavIndex(props){
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={fabGithub} />
+                    <FontAwesomeIcon icon={faGithub} />
                   </p>
                 </div>
               </div>
