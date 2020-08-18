@@ -12,6 +12,12 @@
   <script src="utils.js"></script>
 
   <link rel="stylesheet" href="style.css">
+  <style>
+    td {
+      text-align:center;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -78,73 +84,73 @@
                   </div>
                 </div>
               </div>
-            <!-- navbar-item -->
+              <!-- navbar-item -->
 
-            <!-- navbar-item -->
-            <a href="time_analysis.html" class="navbar-item">
-              <div class="level is-mobile">
-                <div class="level-left">
-                  <div class="level-item">
-                    <p>
-                      <i class="fas fa-clock"></i>
-                      <strong>time analysis</strong>
-                      <br />
-                      <small>time used for the tests</small>
-                    </p>
+              <!-- navbar-item -->
+              <a href="time_analysis.html" class="navbar-item">
+                <div class="level is-mobile">
+                  <div class="level-left">
+                    <div class="level-item">
+                      <p>
+                        <i class="fas fa-clock"></i>
+                        <strong>time analysis</strong>
+                        <br />
+                        <small>time used for the tests</small>
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            <!-- navbar-item -->
+                <!-- navbar-item -->
 
-            <!-- navbar-item -->
-            <a href="chartjs_test.html" class="navbar-item">
-              <div class="level is-mobile">
-                <div class="level-left">
-                  <div class="level-item">
-                    <p>
-                      <i class="fas fa-code-branch"></i>
-                      <strong>chartjs test</strong>
-                      <br />
-                      <small>back stage to test chartjs api</small>
-                    </p>
+                <!-- navbar-item -->
+                <a href="chartjs_test.html" class="navbar-item">
+                  <div class="level is-mobile">
+                    <div class="level-left">
+                      <div class="level-item">
+                        <p>
+                          <i class="fas fa-code-branch"></i>
+                          <strong>chartjs test</strong>
+                          <br />
+                          <small>back stage to test chartjs api</small>
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            <!-- navbar-item -->
+                  <!-- navbar-item -->
 
-            <!-- navbar-item -->
-            <a href="roadmap.html" class="navbar-item">
-              <div class="level is-mobile">
-                <div class="level-left">
-                  <div class="level-item">
-                    <p>
-                      <i class="fas fa-road"></i>
-                      <strong>Roadmap</strong>
-                      <br />
-                      <small>simple plan of this test report</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            <!-- navbar-item -->
+                  <!-- navbar-item -->
+                  <a href="roadmap.html" class="navbar-item">
+                    <div class="level is-mobile">
+                      <div class="level-left">
+                        <div class="level-item">
+                          <p>
+                            <i class="fas fa-road"></i>
+                            <strong>Roadmap</strong>
+                            <br />
+                            <small>simple plan of this test report</small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- navbar-item -->
 
-            <!-- navbar-item -->
-            <a href="about.html" class="navbar-item">
-              <div class="level is-mobile">
-                <div class="level-left">
-                  <div class="level-item">
-                    <p>
-                      <i class="fas fa-question-circle"></i>
-                      <strong>About this page</strong>
-                      <br />
-                      <small>Side projects to enhance Bulma</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            <!-- navbar-item -->
+                    <!-- navbar-item -->
+                    <a href="about.html" class="navbar-item">
+                      <div class="level is-mobile">
+                        <div class="level-left">
+                          <div class="level-item">
+                            <p>
+                              <i class="fas fa-question-circle"></i>
+                              <strong>About this page</strong>
+                              <br />
+                              <small>Side projects to enhance Bulma</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- navbar-item -->
 
-            </a>
+                    </a>
           </div>
 
         </div>
@@ -170,12 +176,22 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
+
+
+            <a class="button is-primary is-inverted is-small" href="https://github.com/louiscklaw/gatsbyjs-playlist/issues/new">
+              <span class="icon">
+                <i class="fas fa-bug"></i>
+              </span>
+              <span>bugs report</span>
+            </a>
+
             <a class="button is-primary is-inverted is-small" href="https://www.github.com/louiscklaw">
               <span class="icon">
                 <i class="fab fa-github"></i>
               </span>
               <span>github source</span>
             </a>
+
           </div>
         </div>
       </div>
@@ -189,8 +205,24 @@
       <div class="columns is-desktop">
 
         <!-- column -->
-        <div class="column is-one-third">
-          <h1 class="title"> Test progress overview </h1>
+        <div class="column is-half">
+          <div style="display: flex; justify-content: flex-start; flex-flow: row;">
+
+            <p class="title"> Test progress overview
+              <div class="tags" style="padding-left: 1em;">
+                <div class="tag is-link">
+                  <i class="fas fa-tags" style="margin-right: 0.5em;"></i>
+                  Link
+                </div>
+                <div class="tag is-link">
+                  <i class="fas fa-tags" style="margin-right: 0.5em;"></i>
+                  Link
+                </div>
+              </div>
+            </p>
+
+          </div>
+
           <nav class="breadcrumb">
             <ul>
               <li>
@@ -205,9 +237,7 @@
         <!-- column -->
 
         <!-- column -->
-        <div class="column"
-          style="display: flex; align-content: center; text-align: center;"
-        >
+        <div class="column" style="display: flex; align-content: center; text-align: center;">
           <div class="level" style="width: 100%">
             <div class="level-item has-text-centered">
               <div>
@@ -267,7 +297,7 @@
 
               <div class="content">
                 <p class="test_description_unit_test"></p>
-                <table class="table">
+                <table>
                   <thead>
                     <tr>
                       <td>Passed</td>
@@ -275,13 +305,15 @@
                       <td>In progress</td>
                       <td>Error</td>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>10</td>
                       <td>2</td>
                       <td>13</td>
                       <td>1</td>
                     </tr>
-                  </thead>
+                  </tbody>
                 </table>
                 <p>time spent: 1hr30min</p>
               </div>
@@ -319,13 +351,15 @@
                       <td>In progress</td>
                       <td>Error</td>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>10</td>
                       <td>2</td>
                       <td>13</td>
                       <td>1</td>
                     </tr>
-                  </thead>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -363,13 +397,15 @@
                       <td>In progress</td>
                       <td>Error</td>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>10</td>
                       <td>2</td>
                       <td>13</td>
                       <td>1</td>
                     </tr>
-                  </thead>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -407,13 +443,15 @@
                       <td>In progress</td>
                       <td>Error</td>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>10</td>
                       <td>2</td>
                       <td>13</td>
                       <td>1</td>
                     </tr>
-                  </thead>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -458,13 +496,15 @@
                       <td>In progress</td>
                       <td>Error</td>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>10</td>
                       <td>2</td>
                       <td>13</td>
                       <td>1</td>
                     </tr>
-                  </thead>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -502,13 +542,15 @@
                       <td>In progress</td>
                       <td>Error</td>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>10</td>
                       <td>2</td>
                       <td>13</td>
                       <td>1</td>
                     </tr>
-                  </thead>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -548,13 +590,15 @@
                       <td>In progress</td>
                       <td>Error</td>
                     </tr>
+                  </thead>
+                  <tbody>
                     <tr>
                       <td>10</td>
                       <td>2</td>
                       <td>13</td>
                       <td>1</td>
                     </tr>
-                  </thead>
+                  </tbody>
                 </table>
               </div>
             </div>
