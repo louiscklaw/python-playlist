@@ -4,8 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "../unittest-json-reporting-tryout"
+			"path": "../../gatsbyjs-playlist/gatsby-bulmaswatch-tryout"
+		},
+		{
+			"path": "../report-draft"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "report-draft"
+	}
 }
