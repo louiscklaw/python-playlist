@@ -6,28 +6,6 @@ import {combineStyles} from '../../utils/common'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {
-  faAlignCenter,
-  faAlignLeft,
-  faAlignRight,
-  faAngleDown,
-  faBold,
-  faCheck,
-  faCloudUploadAlt,
-  faEnvelope,
-  faFileAlt,
-  faHeading,
-  faHeart,
-  faHome,
-  faItalic,
-  faReply,
-  faRetweet,
-  faTimes,
-  faUnderline,
-  faUpload,
-  faUser,
-  faWarning,
-  faBug,
-  faPalette,
   faPaste
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -35,7 +13,7 @@ import ResultContext from '../contexts/ResultContext'
 import ThemeContext from '../contexts/ThemeContext'
 import ConfigContext from '../contexts/ConfigContext'
 
-function ResultCard(props){
+function DoughnutResultCard(props){
   const {active_style} = React.useContext(ThemeContext)
 
   const {chart_config, chart_colors} = React.useContext(ConfigContext)
@@ -118,7 +96,7 @@ function ResultCard(props){
       <div className={active_style.mediaContent}>
         <p className={combineStyles([active_style.title, active_style.is4])}>
           {result_name}
-
+          <FontAwesomeIcon icon={faPaste} />
         </p>
       </div>
     </div>
@@ -152,4 +130,4 @@ function ResultCard(props){
   )
 }
 
-export default ResultCard
+export default DoughnutResultCard

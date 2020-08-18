@@ -181,12 +181,12 @@ function NavIndex(props){
           </a>
           {/* navbar-item */}
           {/* navbar-item */}
-          <a href="about.html" className={active_style.navbarItem}>
+          <a href="#" className={active_style.navbarItem}>
             <div className={combineStyles([active_style.level, active_style.isMobile])}>
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={faPalette} />
+                    <FontAwesomeIcon icon={faPalette} style={{fontSize: '1.33em;'}}/>
                   </p>
                 </div>
               </div>
@@ -194,12 +194,12 @@ function NavIndex(props){
           </a>
           {/* navbar-item */}
           {/* navbar-item */}
-          <a href="about.html" className={active_style.navbarItem}>
+          <a href="//github.com/louiscklaw/python-playlist/issues/new" className={active_style.navbarItem}>
             <div className={combineStyles([active_style.level, active_style.isMobile])}>
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={faBug} />
+                    <FontAwesomeIcon icon={faBug} style={{fontSize: '1.33em;'}}/>
                   </p>
                 </div>
               </div>
@@ -207,12 +207,12 @@ function NavIndex(props){
           </a>
           {/* navbar-item */}
           {/* navbar-item */}
-          <a href="about.html" className={active_style.navbarItem}>
+          <a href="//github.com/louiscklaw/python-playlist" className={active_style.navbarItem}>
             <div className={combineStyles([active_style.level, active_style.isMobile])}>
               <div className={active_style.levelLeft}>
                 <div className={active_style.levelItem}>
                   <p>
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon icon={faGithub} style={{fontSize: '1.33em;'}}/>
                   </p>
                 </div>
               </div>

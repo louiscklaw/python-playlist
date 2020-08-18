@@ -2,8 +2,17 @@ import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faTags
-} from '@fortawesome/free-brands-svg-icons'
+  faGithub,
+  faBug,
+  faPalette,
+  faQuestionCircle,
+  faRoad,
+  faCodeBranch,
+  faClock,
+  faBook,
+  faTags,
+  faLink
+} from '@fortawesome/free-solid-svg-icons'
 
 import ThemeContext from '../contexts/ThemeContext'
 import {combineStyles} from '../../utils/common'

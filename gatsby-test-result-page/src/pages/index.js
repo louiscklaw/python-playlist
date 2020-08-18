@@ -3,7 +3,7 @@ import { Link, navigate } from "gatsby"
 
 import Layout from "../components/layout"
 import Navbar from '../components/nav'
-import Cards from '../components/cards'
+// import Cards from '../components/cards
 
 import SEO from "../components/seo"
 
