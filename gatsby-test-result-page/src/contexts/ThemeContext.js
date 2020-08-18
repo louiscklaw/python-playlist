@@ -24,7 +24,6 @@ function ThemeContextProvider(props){
 
   const rotateStyle = () => {
     active_style = flatly_style
-
   }
 
   return(

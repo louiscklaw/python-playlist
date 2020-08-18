@@ -5,18 +5,29 @@ import SEO from "../components/seo"
 
 import Layout from "../components/layout"
 import Navbar from '../components/nav'
-import Card from '../components/card'
+import Cards from '../components/cards'
 import Footer from '../components/footer'
 import PageHeadings from '../components/page-headings'
 
-const OverviewPage = () => (
-  <Layout>
+import ThemeContext from '../contexts/ThemeContext'
 
-    <SEO title="Overview" />
-    <Navbar />
-    <PageHeadings />
+function OverviewPage(props){
+  const {active_style} = React.useContext(ThemeContext)
+  return(
+    <Layout>
+      <SEO title="Overview" />
+      <Navbar />
+      <PageHeadings />
+      <section className={active_style.section}>
+        <div className={active_style.container}>
 
-  </Layout>
-)
+          <Cards />
+
+
+        </div>
+      </section>
+    </Layout>
+  )
+}
 
 export default OverviewPage

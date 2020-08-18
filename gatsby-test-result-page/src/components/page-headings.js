@@ -3,17 +3,19 @@ import {Link} from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  fabGithub,
-  fasBug,
-  fasPalette,
-  fasQuestionCircle,
-  fasRoad,
-  fasCodeBranch,
-  fasClock,
-  fasBook,
-  fasTags,
-  fasLink
+  faGithub,
+  faBug,
+  faPalette,
+  faQuestionCircle,
+  faRoad,
+  faCodeBranch,
+  faClock,
+  faBook,
+  faTags,
+  faLink
 } from '@fortawesome/free-brands-svg-icons'
+
+import HeadingsTags from './headings-tags'
 
 import ThemeContext from '../contexts/ThemeContext'
 
@@ -32,8 +34,9 @@ function PageHeadings(props){
           <p className={active_style.title}>
             Test progress overview
             <a>
-              <FontAwesomeIcon icon={fasLink} />
+              <FontAwesomeIcon icon={faLink} />
             </a>
+
           </p>
         </div>
         <div className={active_style.content}>
@@ -48,13 +51,11 @@ function PageHeadings(props){
         <div style={{display: 'flex', justifyContent: 'flex-start', flexFlow: 'row'}}>
           <div className={active_style.tags} style={{paddingLeft: '1em'}}>
             <div className={combineStyles([active_style.tag, active_style.isLink])}>
-              <FontAwesomeIcon icon={fasTags} />
+              <FontAwesomeIcon icon={faTags} />
               Link
             </div>
-            <div className={combineStyles([active_style.tag, active_style.isLink])}>
-              <FontAwesomeIcon icon={fasTags} />
-              Link
-            </div>
+
+            <HeadingsTags />
           </div>
         </div>
       </div>
