@@ -1,0 +1,50 @@
+{
+  "reports": {
+    "testsuites": {
+      "testsuite": {
+        "@errors": "0",
+        "@failures": "0",
+        "@file": ".py",
+        "@name": "TestHelloworld-20200731134126",
+        "@skipped": "1",
+        "@tests": "4",
+        "@time": "0.009",
+        "@timestamp": "2020-07-31T13:41:26",
+        "testcase": [ {
+          "@classname": "TestHelloworld",
+          "@file": "helloworld.py",
+          "@line": "17",
+          "@name": "test_isupper",
+          "@time": "0.008",
+          "@timestamp": "2020-07-31T13:41:26"
+        }, {
+          "@classname": "TestHelloworld",
+          "@file": "helloworld.py",
+          "@line": "22",
+          "@name": "test_split",
+          "@time": "0.001",
+          "@timestamp": "2020-07-31T13:41:26"
+        }, {
+          "@classname": "TestHelloworld",
+          "@file": "helloworld.py",
+          "@line": "13",
+          "@name": "test_upper",
+          "@time": "0.000",
+          "@timestamp": "2020-07-31T13:41:26"
+        }, {
+          "@classname": "TestHelloworld",
+          "@file": "helloworld.py",
+          "@line": "29",
+          "@name": "test_skip",
+          "@time": "0.000",
+          "@timestamp": "2020-07-31T13:41:26",
+          "skipped": {
+            "@message": "demonstrating skipping",
+            "@type": "skip"
+          }
+        } ]
+      }
+    },
+    "meta": {}
+  }
+}
