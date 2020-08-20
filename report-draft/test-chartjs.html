@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Doughnut Chart</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="utils.js"></script>
+
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="canvas-holder" style="width:30%">
+		<canvas id="chart-area-b"></canvas>
+  </div>
+
+	<div id="canvas-holder" style="width:30%">
+		<canvas id="chart-area-a"></canvas>
+  </div>
+
+
+	<button id="randomizeData">Randomize Data</button>
+	<button id="addDataset">Add Dataset</button>
+	<button id="removeDataset">Remove Dataset</button>
+	<button id="addData">Add Data</button>
+	<button id="removeData">Remove Data</button>
+	<button id="changeCircleSize">Semi/Full Circle</button>
+	<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.orange,
+						window.chartColors.yellow,
+						window.chartColors.green,
+						window.chartColors.blue,
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Red',
+					'Orange',
+					'Yellow',
+					'Green',
+					'Blue'
+				]
+			},
+			options: {
+        aspectRatio:1,
+				responsive: true,
+				legend: {
+					position: 'top',
+				},
+				title: {
+					display: true,
+					text: 'Chart.js Doughnut Chart'
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			}
+		};
+
+		window.onload = function() {
+			var ctx_b = document.getElementById('chart-area-b').getContext('2d');
+      window.myDoughnut = new Chart(ctx_b, config);
+
+			var ctx_a = document.getElementById('chart-area-a').getContext('2d');
+			window.myDoughnut = new Chart(ctx_a, config);
+    };
+
+
+  </script>
+
+
+
+</body>
+
+</html>

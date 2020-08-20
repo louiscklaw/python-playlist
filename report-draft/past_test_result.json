@@ -1,0 +1,58 @@
+{
+  "unit_test": [ {
+    "test_suite_name": "Test suite 1",
+    "test_suite_description": "Test suite 1 description",
+    "results": {
+      "passed": 10,
+      "failed": 9,
+      "error": 8,
+      "in_progress": 7
+    }
+  }, {
+    "test_suite_name": "Test suite 2",
+    "test_suite_description": "Test suite 2 description",
+    "results": {
+      "passed": 20,
+      "failed": 9,
+      "error": 8,
+      "in_progress": 7
+    }
+  }, {
+    "test_suite_name": "Test suite 3",
+    "test_suite_description": "Test suite 2 description",
+    "results": {
+      "passed": 0,
+      "failed": 0,
+      "error": 0,
+      "in_progress": 0
+    }
+  }, {
+    "test_suite_name": "Test suite 4",
+    "test_suite_description": "Test suite 2 description",
+    "results": {
+      "passed": 20,
+      "failed": 9,
+      "error": 8,
+      "in_progress": 7
+    }
+  } ],
+  "integration_test": [ {
+    "test_suite_name": "Test suite 1",
+    "test_suite_description": "Test suite 1 description",
+    "results": {
+      "passed": 10,
+      "failed": 9,
+      "error": 8,
+      "in_progress": 7
+    }
+  }, {
+    "test_suite_name": "Test suite 2",
+    "test_suite_description": "Test suite 2 description",
+    "results": {
+      "passed": 10,
+      "failed": 9,
+      "error": 8,
+      "in_progress": 7
+    }
+  } ]
+}

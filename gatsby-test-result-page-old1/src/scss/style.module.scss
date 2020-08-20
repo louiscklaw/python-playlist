@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "bulma/bulma.sass";
+
+.test-result-header{
+  // background-color: red;
+  margin: 2rem 1rem;
+}
+
+.card-content-result-description {
+  font-size: small;
+}
+
+.card-title{
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.card-title-explain {
+  font-size: small;
+}
+
+.card-header-wrapper{
+  padding: 0.5rem;
+}
+
+.result-card{
+
+  margin: 10px 10px;
+}
+
+.result-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(16, calc(100%/16));
+  grid-template-rows: repeat(6, calc(100%/6));
+}
+
+.append-report-section{
+  font-size: small;
+}
+
+.result-tile {
+  min-height: 100px;
+
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, calc(100% /4));
+  gap: 10px 10px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}

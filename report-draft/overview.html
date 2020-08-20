@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hello Bulma!</title>
+
+  <link rel="stylesheet" href="//jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="//use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="utils.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="overview.html">
+        Simple test report
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+
+        <a class="navbar-item is-active" href="dashboard.html">
+          Overview
+        </a>
+
+        <a class="navbar-item" href="test-report-content.html">
+          smoke_test </a>
+
+        <a class="navbar-item">
+          unit_test
+        </a>
+        <a class="navbar-item">
+          integration_test
+        </a>
+        <a class="navbar-item">
+          acceptance_test
+        </a>
+        <a class="navbar-item">
+          interface_test
+        </a>
+        <a class="navbar-item">
+          regression_test
+        </a>
+        <a class="navbar-item">
+          sanity_test
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <!-- navbar-item -->
+            <a href="time_analysis.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-book"></i>
+                      <strong>Documentation</strong>
+                      <br />
+                      <small>time used for the tests</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="time_analysis.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-clock"></i>
+                      <strong>time analysis</strong>
+                      <br />
+                      <small>time used for the tests</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="chartjs_test.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-code-branch"></i>
+                      <strong>chartjs test</strong>
+                      <br />
+                      <small>back stage to test chartjs api</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="roadmap.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-road"></i>
+                      <strong>Roadmap</strong>
+                      <br />
+                      <small>simple plan of this test report</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="about.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-question-circle"></i>
+                      <strong>About this page</strong>
+                      <br />
+                      <small>Side projects to enhance Bulma</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- navbar-item -->
+
+          </div>
+        </div>
+
+        <div class="navbar-item">
+          <div class="select is-small" style="color: #34495e;">
+            <select>
+              <option>Select version</option>
+              <option>options version 1</option>
+              <option>options version 2</option>
+              <option>options version 3</option>
+              <option>options version 4</option>
+              <option>options version 5</option>
+              <option>options version 6</option>
+              <option>options version 7</option>
+              <option>options version 8</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+
+            <!-- navbar-item -->
+            <a href="about.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-palette" style="font-size: 1.33em"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="about.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fas fa-bug" style="font-size: 1.33em"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- navbar-item -->
+
+            <!-- navbar-item -->
+            <a href="about.html" class="navbar-item">
+              <div class="level is-mobile">
+                <div class="level-left">
+                  <div class="level-item">
+                    <p>
+                      <i class="fab fa-github" style="font-size: 1.33em"></i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- navbar-item -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- overview text -->
+
+  <section class="section" id="content">
+    <div class="container">
+      <div class="columns is-desktop">
+
+        <!-- column -->
+        <div class="column is-one-forth">
+          <div style="display: flex; justify-content: flex-start; flex-flow: row;">
+
+            <p class="title">
+              Test progress overview
+              <a>
+                <i class="fas fa-link" style="font-size: 0.6em;"></i>
+              </a>
+            </p>
+
+          </div>
+
+          <div class="content">
+            <div class="subtitle">
+              showing the overall test status
+            </div>
+          </div>
+        </div>
+        <!-- column -->
+
+        <!-- column -->
+        <div class="column is-one-forth">
+          <div style="display: flex; justify-content: flex-start; flex-flow: row;">
+            <div class="tags" style="padding-left: 1em;">
+              <div class="tag is-link">
+                <i class="fas fa-tags" style="margin-right: 0.5em;"></i>
+                Link
+              </div>
+              <div class="tag is-link">
+                <i class="fas fa-tags" style="margin-right: 0.5em;"></i>
+                Link
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- column -->
+
+        <!-- column -->
+        <div class="column" style="display: flex; align-content: center; text-align: center;">
+          <div class="level" style="width: 100%">
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Testing passing</p>
+                <p class="title">111</p>
+              </div>
+            </div>
+
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Test failing</p>
+                <p class="title">111</p>
+              </div>
+            </div>
+
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Test in-progress</p>
+                <p class="title">111</p>
+              </div>
+            </div>
+
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Test error</p>
+                <p class="title">111</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- column -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- overview text -->
+
+
+  <!-- section  -->
+  <section class="section" style="padding-top: 0.5rem">
+    <div class="container">
+
+      <!-- columns -->
+      <div class="columns is-desktop">
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-unit_test"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Unit test
+                    <i class="fas fa-paste" style="font-size: 0.8em;"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="test_description_unit_test"></p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Passed</td>
+                      <td>Failed</td>
+                      <td>In progress</td>
+                      <td>Error</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>13</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>time spent: 1hr30min</p>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+
+        <div class="column">
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-integration_test"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">
+                    Integration test
+                    <i class="fas fa-paste" style="font-size: 0.8em;"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="test_description_integration_test">
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Passed</td>
+                      <td>Failed</td>
+                      <td>In progress</td>
+                      <td>Error</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>13</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-acceptance_test"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Acceptance test
+                    <i class="fas fa-paste" style="font-size: 0.8em;"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="test_description_acceptance_test">
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Passed</td>
+                      <td>Failed</td>
+                      <td>In progress</td>
+                      <td>Error</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>13</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <div class="column">
+
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-interface_test"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Interface test
+                    <i class="fas fa-paste" style="font-size: 0.8em;"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="test_description_interface_test"></p>
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Passed</td>
+                      <td>Failed</td>
+                      <td>In progress</td>
+                      <td>Error</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>13</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+      </div>
+
+      <!-- columns -->
+
+
+      <!-- columns -->
+      <div class="columns is-desktop">
+        <div class="column">
+
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-regression_test"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Regression test
+                    <i class="fas fa-paste" style="font-size: 0.8em;"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="test_description_regression_test">
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Passed</td>
+                      <td>Failed</td>
+                      <td>In progress</td>
+                      <td>Error</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>13</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+
+
+        <div class="column">
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-sanity_test"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Sanity test
+                    <i class="fas fa-paste" style="font-size: 0.8em;"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="test_description_sanity_test">
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Passed</td>
+                      <td>Failed</td>
+                      <td>In progress</td>
+                      <td>Error</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>13</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+
+        <!-- column -->
+        <div class="column">
+
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-smoke_test"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Smoke test
+                    <i class="fas fa-paste" style="font-size: 0.8em;"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p class="test_description_smoke_test">
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>Passed</td>
+                      <td>Failed</td>
+                      <td>In progress</td>
+                      <td>Error</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>13</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+        <!-- column -->
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-time_spent"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">total time spent analysis</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>unit_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>integration_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>acceptance_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>interface_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>regression_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>sanity_test</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>smoke_test</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+      </div>
+      <!-- columns -->
+
+    </div>
+  </section>
+  <!-- section  -->
+
+
+
+
+  <script>
+    var randomScalingFactor = function () {
+      return Math.round( Math.random() * 100 );
+    };
+
+    var chart_config = {
+      type: 'doughnut',
+      options: {
+        aspectRatio: 1,
+        responsive: true,
+        legend: {
+          position: 'right',
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        }
+      }
+    };
+
+
+    function plot_chart( x ) {
+
+      const get_chart_data = ( test_name ) => {
+        return {
+          ...chart_config,
+          options: {
+            ...chart_config.options,
+            title: {
+              display: true,
+              text: test_name + ' result'
+            }
+          },
+          data: {
+            datasets: [ {
+              data: [
+                x[ test_name ].passed.value,
+                x[ test_name ].failed.value,
+                x[ test_name ].error.value,
+                x[ test_name ].in_prog.value,
+              ],
+              backgroundColor: [
+                window.chartColors.green,
+                window.chartColors.red,
+                window.chartColors.yellow,
+                window.chartColors.grey,
+                window.chartColors.blue,
+              ],
+              label: 'Dataset 1'
+            } ],
+            labels: [
+              'Passed',
+              'Failed',
+              'Error',
+              'In Progress'
+            ]
+          }
+        }
+      }
+
+      [
+        'unit_test',
+        'integration_test',
+        'acceptance_test',
+        'interface_test',
+        'regression_test',
+        'sanity_test',
+        'smoke_test'
+      ].forEach( test_name => {
+
+        // fill chart data
+        var ctx = document.getElementById( 'chart-area-' + test_name ).getContext( '2d' );
+        window.myDoughnut = new Chart( ctx, get_chart_data( test_name ) );
+
+        // fill chart description
+        var ele = document.querySelector( '.test_description_' + test_name )
+        ele.innerHTML = x[ test_name ].test_description
+      } )
+
+    }
+
+    function get_time_spent_by_test( json_in ) {
+      return Object.keys( json_in ).map( test_name => parseInt( json_in[ test_name ].run_time ) )
+    }
+
+    function get_time_spent_data( json_in ) {
+      return {
+        ...chart_config,
+        options: {
+          ...chart_config.options,
+          aspectRatio: 1,
+          title: {
+            display: true,
+            text: 'test_name result'
+          },
+          legend: {
+            position: 'right'
+          }
+        },
+        data: {
+          datasets: [ {
+            data: [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            backgroundColor: [
+              window.chartColors.green,
+              window.chartColors.red,
+              window.chartColors.yellow,
+              window.chartColors.grey,
+              window.chartColors.blue,
+            ],
+            label: 'Dataset 1'
+          } ],
+          labels: [
+            'unit',
+            'integration',
+            'acceptance',
+            'interface',
+            'regression',
+            'sanity',
+            'smoke'
+          ]
+        }
+      }
+    }
+
+    function plot_time_spent( x ) {
+      var ele = document.querySelector( '#chart-area-time_spent' )
+      var time_spent_by_test = get_time_spent_by_test( x )
+      var time_spent_total = time_spent_by_test.reduce( ( x, y ) => x + y )
+
+      var ctx = document.getElementById( 'chart-area-time_spent' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx, get_time_spent_data() );
+    }
+
+    fetch( 'data.json' )
+      .then( resp => resp.json() )
+      .then( ( x ) => {
+
+        plot_chart( x )
+        plot_time_spent( x )
+
+      } )
+  </script>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <div class="container">
+
+        <p> Simple test report for xxxxx </p>
+
+        <a class="button is-primary is-inverted is-small" href="//www.github.com/louiscklaw" target="_blank">
+          <i class="fab fa-github-square"></i>
+          <span style="padding-left: 0.5rem;">www.github.com/louiscklaw</span>
+        </a>
+
+
+        <a class="button is-primary is-inverted is-small" href="//www.facebook.com/louiscklaw" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+          <span style="padding-left: 0.5rem;">www.facebook.com/louiscklaw</span>
+        </a>
+
+        <a class="button is-primary is-inverted is-small" href="//www.linkedin.com/in/louiscklaw" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span style="padding-left: 0.5rem;">www.linkedin.com/in/louiscklaw</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="content has-text-centered">
+      <div class="container">
+        <p> 💖 coded by louiscklaw. 2020 </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- footer -->
+
+
+  <script>
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call( document.querySelectorAll( '.navbar-burger' ), 0 );
+
+    // Check if there are any nav burgers
+    if ( $navbarBurgers.length > 0 ) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( function ( $el ) {
+        $el.addEventListener( 'click', () => {
+
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById( target );
+
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle( 'is-active' );
+          $target.classList.toggle( 'is-active' );
+
+        } );
+      } );
+    }
+  </script>
+
+</body>
+
+</html>

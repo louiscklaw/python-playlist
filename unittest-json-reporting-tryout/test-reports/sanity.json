@@ -1,0 +1,3197 @@
+{
+  "reports": {
+    "meta": {
+      "desc": ""
+    },
+    "testsuite": [
+      {
+        "@errors": "49",
+        "@failures": "0",
+        "@name": "sanity_suite1.Test_sanity_suite1-20200807150206",
+        "@tests": "162",
+        "@time": "0.012",
+        "doc_string": "# helloworld h1\n\n  ## This is an h2 tag\n\n  ### This is an h3 tag\n\n  #### This is an h4 tag\n\n  ##### This is an h5 tag\n\n  ###### This is an h6 tag\n\n\n  I think you should use an\n  `<addr>` element here instead.\n\n  First Header | Second Header\n  ------------ | -------------\n  Content from cell 1 | Content from cell 2\n  Content in the first column | Content in the second column\n\n  - white box test\n  - test by functions",
+        "doc_string_added_by": "attach_testsuite_docstring.py",
+        "system-err": null,
+        "system-out": null,
+        "testcase": [
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_0",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_1",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_10",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_100",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_102",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_103",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_104",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_105",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_108",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_109",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_11",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_111",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_112",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_113",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_114",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_115",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_116",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_117",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_118",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_119",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_120",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_123",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_124",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_125",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_126",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_127",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_128",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_129",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_13",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_130",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_132",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_133",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_134",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_135",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_138",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_139",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_140",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_142",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_145",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_146",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_147",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_149",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_150",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_151",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_152",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_154",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_155",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_156",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_157",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_158",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_159",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_16",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_160",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_18",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_2",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_20",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_21",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_24",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_29",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_31",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_33",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_34",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_35",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_36",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_4",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_41",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_42",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_43",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_44",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_45",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_46",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_5",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_50",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_51",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_52",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_56",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_58",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_59",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_6",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_60",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_62",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_67",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_68",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_70",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_71",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_76",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_78",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_79",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_80",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_82",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_84",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_86",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_87",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_88",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_9",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_93",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_94",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_95",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_97",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_98",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_99",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_107",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 472, in test_sample_107\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_110",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 484, in test_sample_110\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_12",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 81, in test_sample_12\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_121",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 528, in test_sample_121\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_122",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 532, in test_sample_122\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_131",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 568, in test_sample_131\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_136",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 588, in test_sample_136\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_137",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 592, in test_sample_137\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_14",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 89, in test_sample_14\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_143",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 617, in test_sample_143\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_144",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 621, in test_sample_144\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_148",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 637, in test_sample_148\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_15",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 93, in test_sample_15\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_153",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 657, in test_sample_153\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_161",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 689, in test_sample_161\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_17",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 101, in test_sample_17\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_19",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 109, in test_sample_19\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_22",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 121, in test_sample_22\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_23",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 125, in test_sample_23\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_25",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 133, in test_sample_25\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_26",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 137, in test_sample_26\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_28",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 146, in test_sample_28\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_3",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 45, in test_sample_3\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_32",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 163, in test_sample_32\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_38",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 188, in test_sample_38\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_39",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 192, in test_sample_39\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_47",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 225, in test_sample_47\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_48",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 229, in test_sample_48\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_49",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 233, in test_sample_49\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_53",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 249, in test_sample_53\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_57",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 267, in test_sample_57\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_61",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 283, in test_sample_61\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_63",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 291, in test_sample_63\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_65",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 300, in test_sample_65\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_66",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 304, in test_sample_66\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_69",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 316, in test_sample_69\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_7",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 61, in test_sample_7\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_72",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 328, in test_sample_72\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_74",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 337, in test_sample_74\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_75",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 341, in test_sample_75\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_77",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 349, in test_sample_77\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_8",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 65, in test_sample_8\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_81",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 365, in test_sample_81\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_83",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 373, in test_sample_83\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_85",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 381, in test_sample_85\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_90",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 402, in test_sample_90\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_91",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 406, in test_sample_91\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_92",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 410, in test_sample_92\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_96",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite1.py\", line 426, in test_sample_96\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_101",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_106",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_141",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_27",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_30",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_37",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_40",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_54",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_55",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_64",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_73",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite1.Test_sanity_suite1",
+            "@name": "test_sample_89",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          }
+        ]
+      },
+      {
+        "@errors": "53",
+        "@failures": "0",
+        "@name": "sanity_suite2.Test_sanity_suite2-20200807150206",
+        "@tests": "202",
+        "@time": "0.014",
+        "doc_string": "# helloworld h1\n\n  ## This is an h2 tag\n\n  ### This is an h3 tag\n\n  #### This is an h4 tag\n\n  ##### This is an h5 tag\n\n  ###### This is an h6 tag\n\n\n  I think you should use an\n  `<addr>` element here instead.\n\n  First Header | Second Header\n  ------------ | -------------\n  Content from cell 1 | Content from cell 2\n  Content in the first column | Content in the second column\n\n  - white box test\n  - test by functions",
+        "doc_string_added_by": "attach_testsuite_docstring.py",
+        "system-err": null,
+        "system-out": null,
+        "testcase": [
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_1",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_10",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_100",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_101",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_102",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_104",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_105",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_106",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_108",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_109",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_11",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_110",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_111",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_113",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_114",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_115",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_117",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_119",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_12",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_120",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_121",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_123",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_124",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_125",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_126",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_127",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_13",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_131",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_133",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_134",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_137",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_138",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_139",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_14",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_140",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_141",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_142",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_143",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_145",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_146",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_147",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_148",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_15",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_150",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_151",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_153",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_154",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_157",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_159",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_160",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_161",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_163",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_165",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_166",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_167",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_168",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_169",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_17",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_170",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_171",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_175",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_177",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_178",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_18",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_180",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_184",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_185",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_186",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_187",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_188",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_190",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_192",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_193",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_194",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_196",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_197",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_198",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_2",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_201",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_23",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_24",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_25",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_26",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_27",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_29",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_3",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_30",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_31",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_32",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_34",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_36",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_38",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_39",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_40",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_41",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_42",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_46",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_49",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_5",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_52",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_54",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_55",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_56",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_57",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_6",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_60",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_61",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_62",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_64",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_65",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_7",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_70",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_72",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_73",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_74",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_76",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_77",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_78",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_79",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_8",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_80",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_81",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_83",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_85",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_86",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_87",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_88",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_89",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_91",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_92",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_93",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_95",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_96",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_98",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_99",
+            "@time": "0.000",
+            "doc_string": " passed template ",
+            "doc_string_added_by": "attach_docstring.py"
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_0",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 33, in test_sample_0\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_103",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 452, in test_sample_103\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_107",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 468, in test_sample_107\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_112",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 488, in test_sample_112\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_116",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 504, in test_sample_116\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_118",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 512, in test_sample_118\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_128",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 553, in test_sample_128\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_129",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 557, in test_sample_129\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_130",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 561, in test_sample_130\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_136",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 587, in test_sample_136\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_144",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 619, in test_sample_144\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_149",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 639, in test_sample_149\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_155",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 664, in test_sample_155\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_156",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 668, in test_sample_156\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_16",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 98, in test_sample_16\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_164",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 702, in test_sample_164\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_172",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 734, in test_sample_172\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_173",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 738, in test_sample_173\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_174",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 742, in test_sample_174\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_176",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 750, in test_sample_176\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_179",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 762, in test_sample_179\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_181",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 770, in test_sample_181\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_183",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 779, in test_sample_183\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_189",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 803, in test_sample_189\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_19",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 110, in test_sample_19\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_191",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 811, in test_sample_191\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_195",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 827, in test_sample_195\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_199",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 843, in test_sample_199\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_20",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 114, in test_sample_20\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_200",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 847, in test_sample_200\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_21",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 118, in test_sample_21\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_22",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 122, in test_sample_22\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_28",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 146, in test_sample_28\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_35",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 175, in test_sample_35\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_37",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 183, in test_sample_37\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_44",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 212, in test_sample_44\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_45",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 216, in test_sample_45\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_47",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 224, in test_sample_47\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_50",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 237, in test_sample_50\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_51",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 241, in test_sample_51\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_53",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 249, in test_sample_53\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_59",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 274, in test_sample_59\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_63",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 290, in test_sample_63\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_66",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 302, in test_sample_66\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_67",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 306, in test_sample_67\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_68",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 310, in test_sample_68\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_71",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 323, in test_sample_71\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_75",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 339, in test_sample_75\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_82",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 367, in test_sample_82\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_9",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 70, in test_sample_9\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_90",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 400, in test_sample_90\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_94",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 416, in test_sample_94\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_97",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/sanity/sanity_suite2.py\", line 428, in test_sample_97\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_122",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_132",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_135",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_152",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_158",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_162",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_182",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_33",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_4",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_43",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_48",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_58",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_69",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          },
+          {
+            "@classname": "sanity_suite2.Test_sanity_suite2",
+            "@name": "test_sample_84",
+            "@time": "0.000",
+            "doc_string": " skipped template ",
+            "doc_string_added_by": "attach_docstring.py",
+            "skipped": {
+              "@message": "demonstrating skipping",
+              "@type": "skip"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

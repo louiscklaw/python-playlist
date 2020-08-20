@@ -1,0 +1,37 @@
+{
+  "name": "gatsby-example-using-yaml-json",
+  "private": true,
+  "description": "Gatsby example to use YAML as a source and add JSON and YAML at build time",
+  "version": "0.1.0",
+  "author": "jonniebigodes",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.10",
+    "bulma": "^0.9.0",
+    "gatsby": "^2.23.12",
+    "gatsby-plugin-fontawesome-css": "^1.0.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-sass": "^2.3.10",
+    "js-yaml": "^3.14.0",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-markdown": "^4.3.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  }
+}

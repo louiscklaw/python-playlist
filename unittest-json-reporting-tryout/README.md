@@ -7,6 +7,13 @@ https://github.com/rexxars/react-markdown
 
 - meta of test type is defined in `src/reports_meta/{test_type}/desc.md`
 
+### to run test
+```bash
+$ cd src
+./run.sh
+
+```
+
 ### to generate testcases
 
 `scripts/gen_tests/run.sh`

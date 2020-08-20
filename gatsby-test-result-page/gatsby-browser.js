@@ -1,17 +1,15 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
 import React from "react"
 
-import { GlobalContextProvider } from "~contexts/global"
-
+import { ThemeContextProvider } from "./src/contexts/ThemeContext"
+import { ResultContextProvider } from "./src/contexts/ResultContext"
+import { ConfigContextProvider } from "./src/contexts/ConfigContext"
 
 export const wrapRootElement = ({ element }) => (
-  <GlobalContextProvider>
-    {element}
-  </GlobalContextProvider>
+  <ThemeContextProvider>
+    <ConfigContextProvider>
+      <ResultContextProvider>
+        {element}
+      </ResultContextProvider>
+    </ConfigContextProvider>
+  </ThemeContextProvider>
 )

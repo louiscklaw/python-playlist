@@ -1,0 +1,15 @@
+.navbar-item svg {
+  margin: 0 0.3rem;
+}
+
+section {
+  font-size: small;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center !important;
+}
+
+a

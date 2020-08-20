@@ -34,9 +34,18 @@ def checkIfYamlWithFrontmatter(parse_result):
 def helloCommon():
   print('helloCommon')
 
+# origional
+# def openJsonFile(json_filepath):
+#   f_json_in = open(json_filepath,'r')
+#   return json.load(f_json_in)
+
 def openJsonFile(json_filepath):
-  f_json_in = open(json_filepath,'r')
-  return json.load(f_json_in)
+  if checkFileExist(json_filepath):
+    f_json = open(json_filepath)
+    return json.load(f_json, encoding='utf-8')
+
+  else:
+    raise 'cannot read defined json file {}'.format(json_filepath)
 
 def readJSONFile(filepath):
   f_json = open(filepath,'r')
@@ -57,3 +66,13 @@ def listJsonFileInDirectory(dir_in):
     for file in filter(lambda x: x.find('.json') > -1, files):
       output_json_filelist.append(file)
   return output_json_filelist
+
+def checkFileExist(filepath):
+  return os.path.exists(filepath)
+
+def createFile(filepath):
+  if checkFileExist(filepath):
+    print('file already exist, skipping create file')
+  else:
+    fo = open(filepath,'w')
+    fo.close()

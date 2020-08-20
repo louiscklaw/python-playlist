@@ -1,28 +1,23 @@
 import React from "react"
-
 import { Link, navigate } from "gatsby"
 
-import Navbar from '~components/nav'
+import Layout from "../components/layout"
+import Navbar from '../components/nav'
+// import Cards from '../components/cards
 
-import PreJson from '~components/pre-json'
-import PreUnittest from '~components/pre-unittest'
+import SEO from "../components/seo"
 
-import style from '~scss/style.module.scss'
-import {combineStyle} from '~utils/common'
+import style from '../scss/style.module.scss'
 
-function IndexPage() {
-
+function IndexPage (){
   React.useEffect(()=>{
-    navigate('/unit')
-  },[])
-
-
+    navigate('/overview')
+  })
   return (
-    <>
-      Please enable javascript for page working ...
-    </>
+    <Layout>
+      <SEO title="Index" />
+    </Layout>
   )
 
 }
-
 export default IndexPage
