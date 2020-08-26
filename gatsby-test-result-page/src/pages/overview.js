@@ -19,9 +19,13 @@ import { combineStyles, chunkArray, fillToTheNearestRow } from '../../utils/comm
 import DoughnutTimeSpentCard from "../components/doughnut-timespent-card"
 import DoughnutResultCard from '../components/doughnut-result-card'
 
+import json_fetcher from '../endpoints/json_fetcher'
+
 function OverviewPage(props){
   const {active_style} = React.useContext(ThemeContext)
   const {getResultByTestName} = React.useContext(ResultContext)
+
+  let [show_test_result_list, setShowTestResultList] = React.useState([])
 
   let test_card_name_list = [
     "unit_test",
@@ -34,10 +38,25 @@ function OverviewPage(props){
   ]
 
 
-  let test_results_list = test_card_name_list.map(x => getResultByTestName(x))
-  let number_of_card_per_row = 4
+  React.useEffect(()=>{
+    if (test_card_name_list.length > 0){
+      console.log('test_card_name_list',test_card_name_list)
 
-  let show_test_result_list=chunkArray(fillToTheNearestRow(test_results_list,number_of_card_per_row),number_of_card_per_row)
+
+      json_fetcher.fetchTestsResultJson()
+        .then(r => r.json())
+        .then(r_json=>{
+          // console.log('r_json',r_json)
+          let test_results_list = test_card_name_list.map(x => getResultByTestName(x))
+          let number_of_card_per_row = 4
+
+          setShowTestResultList(chunkArray(fillToTheNearestRow(test_results_list,number_of_card_per_row),number_of_card_per_row))
+        })
+
+
+    }
+  },[test_card_name_list])
+
 
 
 
