@@ -1,6 +1,6 @@
 import React from 'react'
 
-import json_fetcher from '../apis/json_fetcher'
+import json_fetcher from '../endpoints/json_fetcher'
 
 const default_value ={
   hello:'world',
