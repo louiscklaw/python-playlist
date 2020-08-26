@@ -128,7 +128,9 @@ function ResultContextProvider(props){
   let {children} = props
   const [hello, setHello] = React.useState(null)
   const [hello_json, setHelloJson] = React.useState(null)
+
   const [tests_result, setTestsResult] =React.useState(null)
+  const [unittest_result, setUnittestResult] = React.useState(null)
 
   const getResultByTestName = (test_name) => {
     let test_result = tests_result[test_name]
@@ -148,6 +150,10 @@ function ResultContextProvider(props){
       .then(r => r.json())
       .then(r_json => setTestsResult(r_json))
 
+
+    json_fetcher.fetchUnitTestResultJson()
+      .then(r => r.json())
+      .then( r_json=> setUnittestResult(r_json))
   },[])
 
   const fetchTestSuiteResult = (test_suite_name) => {
@@ -160,7 +166,8 @@ function ResultContextProvider(props){
         hello, setHello,
         tests_result,
         hello_json, fetchTestSuiteResult,
-        getResultByTestName
+        getResultByTestName,
+        unittest_result
         }}>
         {children}
       </ResultContext.Provider>
