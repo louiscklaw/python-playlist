@@ -59,8 +59,9 @@ function NavIndex(props){
       <Link to="/unit_test" className={combineStyles([active_style.navbarItem, unit_test_active])}>
         unit_test
       </Link>
-      <a className={active_style.navbarItem} href="test-report-content.html">
-        smoke_test </a>
+      <Link to="/WIP" className={combineStyles([active_style.navbarItem])}>
+        smoke_test
+      </Link>
       <a className={active_style.navbarItem}>
         integration_test
       </a>
