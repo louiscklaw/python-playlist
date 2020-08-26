@@ -35,7 +35,35 @@ function OverviewPage(props){
 
       <PageHeadings {...props} />
       <section className={active_style.section}>
+
+
+
         <div className={active_style.container}>
+          <h2 className={combineStyles([active_style.title, active_style.is4])} style={{textDecoration:"underline"}}>Test results</h2>
+
+          <div className={combineStyles([active_style.columns, active_style.isDesktop])}>
+            <DoughnutResultCards card_configs={[
+              {result_to_show: unit_test, result_name: unit_test.name, result_description: unit_test.description },
+              {result_to_show: integration_test, result_name: integration_test.name, result_description: integration_test.description},
+              {result_to_show: tests_result.acceptance_test, result_name: 'unit test 3', result_description: 'result_description3'},
+              {result_to_show: tests_result.interface_test, result_name: 'unit test 4', result_description: 'result_description4'}
+            ]}/>
+          </div>
+
+          <div className={combineStyles([active_style.columns, active_style.isDesktop])}>
+            <DoughnutResultCards card_configs={[
+              {result_to_show: tests_result.regression_test, result_name: 'unit test 1', result_description: 'result_description1'},
+              {result_to_show: tests_result.sanity_test, result_name: 'unit test 2', result_description: 'result_description2'},
+              {result_to_show: tests_result.smoke_test, result_name: 'unit test 3', result_description: 'result_description3'},
+            ]}/>
+            <EmptyCard test_result_to_show={null} result_name={null}/>
+          </div>
+        </div>
+      </section>
+
+      <section className={active_style.section}>
+        <div className={active_style.container}>
+          <h2 className={combineStyles([active_style.title, active_style.is4])} style={{textDecoration:"underline"}}>Time spent</h2>
 
           <div className={combineStyles([active_style.columns, active_style.isDesktop])}>
             <DoughnutResultCards card_configs={[
@@ -55,7 +83,9 @@ function OverviewPage(props){
             <EmptyCard test_result_to_show={null} result_name={null}/>
           </div>
 
+
         </div>
+
       </section>
     </Layout>
   )
