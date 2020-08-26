@@ -12,7 +12,7 @@
     "passed": {
       "value": 4
     },
-    "run_time": "10",
+    "run_time": "11",
     "test_description": " UNIT TESTING is a level of software testing where individual units/ components of a software are tested."
   },
   "test_suite_2": {
@@ -28,7 +28,7 @@
     "passed": {
       "value": 4
     },
-    "run_time": "10",
+    "run_time": "12",
     "test_description": " UNIT TESTING is a level of software testing where individual units/ components of a software are tested."
   },
   "test_suite_3": {
@@ -44,7 +44,7 @@
     "passed": {
       "value": 4
     },
-    "run_time": "10",
+    "run_time": "13",
     "test_description": " UNIT TESTING is a level of software testing where individual units/ components of a software are tested."
   }
 }
