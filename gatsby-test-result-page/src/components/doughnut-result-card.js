@@ -100,7 +100,13 @@ function DoughnutResultCard(props){
       <div className={active_style.mediaContent}>
         <p className={combineStyles([active_style.title, active_style.is4])}>
           {result_name}
-          <FontAwesomeIcon icon={faPaste} />
+          <FontAwesomeIcon icon={faPaste}
+            style={{
+              height: '0.8em',
+              paddingBottom:'3px',
+              paddingLeft:'3px'
+            }}
+          />
         </p>
       </div>
     </div>

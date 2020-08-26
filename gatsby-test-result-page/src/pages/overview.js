@@ -19,26 +19,22 @@ import { combineStyles, chunkArray, fillToTheNearestRow } from '../../utils/comm
 import DoughnutTimeSpentCard from "../components/doughnut-timespent-card"
 import DoughnutResultCard from '../components/doughnut-result-card'
 
-function fillToTheMultipliesOfRow(array_in, number_per_row){
-  return 'helloworld'
-}
-
 function OverviewPage(props){
   const {active_style} = React.useContext(ThemeContext)
-  const {tests_result, getResultByTestName} = React.useContext(ResultContext)
+  const {getResultByTestName} = React.useContext(ResultContext)
 
-  // let unit_test = tests_result.unit_test
-  let unit_test = getResultByTestName('unit_test')
-  let integration_test = getResultByTestName('integration_test')
-
-
-  let test_results_list = [
-    unit_test,
-    integration_test,
-    integration_test,
-    integration_test,
-    integration_test,
+  let test_card_name_list = [
+    "unit_test",
+    "acceptance_test",
+    "integration_test",
+    "interface_test",
+    "regression_test",
+    "sanity_test",
+    "smoke_test",
   ]
+
+
+  let test_results_list = test_card_name_list.map(x => getResultByTestName(x))
   let number_of_card_per_row = 4
 
   let show_test_result_list=chunkArray(fillToTheNearestRow(test_results_list,number_of_card_per_row),number_of_card_per_row)

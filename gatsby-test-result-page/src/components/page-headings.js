@@ -23,7 +23,12 @@ function PageHeadings(props){
         <div style={{display: 'flex', justifyContent: 'flex-start', flexFlow: 'row'}}>
           <p className={active_style.title}>
             Test progress overview
-            <FontAwesomeIcon icon={faLink} />
+            <FontAwesomeIcon icon={faLink} style={{
+              width: '0.7em',
+              height: '0.7em',
+              paddingBottom:'5px',
+              paddingLeft: '3px'
+            }}/>
 
           </p>
         </div>
