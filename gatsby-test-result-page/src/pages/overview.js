@@ -30,8 +30,10 @@ function OverviewPage(props){
   return(
     <Layout>
       <SEO title="Overview" />
-      <Navbar />
-      <PageHeadings />
+
+      <Navbar active_nav_item="overview" />
+
+      <PageHeadings {...props} />
       <section className={active_style.section}>
         <div className={active_style.container}>
 

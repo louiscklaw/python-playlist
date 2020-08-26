@@ -24,6 +24,20 @@ const combineStyles = (styles) => styles.join(' ')
 function NavIndex(props){
   const {active_style, rotateStyle} = React.useContext(ThemeContext)
 
+  let unit_test_active, overview_active = null
+  const {active_nav_item} = props
+
+      switch(active_nav_item) {
+        case 'unit_test':
+          unit_test_active = active_style.isActive
+          break;
+        case 'overview':
+          overview_active = active_style.isActive
+          break;
+        default:
+          // code block
+      }
+
   return(
     <nav className={active_style.navbar} role="navigation" aria-label="main navigation">
   <div className={active_style.navbarBrand}>
@@ -38,14 +52,15 @@ function NavIndex(props){
   </div>
   <div id="navbarBasicExample" className={active_style.navbarMenu}>
     <div className={active_style.navbarStart}>
-      <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="dashboard.html">
-        Overview
-      </a>
+      <Link to="/overview" className={combineStyles([active_style.navbarItem, overview_active])}>
+        overview
+      </Link>
+
+      <Link to="/unit_test" className={combineStyles([active_style.navbarItem, unit_test_active])}>
+        unit_test
+      </Link>
       <a className={active_style.navbarItem} href="test-report-content.html">
         smoke_test </a>
-      <a className={active_style.navbarItem}>
-        unit_test
-      </a>
       <a className={active_style.navbarItem}>
         integration_test
       </a>

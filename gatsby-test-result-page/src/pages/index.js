@@ -7,8 +7,6 @@ import Navbar from '../components/nav'
 
 import SEO from "../components/seo"
 
-import style from '../scss/style.module.scss'
-
 function IndexPage (){
   React.useEffect(()=>{
     navigate('/overview')
@@ -20,4 +18,5 @@ function IndexPage (){
   )
 
 }
+
 export default IndexPage
