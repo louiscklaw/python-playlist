@@ -23,7 +23,11 @@ function HeadingTags(props){
   return(
     <>
       <div className={combineStyles([active_style.tag, active_style.isLink])}>
-        <FontAwesomeIcon icon={faTags} />
+        <FontAwesomeIcon icon={faTags}
+          style={{
+            paddingRight: '5px'
+          }}
+        />
         Link
       </div>
     </>
