@@ -8,17 +8,18 @@ from math import ceil
 actual_weight=[
 3.04,
 1.45,
-0.1,
-1.15,
-0.05,
-0.22,
-2.8,
-0.57
+0.14,
+0.44,
+0.6,
+0.26,
+0.11,
+0.3,
+0.1
   ]
 len_actual_weight=len(actual_weight)
 range_actual_weights=range(0,len_actual_weight)
 
-comp_items=[3,5,6,7]
+comp_items=[8,7,6,5,4,3,2]
 
 len_comp_item = len(comp_items)
 
