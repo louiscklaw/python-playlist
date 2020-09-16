@@ -1,0 +1,53 @@
+{
+  "reports": {
+    "testsuite": [ {
+      "@errors": "2",
+      "@failures": "0",
+      "@name": "unit_suite1.Test_unit_suite1-20200802173212",
+      "@tests": "2",
+      "@time": "0.000",
+      "testcase": [ {
+        "@classname": "unit_suite1.Test_unit_suite1",
+        "@name": "test_helloworld",
+        "@time": "0.000",
+        "error": {
+          "@message": "test_helloworld() takes 0 positional arguments but 1 was given",
+          "@type": "TypeError",
+          "#text": "TypeError: test_helloworld() takes 0 positional arguments but 1 was given"
+        }
+      }, {
+        "@classname": "unit_suite1.Test_unit_suite1",
+        "@name": "test_no_doc_string",
+        "@time": "0.000",
+        "error": {
+          "@message": "test_no_doc_string() takes 0 positional arguments but 1 was given",
+          "@type": "TypeError",
+          "#text": "TypeError: test_no_doc_string() takes 0 positional arguments but 1 was given"
+        }
+      } ],
+      "system-out": null,
+      "system-err": null
+    }, {
+      "@errors": "1",
+      "@failures": "0",
+      "@name": "unit_suite2.Test_unit_suite2-20200802173212",
+      "@tests": "1",
+      "@time": "0.000",
+      "testcase": {
+        "@classname": "unit_suite2.Test_unit_suite2",
+        "@name": "test_sample_0",
+        "@time": "0.000",
+        "error": {
+          "@message": "shouldn't happen",
+          "@type": "AssertionError",
+          "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/test/unit/unit_suite2.py\", line 33, in test_sample_0\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen"
+        }
+      },
+      "system-out": null,
+      "system-err": null
+    } ],
+    "meta": {
+      "desc": "# helloworld h1\n\n## This is an h2 tag\n\n### This is an h3 tag\n\n#### This is an h4 tag\n\n##### This is an h5 tag\n\n###### This is an h6 tag\n\n\nI think you should use an\n`<addr>` element here instead.\n\nFirst Header | Second Header\n------------ | -------------\nContent from cell 1 | Content from cell 2\nContent in the first column | Content in the second column\n\n- white box test\n- test by functions\n"
+    }
+  }
+}

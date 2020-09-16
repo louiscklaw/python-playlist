@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Bulma!</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="dashboard.html">
+      <a class="navbar-item" href="overview.html">
         <i class="fas fa-bug"></i>
         Simple test report
       </a>
@@ -33,8 +33,8 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
 
-        <a class="navbar-item" href="dashboard.html">
-          <i class="fas fa-tachometer-alt"></i>
+        <a class="navbar-item" href="overview.html">
+
           Overview
         </a>
 
@@ -68,11 +68,13 @@
             More
           </a>
 
+
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="about.html">
-              About
-            </a>
+            <a class="navbar-item" href="chartjs_test.html"> chartjs test </a>
+            <a class="navbar-item" href="roadmap.html"> Roadmap </a>
+            <a class="navbar-item" href="about.html"> About </a>
           </div>
+
         </div>
 
         <div class="navbar-item">
@@ -109,7 +111,7 @@
   <!-- section -->
   <section class="section" style="padding-top: 1rem; padding-bottom: 1rem;">
     <div class="container">
-      <p class="title is-4"> Test progress overview </p>
+      <p class="title is-4"> chartjs test </p>
     </div>
   </section>
   <!-- section -->
@@ -143,7 +145,7 @@
                   UNIT TESTING is a level of software testing where individual units/ components of a software are
                   tested.
                 </p>
-                <table>
+                <table class="table">
                   <thead>
                     <tr>
                       <td>Passed</td>
@@ -308,154 +310,6 @@
 
       <!-- columns -->
 
-
-      <!-- columns -->
-      <div class="columns">
-        <div class="column">
-
-
-          <!-- card -->
-          <div class="card">
-            <div class="card-image">
-              <figure class="is-4by3" style="text-align:center;">
-                <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-regression-test"></canvas>
-                </div>
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-4">Regression test</p>
-                </div>
-              </div>
-
-              <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
-                </p>
-                <table>
-                  <thead>
-                    <tr>
-                      <td>Passed</td>
-                      <td>Failed</td>
-                      <td>In progress</td>
-                      <td>Error</td>
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td>2</td>
-                      <td>13</td>
-                      <td>1</td>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-            </div>
-          </div>
-          <!-- card -->
-
-        </div>
-        <div class="column">
-
-
-          <!-- card -->
-          <div class="card">
-            <div class="card-image">
-              <figure class="is-4by3" style="text-align:center;">
-                <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-sanity-test"></canvas>
-                </div>
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-4">Sanity test</p>
-                </div>
-              </div>
-
-              <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
-                </p>
-                <table>
-                  <thead>
-                    <tr>
-                      <td>Passed</td>
-                      <td>Failed</td>
-                      <td>In progress</td>
-                      <td>Error</td>
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td>2</td>
-                      <td>13</td>
-                      <td>1</td>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-            </div>
-          </div>
-          <!-- card -->
-
-        </div>
-        <div class="column">
-
-
-          <!-- card -->
-          <div class="card">
-            <div class="card-image">
-              <figure class="is-4by3" style="text-align:center;">
-                <div id="canvas-holder" style="width: 90%; margin: auto;">
-                  <canvas id="chart-area-smoke-test"></canvas>
-                </div>
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content">
-                  <p class="title is-4">Smoke test</p>
-                </div>
-              </div>
-
-              <div class="content">
-                <p>
-                  UNIT TESTING is a level of software testing where individual units/ components of a software are
-                  tested.
-                </p>
-                <table>
-                  <thead>
-                    <tr>
-                      <td>Passed</td>
-                      <td>Failed</td>
-                      <td>In progress</td>
-                      <td>Error</td>
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td>2</td>
-                      <td>13</td>
-                      <td>1</td>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-            </div>
-          </div>
-          <!-- card -->
-
-        </div>
-        <div class="column">
-
-        </div>
-      </div>
-
-      <!-- columns -->
-
     </div>
   </section>
   <!-- section  -->
@@ -500,7 +354,7 @@
         aspectRatio: 1.5,
         responsive: true,
         legend: {
-          position: 'top',
+          position: 'right',
         },
         title: {
           display: true,

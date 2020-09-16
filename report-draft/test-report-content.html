@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Bulma!</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="dashboard.html">
+      <a class="navbar-item" href="overview.html">
         Simple test report
       </a>
 
@@ -32,41 +32,36 @@
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
 
-        <a class="navbar-item" href="dashboard.html">
-          <i class="fas fa-bug"></i>
+        <a class="navbar-item" href="overview.html">
           Overview
         </a>
 
-        <a class="navbar-item" href="test-report-content.html">
-          <i class="far fa-calendar-check"></i>
+        <a class="navbar-item is-active" href="test-report-content.html">
           smoke_test </a>
 
         <a class="navbar-item">
-          <i class="far fa-calendar-check"></i>
           unit_test
         </a>
         <a class="navbar-item">
-          <i class="far fa-calendar-check"></i>
           integration_test
         </a>
         <a class="navbar-item">
-          <i class="far fa-calendar-check"></i>
           acceptance_test
         </a>
         <a class="navbar-item">
-          <i class="far fa-calendar-check"></i>
           interface_test
         </a>
         <a class="navbar-item">
-          <i class="far fa-calendar-check"></i>
           regression_test
         </a>
         <a class="navbar-item">
-          <i class="far fa-calendar-check"></i>
           sanity_test
         </a>
 
-        <a class="navbar-item"> Documentation </a>
+        <a class="navbar-item">
+          <i class="fas fa-book"></i>
+          Documentation
+        </a>
 
 
         <div class="navbar-item has-dropdown is-hoverable">
@@ -74,15 +69,18 @@
             More
           </a>
 
+
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="about.html">
-              About
-            </a>
+            <a class="navbar-item" href="time_analysis.html"> time_analysis </a>
+            <a class="navbar-item" href="chartjs_test.html"> chartjs test </a>
+            <a class="navbar-item" href="roadmap.html"> Roadmap </a>
+            <a class="navbar-item" href="about.html"> About </a>
           </div>
+
         </div>
 
         <div class="navbar-item">
-          <div class="select">
+          <div class="select is-small" style="color: #34495e;">
             <select>
               <option>Select version</option>
               <option>options version 1</option>
@@ -102,9 +100,17 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-white" href="https://www.github.com/louiscklaw" target="_blank">
-              <i class="fab fa-github-square fa-2x"></i>
-              <p style="margin: 0 0.3rem">Github source</p>
+            <a class="button is-primary is-inverted is-small" href="https://www.github.com/louiscklaw">
+              <span class="icon">
+                <i class="fas fa-bug"></i>
+              </span>
+              <span>bugs report</span>
+            </a>
+            <a class="button is-primary is-inverted is-small" href="https://www.github.com/louiscklaw">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>github source</span>
             </a>
           </div>
         </div>
@@ -112,14 +118,62 @@
     </div>
   </nav>
 
-  <!-- section -->
-  <section class="section" style="padding-top: 1rem; padding-bottom: 1rem;">
+  <!-- overview text -->
+
+  <section class="section" id="content">
     <div class="container">
-      <p class="title is-5"> Unit test overview </p>
-      <p class=""> unit test description</p>
+      <div class="columns is-desktop">
+        <div class="column is-one-third">
+          <h1 class="title"> Unit test result </h1>
+          <nav class="breadcrumb">
+            <ul>
+              <li>
+                <a href="dashboard.html">overview</a>
+              </li>
+              <li>
+                unit test
+              </li>
+            </ul>
+          </nav>
+          <div class="content">
+            <p> showing the overall test status </p>
+          </div>
+        </div>
+
+        <!-- column -->
+        <div class="column">
+          <div class="level">
+
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Testing passing</p>
+                <p class="title">3,456</p>
+              </div>
+            </div>
+
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Test failing</p>
+                <p class="title">3,456</p>
+              </div>
+            </div>
+
+            <div class="level-item has-text-centered">
+              <div>
+                <p class="heading">Test in-progress / error</p>
+                <p class="title">3,456</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- column -->
+
+      </div>
     </div>
   </section>
-  <!-- section -->
+
+
+  <!-- overview text -->
 
   <!-- section  -->
   <section class="section" style="padding-top: 0.5rem">
@@ -319,6 +373,130 @@
         </div>
         <!-- column -->
 
+
+
+      </div>
+      <!-- columns -->
+
+      <!-- columns -->
+      <div class="columns">
+
+        <!-- column -->
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-area-time_spent"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">total time spent analysis</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>test_suite_1</td>
+                      <td>2 (+2)</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite_2</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite_3</td>
+                      <td>2(+5)</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite_4</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+
+
+        <!-- column -->
+        <div class="column">
+
+          <!-- card -->
+          <div class="card">
+            <div class="card-image">
+              <figure class="is-4by3" style="text-align:center;">
+                <div id="canvas-holder" style="width: 90%; margin: auto;">
+                  <canvas id="chart-0"></canvas>
+                </div>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">test case growth history</p>
+                </div>
+              </div>
+
+              <div class="content">
+                <p> illustrate the total time spent
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>test name</td>
+                      <td>time used (min)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>test_suite1</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite2</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite3</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>test_suite4</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+
+        </div>
+        <!-- column -->
+
+        <div class="column"></div>
+
       </div>
       <!-- columns -->
 
@@ -326,84 +504,254 @@
   </section>
   <!-- section  -->
 
+  <script>
+    const test_name = 'unit_test'
+    Promise.all( [
+        fetch( 'test_result.json' ),
+        fetch( 'past_test_result.json' )
+      ] )
+      .then( values => {
+        Promise.all( [
+            values[ 0 ].json(),
+            values[ 1 ].json()
+          ] )
+          .then( values => {
+            const test_result_json = values[ 0 ]
+            const past_test_result_json = values[ 1 ]
+            const canvas_id_list = [
+              'canvas-test-suite-1',
+              'canvas-test-suite-2',
+              'canvas-test-suite-3',
+              'canvas-test-suite-4',
+            ]
+
+
+            canvas_id_list.map( canvas_id => {
+              const idx = canvas_id_list.indexOf( canvas_id )
+
+              const test_results = test_result_json[ test_name ][ idx ].results
+
+              const past_test_results = past_test_result_json[ test_name ][ idx ].results
+
+              var barChartData = {
+                labels: [ 'past version', 'This version' ],
+                datasets: [ {
+                  label: 'Passed',
+                  backgroundColor: window.chartColors.green,
+                  data: [
+                    past_test_results[ 'passed' ],
+                    test_results[ 'passed' ]
+                  ]
+                }, {
+                  label: 'Failed',
+                  backgroundColor: window.chartColors.red,
+                  data: [
+                    past_test_results[ 'failed' ],
+                    test_results[ 'failed' ],
+                  ]
+                }, {
+                  label: 'Error',
+                  backgroundColor: window.chartColors.yellow,
+                  data: [
+                    past_test_results[ 'error' ],
+                    test_results[ 'error' ],
+                  ]
+                }, {
+                  label: 'In progress',
+                  backgroundColor: window.chartColors.grey,
+                  data: [
+                    past_test_results[ 'in_progress' ],
+                    test_results[ 'in_progress' ],
+                  ]
+                } ]
+              };
+
+              var ctx = document.querySelector( '#' + canvas_id ).getContext( '2d' );
+              window.myBar = new Chart( ctx, {
+                type: 'bar',
+                data: barChartData,
+                options: {
+                  aspectRatio: 1,
+                  title: {
+                    display: true,
+                    text: 'test results'
+                  },
+                  tooltips: {
+                    mode: 'index',
+                    intersect: false
+                  },
+                  responsive: true,
+                  scales: {
+                    xAxes: [ {
+                      stacked: true,
+                    } ],
+                    yAxes: [ {
+                      stacked: true
+                    } ]
+                  }
+                }
+              } );
+
+            } )
 
 
 
-	<script>
-		var barChartData = {
-			labels: ['past version', 'This version'],
-			datasets: [{
-				label: 'Passed',
-				backgroundColor: window.chartColors.green,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				label: 'Failed',
-				backgroundColor: window.chartColors.red,
-				data: [
-					randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				label: 'Error',
-				backgroundColor: window.chartColors.yellow,
-				data: [
-          randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}, {
-				label: 'In progress',
-				backgroundColor: window.chartColors.grey,
-				data: [
-          randomScalingFactor(),
-					randomScalingFactor()
-				]
-			}]
+
+
+
+
+            var color = Chart.helpers.color;
+            var horizontalBarChartData = {
+              labels: [
+                'this_version',
+                'past_version'
+              ],
+              datasets: [ {
+                label: 'test suite 1',
+                backgroundColor: color( window.chartColors.red ).alpha( 0.5 ).rgbString(),
+                borderColor: window.chartColors.red,
+                borderWidth: 1,
+                data: [
+                  4,
+                  3
+                ]
+              }, {
+                label: 'test suite 2',
+                backgroundColor: color( window.chartColors.orange ).alpha( 0.5 ).rgbString(),
+                borderColor: window.chartColors.orange,
+                data: [
+                  3,
+                  2
+                ]
+              }, {
+                label: 'test suite 3',
+                backgroundColor: color( window.chartColors.yellow ).alpha( 0.5 ).rgbString(),
+                borderColor: window.chartColors.yellow,
+                data: [
+                  2,
+                  1
+                ]
+              }, {
+                label: 'test suite 4',
+                backgroundColor: color( window.chartColors.green ).alpha( 0.5 ).rgbString(),
+                borderColor: window.chartColors.green,
+                data: [
+                  1,
+                  0
+                ]
+              } ]
+
+            };
+
+
+
+            var ctx = document.getElementById( 'chart-area-time_spent' ).getContext( '2d' );
+            window.myHorizontalBar = new Chart( ctx, {
+              type: 'horizontalBar',
+              data: horizontalBarChartData,
+              options: {
+                // Elements options apply to all of the options unless overridden in a dataset
+                // In this case, we are setting the border of each horizontal bar to be 2px wide
+                aspectRatio: 1,
+                scales: {
+                  xAxes: [ {
+                    stacked: true
+                  } ],
+                  yAxes: [ {
+                    stacked: true
+                  } ]
+                },
+                elements: {
+                  rectangle: {
+                    borderWidth: 2,
+                  }
+                },
+                responsive: true,
+                legend: {
+                  position: 'bottom',
+                },
+                title: {
+                  display: true,
+                  text: 'Chart.js Horizontal Bar Chart'
+                }
+              }
+            } );
+
+
+
+
+
+
+
+
+
+
+
+          } )
+      } )
+
+
+
+
+
+
+    var barChartData = {
+      labels: [ 'last version', 'this version' ],
+      datasets: [ {
+          label: 'test_suite 1',
+          backgroundColor: window.chartColors.red,
+          data: [ 1, 2 ]
+        }, {
+          label: 'test_suite 2',
+          backgroundColor: window.chartColors.blue,
+          data: [ 1, 2 ]
+        }, {
+          label: 'test_suite 3',
+          backgroundColor: window.chartColors.green,
+          data: [ 1, 2 ]
+        },
+        {
+          label: 'test_suite 4',
+          backgroundColor: window.chartColors.green,
+          data: [ 1, 2 ]
+        },
+
+
+
+      ]
 
     };
-
-		function initBarChart(ele_selector) {
-			var ctx = document.getElementById(ele_selector).getContext('2d');
-			window.myBar = new Chart(ctx, {
-				type: 'bar',
-				data: barChartData,
-				options: {
-          aspectRatio:1,
-					title: {
-						display: true,
-						text: 'Chart.js Bar Chart - Stacked'
-					},
-					tooltips: {
-						mode: 'index',
-						intersect: false
-					},
-					responsive: true,
-					scales: {
-						xAxes: [{
-							stacked: true,
-						}],
-						yAxes: [{
-							stacked: true
-						}]
-					}
-				}
-			});
-		};
-
-    window.onload = () => {
-      initBarChart('canvas-test-suite-1')
-      initBarChart('canvas-test-suite-2')
-      initBarChart('canvas-test-suite-3')
-      initBarChart('canvas-test-suite-4')
-    }
-
-
-
-
-
-	</script>
+    window.onload = function () {
+      var ctx = document.getElementById( 'chart-0' ).getContext( '2d' );
+      window.myBar = new Chart( ctx, {
+        type: 'bar',
+        data: barChartData,
+        options: {
+          aspectRatio: 1,
+          legend: {
+            position: 'right'
+          },
+          title: {
+            display: true,
+            text: 'Chart.js Bar Chart - Stacked'
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false
+          },
+          responsive: true,
+          scales: {
+            xAxes: [ {
+              stacked: true,
+            } ],
+            yAxes: [ {
+              stacked: true
+            } ]
+          }
+        }
+      } );
+    };
+  </script>
 
   <!-- footer -->
   <footer class="footer">
@@ -412,20 +760,19 @@
 
         <p> Simple test report for xxxxx </p>
 
-        <a class="button is-small is-white" href="//www.github.com/louiscklaw" target="_blank">
-          <i class="fab fa-github-square fa-2x"></i>
+        <a class="button is-primary is-inverted is-small" href="//www.github.com/louiscklaw" target="_blank">
+          <i class="fab fa-github-square"></i>
           <span style="padding-left: 0.5rem;">www.github.com/louiscklaw</span>
         </a>
 
 
-        <a class="button is-small is-white" href="//www.facebook.com/louiscklaw" target="_blank">
-          <i class="fab fa-facebook-square fa-2x"></i>
+        <a class="button is-primary is-inverted is-small" href="//www.facebook.com/louiscklaw" target="_blank">
+          <i class="fab fa-facebook-square"></i>
           <span style="padding-left: 0.5rem;">www.facebook.com/louiscklaw</span>
         </a>
 
-
-        <a class="button is-small is-white" href="//www.linkedin.com/in/louiscklaw" target="_blank">
-          <i class="fab fa-linkedin fa-2x"></i>
+        <a class="button is-primary is-inverted is-small" href="//www.linkedin.com/in/louiscklaw" target="_blank">
+          <i class="fab fa-linkedin"></i>
           <span style="padding-left: 0.5rem;">www.linkedin.com/in/louiscklaw</span>
         </a>
 

@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../gatsbyjs-playlist/gatsby-bulmaswatch-tryout"
+		},
+		{
+			"path": "../report-draft"
+		},
+		{
+			"path": "../../gatsbyjs-playlist/conv-to-components"
+		},
+		{
+			"path": "../gatsby-test-result-page-old"
+		},
+		{
+			"path": "../gatsby-test-result-page-old1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "report-draft"
+	}
+}
