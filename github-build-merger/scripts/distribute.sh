@@ -17,5 +17,6 @@ rsync -avzh --progress /home/logic/_workspace/github-playlist/scripts/update_mai
 cd $PROJ_DIR/github-build-merger
   echo 'remember rename github-build-merger-tryout to github-build-merger'
   sed -i -e 's/github-build-merger-tryout/github-build-merger/' $PROJ_DIR/.github/workflows/master_build.yml
+  sed -i -e 's/github-build-merger-tryout/github-build-merger/' $PROJ_DIR/github-build-merger/test.sh
 
 cd -
