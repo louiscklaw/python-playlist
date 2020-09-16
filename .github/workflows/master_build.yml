@@ -33,7 +33,7 @@ jobs:
           export LANG=C.UTF-8
 
           pipenv --help
-          github-build-merger-tryout/test.sh
+          github-build-merger/test.sh
 
   merge:
     needs: [test_merger]
