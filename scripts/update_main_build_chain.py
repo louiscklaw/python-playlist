@@ -102,7 +102,7 @@ def main():
         # pass
 
     merger_yml_contents = [getYmlFile(GITHUB_BUILD_MERGER_TRYOUT_FILEPATH)]
-    merger_yml_contents1 = update_merger_needs(merger_yml_contents,subjob_needs_list)
+    merger_yml_contents1 = update_merger_needs(merger_yml_contents,sorted(subjob_needs_list))
     formatted_merger_contents = map(lambda x: formatSubJobYmlFile(x), merger_yml_contents1)
     # formatted_merger_contents='1123'
 
