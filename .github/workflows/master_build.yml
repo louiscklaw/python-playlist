@@ -21,9 +21,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         run: |
-        cd helloworld-tryout
-          pipenv sync
-          pipenv run python3 ./main.py
+          cd helloworld-tryout
+            pipenv sync
+            pipenv run python3 ./main.py
 
 
 
