@@ -6,8 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-unittest-xml-reporting = "*"
-xmltodict = "*"
+python-frontmatter = "*"
 
 [requires]
 python_version = "3.6"

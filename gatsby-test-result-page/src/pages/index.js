@@ -1,17 +1,22 @@
 import React from "react"
-import {Link} from 'gatsby'
+import { Link, navigate } from "gatsby"
 
-function IndexPage(props){
+import Layout from "../components/layout"
+import Navbar from '../components/nav'
+// import Cards from '../components/cards
+
+import SEO from "../components/seo"
+
+function IndexPage (){
+  React.useEffect(()=>{
+    navigate('/overview')
+  })
   return (
-    <div>
-      <h1>Sourcing content from YAML</h1>
-      <ul>
-        <li>
-          <Link to="/json-test-result">json-test-result</Link>
-        </li>
-      </ul>
-    </div>
+    <Layout>
+      <SEO title="Index" />
+    </Layout>
   )
+
 }
 
 export default IndexPage

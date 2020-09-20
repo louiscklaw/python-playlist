@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="utils.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/octoshrimpy/bulma-o-steps/master/bulma-steps.css">
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="overview.html">
+        <i class="fas fa-bug"></i>
+        Simple test report
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+
+        <a class="navbar-item" href="overview.html">
+
+          Overview
+        </a>
+
+        <a class="navbar-item" href="test-report-content.html">
+          smoke_test </a>
+
+        <a class="navbar-item">
+          unit_test
+        </a>
+        <a class="navbar-item">
+          integration_test
+        </a>
+        <a class="navbar-item">
+          acceptance_test
+        </a>
+        <a class="navbar-item">
+          interface_test
+        </a>
+        <a class="navbar-item">
+          regression_test
+        </a>
+        <a class="navbar-item">
+          sanity_test
+        </a>
+
+        <a class="navbar-item"> Documentation </a>
+
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="roadmap.html"> Roadmap </a>
+            <a class="navbar-item" href="about.html"> About </a>
+          </div>
+        </div>
+
+        <div class="navbar-item">
+          <div class="select">
+            <select>
+              <option>Select version</option>
+              <option>options version 1</option>
+              <option>options version 2</option>
+              <option>options version 3</option>
+              <option>options version 4</option>
+              <option>options version 5</option>
+              <option>options version 6</option>
+              <option>options version 7</option>
+              <option>options version 8</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-white" href="https://www.github.com/louiscklaw" target="_blank">
+              <i class="fab fa-github-square fa-2x"></i>
+              <p style="margin: 0 0.3rem">Github source</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- section -->
+  <section class="section" style="padding-top: 1rem; padding-bottom: 1rem;">
+    <div class="container">
+      <p class="title is-4"> Roadmap for trunk </p>
+
+      <!-- bulma step -->
+      <div>
+        <ul class="steps has-content-centered">
+          <li class="steps-segment">
+            <span class="steps-marker"></span>
+            <div class="steps-content">
+              <p class="is-size-6">Step 1</p>
+              <p class="is-size-7">This is the first step, which means you start here.</p>
+            </div>
+          </li>
+          <li class="steps-segment">
+            <span class="steps-marker"></span>
+            <div class="steps-content">
+              <p class="is-size-6">Step 2</p>
+              <p class="is-size-7">This is the second step. Once you complete the first step, you will end up here.</p>
+            </div>
+          </li>
+          <li class="steps-segment is-active">
+            <span class="steps-marker"></span>
+            <div class="steps-content">
+              <p class="is-size-6">Step 3</p>
+              <p class="is-size-7">This is the third step. This is halfway between the start and the end.</p>
+            </div>
+          </li>
+          <li class="steps-segment">
+            <span class="steps-marker"></span>
+            <div class="steps-content">
+              <p class="is-size-6">Step 4</p>
+              <p class="is-size-7">The fourth step. Nearly there!</p>
+            </div>
+          </li>
+          <li class="steps-segment">
+            <span class="steps-marker"></span>
+            <div class="steps-content">
+              <p class="is-size-6">Step 5</p>
+              <p class="is-size-7">And finally the last step. You have successfully completed all 5 steps.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- bulma step -->
+
+    </div>
+
+  </section>
+  <!-- section -->
+
+  <!-- section  -->
+  <section class="section" style="padding-top: 0.5rem">
+    <div class="container">
+
+
+    </div>
+  </section>
+  <!-- section  -->
+
+
+
+
+  <script>
+    var randomScalingFactor = function () {
+      return Math.round( Math.random() * 100 );
+    };
+
+    var config = {
+      type: 'doughnut',
+      data: {
+        datasets: [ {
+          data: [
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+          ],
+          backgroundColor: [
+            window.chartColors.red,
+            window.chartColors.orange,
+            window.chartColors.yellow,
+            window.chartColors.green,
+            window.chartColors.blue,
+          ],
+          label: 'Dataset 1'
+        } ],
+        labels: [
+          'Failed',
+          'In Progress',
+          'Error',
+          'Passed',
+          'Blue'
+        ]
+      },
+      options: {
+        aspectRatio: 1.5,
+        responsive: true,
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'unittest chart'
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        }
+      }
+    };
+
+    window.onload = function () {
+
+      // chart-area-unit-test
+      var ctx_unittest = document.getElementById( 'chart-area-unit-test' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx_unittest, config );
+
+      // chart-area-integration-test
+      var ctx_integrationtest = document.getElementById( 'chart-area-integration-test' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx_integrationtest, config );
+
+      // chart-area-acceptance-test
+      var ctx_integrationtest = document.getElementById( 'chart-area-acceptance-test' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx_integrationtest, config );
+
+      // chart-area-interface-test
+      var ctx_integrationtest = document.getElementById( 'chart-area-interface-test' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx_integrationtest, config );
+
+      // chart-area-regression-test
+      var ctx_integrationtest = document.getElementById( 'chart-area-regression-test' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx_integrationtest, config );
+
+      // chart-area-sanity-test
+      var ctx_integrationtest = document.getElementById( 'chart-area-sanity-test' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx_integrationtest, config );
+
+      // chart-area-smoke-test
+      var ctx_integrationtest = document.getElementById( 'chart-area-smoke-test' ).getContext( '2d' );
+      window.myDoughnut = new Chart( ctx_integrationtest, config );
+
+    };
+  </script>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <div class="container">
+
+        <p> Simple test report for xxxxx </p>
+
+        <a class="button is-primary is-inverted is-small" href="//www.github.com/louiscklaw" target="_blank">
+          <i class="fab fa-github-square"></i>
+          <span style="padding-left: 0.5rem;">www.github.com/louiscklaw</span>
+        </a>
+
+
+        <a class="button is-primary is-inverted is-small" href="//www.facebook.com/louiscklaw" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+          <span style="padding-left: 0.5rem;">www.facebook.com/louiscklaw</span>
+        </a>
+
+        <a class="button is-primary is-inverted is-small" href="//www.linkedin.com/in/louiscklaw" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span style="padding-left: 0.5rem;">www.linkedin.com/in/louiscklaw</span>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+</body>
+
+</html>

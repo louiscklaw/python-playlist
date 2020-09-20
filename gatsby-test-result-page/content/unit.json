@@ -1,0 +1,84 @@
+{
+  "reports": {
+    "meta": "---\nTitle: basic interface test\nExplain: this is basic interface test explain\n---\n\n# unittest\n## h2\n### h3\n\nhelloworld paragraph\n\n1. hello1\n1. hello2\n1. hello3",
+    "testsuite": [
+      {
+        "@errors": "0",
+        "@failures": "0",
+        "@name": "unit_suite1.Test_unit_suite1-20200803194512",
+        "@tests": "2",
+        "@time": "0.000",
+        "doc_string": "helloworld paragraph\n1. hello1 1. hello2 1. hello3",
+        "explain": "this is basic interface test explain",
+        "system-err": null,
+        "system-out": "hellworld\nno_doc_string",
+        "testcase": [
+          {
+            "@classname": "unit_suite1.Test_unit_suite1",
+            "@name": "test_helloworld",
+            "@time": "0.000",
+            "doc_string": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "title": "test_helloworld"
+          },
+          {
+            "@classname": "unit_suite1.Test_unit_suite1",
+            "@name": "test_no_doc_string",
+            "@time": "0.000",
+            "doc_string": ""
+          }
+        ],
+        "title": "basic interface test"
+      },
+      {
+        "@errors": "1",
+        "@failures": "0",
+        "@name": "unit_suite3.Test_unit_suite3-20200803194512",
+        "@tests": "2",
+        "@time": "0.000",
+        "doc_string": "\n  ### Lang test\n\n  test the lang list\n  ",
+        "system-err": null,
+        "system-out": "hellworld\nno_doc_string",
+        "testcase": [
+          {
+            "@classname": "unit_suite3.Test_unit_suite3",
+            "@name": "test_sample_1",
+            "@time": "0.000",
+            "doc_string": " passed template "
+          },
+          {
+            "@classname": "unit_suite3.Test_unit_suite3",
+            "@name": "test_sample_0",
+            "@time": "0.000",
+            "doc_string": " failed template ",
+            "error": {
+              "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite3.py\", line 13, in test_sample_0\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+              "@message": "shouldn't happen",
+              "@type": "AssertionError"
+            }
+          }
+        ]
+      },
+      {
+        "@errors": "1",
+        "@failures": "0",
+        "@name": "unit_suite2.Test_unit_suite2-20200803194512",
+        "@tests": "1",
+        "@time": "0.000",
+        "doc_string": "\n  ### Nav test\n\n  test the nav bar\n  ",
+        "system-err": null,
+        "system-out": "hellworld\nno_doc_string",
+        "testcase": {
+          "@classname": "unit_suite2.Test_unit_suite2",
+          "@name": "test_sample_0",
+          "@time": "0.000",
+          "doc_string": " failed template ",
+          "error": {
+            "#text": "Traceback (most recent call last):\n  File \"/home/logic/_workspace/python-playlist/unittest-json-reporting-tryout/src/test/unit/unit_suite2.py\", line 13, in test_sample_0\n    self.fail(\"shouldn't happen\")\nAssertionError: shouldn't happen",
+            "@message": "shouldn't happen",
+            "@type": "AssertionError"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+/*! bulmaswatch v0.8.1 | MIT License */
+@import "variables";
+@import "bulma/bulma.sass";
+@import "overrides";
+
+.card td {
+  text-align: center !important;
+}
+
+.main .card{
+  font-size: 0.8em;
+}
+
+.main {
+  font-family: $family-sans-serif;
+}
+
+.navbar {
+  border-radius: unset
+}
