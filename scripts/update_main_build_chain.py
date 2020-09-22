@@ -19,7 +19,9 @@ else:
 MASTER_GITHUB_ACTIONS_FILEPATH='{}/.github/workflows/master_build.yml'.format(PROJ_HOME)
 
 MASTER_GITHUB_ACTIONS_TEMPLATE='''name: master_build
-on: [push]
+on:
+  push:
+  pull_request:
 
 jobs:
 
@@ -29,13 +31,25 @@ jobs:
 '''
 
 def listYmlFiles(path):
+    print('scanning yml files in *tryout directories...')
+
     output = []
+    tryout_dirs=[]
     for root, dirs, files in os.walk('.'):
       tryout_dirs = filter(lambda x: x.find('tryout') > 0, dirs)
+
       for tryout_dir in tryout_dirs:
         build_yml = '{}/{}/build.yml'.format(PROJ_HOME, tryout_dir)
         if (os.path.exists(build_yml)):
           output.append(build_yml)
+
+    if output==[]:
+      print()
+      print('-'*80)
+      print('ERROR: no build.yml found, check if the build.yml is inside *tryout directories')
+      print('-'*80)
+      print()
+
     return output
 
 def getYmlFile(filepath):
@@ -120,7 +134,10 @@ def main():
 
 
 def updateMe():
-  shutil.copyfile('/home/logic/_workspace/github-playlist/scripts/update_main_build_chain.py','scripts/update_main_build_chain.py')
+  shutil.copyfile(
+    '/home/logic/_workspace/github-playlist/scripts/update_main_build_chain.py',
+    'scripts/update_main_build_chain.py'
+    )
 
 
 if __name__ == '__main__':
