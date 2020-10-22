@@ -1,0 +1,5 @@
+# Importing data using pandas
+
+import pandas as pd
+
+data = pd.read_csv('c:/path_to_data/file.csv')
