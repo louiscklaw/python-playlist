@@ -6,24 +6,21 @@ jobs:
   # 
   # /home/logic/_workspace/python-playlist/helloworld-tryout/build.yml
   # 
-  
-  #
-  # /home/logic/_workspace/python-playlist/github-build-merger/subjob.yml
-  #
   helloworld-tryout:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
   
-      - run: |
-        cd helloworld-tryout
-          pipenv sync
-          pipenv run python3 ./main.py
+      - name: build
+        env: # Or as an environment variable
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
   
-      env: # Or as an environment variable
-        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        run: |
+          cd helloworld-tryout
+            pipenv sync
+            pipenv run python3 ./main.py
   
   # 
   # /home/logic/_workspace/python-playlist/pandas-tryout/build.yml
@@ -33,15 +30,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
   
-      - run: |
-        cd pandas-tryout
-          pipenv sync
-          pipenv run python3 ./test1.py
+      - name: build
+        run: |
+          cd pandas-tryout
+            pipenv sync
+            pipenv run python3 ./test1.py
   
-      env: # Or as an environment variable
-        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        env: # Or as an environment variable
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
   
   
 

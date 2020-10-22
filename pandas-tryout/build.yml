@@ -3,12 +3,13 @@ pandas-tryout:
   steps:
     - uses: actions/checkout@v2
 
-    - run: |
-      cd pandas-tryout
-        pipenv sync
-        pipenv run python3 ./test1.py
+    - name: build
+      run: |
+        cd pandas-tryout
+          pipenv sync
+          pipenv run python3 ./test1.py
 
-    env: # Or as an environment variable
-      SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+      env: # Or as an environment variable
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
