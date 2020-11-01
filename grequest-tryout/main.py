@@ -12,20 +12,14 @@ urls = [
     'http://www.example.com',
 ]
 
-urls=urls*500
+urls=urls*3
 
 from datetime import datetime
 rs = (grequests.get(u) for u in urls)
 
-print(datetime.now())
-for u in urls:
-  requests.get(u)
-print(datetime.now())
-print('check point 2 done')
+results = grequests.map(rs)
+for r in results:
+  print(r.text)
 
-print(datetime.now())
-grequests.map(rs)
-print(datetime.now())
-print('check point 1 done')
 
 print('done')
