@@ -1,4 +1,4 @@
-helloworld-tryout:
+grequest-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
@@ -21,6 +21,6 @@ helloworld-tryout:
         export LC_ALL=C.UTF-8
         export LANG=C.UTF-8
 
-        cd helloworld-tryout
+        cd grequest-tryout
           pipenv sync
           pipenv run python3 ./main.py

@@ -6,7 +6,7 @@ jobs:
   # 
   # /home/logic/_workspace/python-playlist/grequest-tryout/build.yml
   # 
-  helloworld-tryout:
+  grequest-tryout:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,7 +29,7 @@ jobs:
           export LC_ALL=C.UTF-8
           export LANG=C.UTF-8
   
-          cd helloworld-tryout
+          cd grequest-tryout
             pipenv sync
             pipenv run python3 ./main.py
   
@@ -157,7 +157,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [helloworld-tryout, helloworld-tryout, pandas-tryout, sentry-helloworld-tryout, test_merger]
+    needs: [grequest-tryout, helloworld-tryout, pandas-tryout, sentry-helloworld-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
