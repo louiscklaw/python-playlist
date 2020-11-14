@@ -1,5 +1,6 @@
 name: master_build
-on: [push]
+on:
+  push:
 
 jobs:
 
@@ -121,7 +122,7 @@ jobs:
   
           pushd pycharm-tryout
             pipenv sync --dev
-            pipenv run pytest -p no:cacheprovider -q test/main.py
+            pipenv run pytest -p no:cacheprovider -q tests/main.py
           popd
   
   # 

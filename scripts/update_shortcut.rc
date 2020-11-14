@@ -71,14 +71,8 @@ with open('/tmp/.env','w') as fo:
 
 END
 
-<<<<<<< HEAD
-  cp /tmp/.env ./.env
-
-  cd $OWD
-=======
   cp /tmp/.env ../.env
 
->>>>>>> origin/develop
 }
 
 new_from(){
