@@ -1,4 +1,4 @@
-pycharm-tryout:
+pycharm-helloworld-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
@@ -20,7 +20,7 @@ pycharm-tryout:
         export LC_ALL=C.UTF-8
         export LANG=C.UTF-8
 
-        pushd pycharm-tryout
+        pushd pycharm-helloworld-tryout
           pipenv sync --dev
           pipenv run pytest -p no:cacheprovider -q tests/main.py
         popd

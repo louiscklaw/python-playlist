@@ -96,9 +96,9 @@ jobs:
             pipenv run python3 test1.py
   
   # 
-  # /home/logic/_workspace/python-playlist/pycharm-tryout/build.yml
+  # /home/logic/_workspace/python-playlist/pycharm-helloworld-tryout/build.yml
   # 
-  pycharm-tryout:
+  pycharm-helloworld-tryout:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -120,7 +120,7 @@ jobs:
           export LC_ALL=C.UTF-8
           export LANG=C.UTF-8
   
-          pushd pycharm-tryout
+          pushd pycharm-helloworld-tryout
             pipenv sync --dev
             pipenv run pytest -p no:cacheprovider -q tests/main.py
           popd
@@ -188,7 +188,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [grequest-tryout, helloworld-tryout, pandas-tryout, pycharm-tryout, sentry-helloworld-tryout, test_merger]
+    needs: [grequest-tryout, helloworld-tryout, pandas-tryout, pycharm-helloworld-tryout, sentry-helloworld-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
