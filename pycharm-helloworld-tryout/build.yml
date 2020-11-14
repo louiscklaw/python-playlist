@@ -22,5 +22,6 @@ pycharm-helloworld-tryout:
 
         pushd pycharm-helloworld-tryout
           pipenv sync --dev
+          pipenv run pytest --help
           pipenv run pytest -p no:cacheprovider -q tests/main.py
         popd
