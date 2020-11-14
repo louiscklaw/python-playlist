@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pycharm-tryout.iml" filepath="$PROJECT_DIR$/.idea/pycharm-tryout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pycharm-helloworld-tryout.iml" filepath="$PROJECT_DIR$/.idea/pycharm-helloworld-tryout.iml" />
     </modules>
   </component>
 </project>
