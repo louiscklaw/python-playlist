@@ -90,7 +90,7 @@ jobs:
           export LC_ALL=C.UTF-8
           export LANG=C.UTF-8
   
-          cd helloworld-tryout
+          cd pandas-tryout
             pipenv sync
             pipenv run python3 test1.py
   
