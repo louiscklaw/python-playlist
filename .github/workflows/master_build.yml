@@ -171,10 +171,9 @@ jobs:
           export LC_ALL=C.UTF-8
           export LANG=C.UTF-8
   
-          pushd pycharm-helloworld-tryout
-            pipenv sync --dev
-            pipenv run pytest -q tests/main.py
-          popd
+          sudo pip install coverage
+          sudo pip install pytest
+          sudo pip install coveralls
   
           coverage erase
           coverage run --source=. -m pytest pycharm-helloworld-tryout/tests/main.py
