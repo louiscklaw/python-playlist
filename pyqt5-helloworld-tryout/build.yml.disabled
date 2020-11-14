@@ -1,4 +1,4 @@
-helloworld-tryout:
+pyqt5-helloworld-tryout:
   runs-on: ubuntu-20.04
   steps:
     - uses: actions/checkout@v2
@@ -21,6 +21,6 @@ helloworld-tryout:
         export LC_ALL=C.UTF-8
         export LANG=C.UTF-8
 
-        cd helloworld-tryout
+        cd pyqt5-helloworld-tryout
           pipenv sync
           pipenv run python3 src/main.py
