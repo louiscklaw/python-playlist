@@ -7,6 +7,6 @@ verify_ssl = true
 
 [packages]
 tables = "*"
-
-[requires]
-python_version = "3.6"
+pandas = "*"
+openpyxl = "*"
+xlrd = "*"

@@ -92,7 +92,7 @@ jobs:
   
           cd helloworld-tryout
             pipenv sync
-            pipenv run python3 ./main.py
+            pipenv run python3 test1.py
   
   # 
   # /home/logic/_workspace/python-playlist/sentry-helloworld-tryout/build.yml
