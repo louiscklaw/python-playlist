@@ -56,7 +56,7 @@ jobs:
   # /home/logic/_workspace/python-playlist/grequest-tryout/build.yml
   # 
   grequest-tryout:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
   
@@ -86,7 +86,7 @@ jobs:
   # /home/logic/_workspace/python-playlist/helloworld-tryout/build.yml
   # 
   helloworld-tryout:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
   
@@ -116,7 +116,7 @@ jobs:
   # /home/logic/_workspace/python-playlist/pandas-tryout/build.yml
   # 
   pandas-tryout:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
   
@@ -178,7 +178,7 @@ jobs:
   # /home/logic/_workspace/python-playlist/sentry-helloworld-tryout/build.yml
   # 
   sentry-helloworld-tryout:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
   
@@ -210,7 +210,7 @@ jobs:
   # /home/logic/_workspace/python-playlist/github-build-merger/subjob.yml
   # 
   test_merger:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -238,7 +238,7 @@ jobs:
   
   merge:
     needs: [graphviz-tryout, grequest-tryout, helloworld-tryout, pandas-tryout, pycharm-helloworld-tryout, sentry-helloworld-tryout, test_merger]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: checkout
         uses: actions/checkout@v2
