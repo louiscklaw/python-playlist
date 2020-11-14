@@ -61,7 +61,7 @@ jobs:
   
           cd helloworld-tryout
             pipenv sync
-            pipenv run python3 ./main.py
+            pipenv run python3 src/main.py
   
   # 
   # /home/logic/_workspace/python-playlist/pandas-tryout/build.yml
