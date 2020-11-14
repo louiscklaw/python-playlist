@@ -19,7 +19,8 @@ else:
 MASTER_GITHUB_ACTIONS_FILEPATH='{}/.github/workflows/master_build.yml'.format(PROJ_HOME)
 
 MASTER_GITHUB_ACTIONS_TEMPLATE='''name: master_build
-on: [push]
+on:
+  push:
 
 jobs:
 
