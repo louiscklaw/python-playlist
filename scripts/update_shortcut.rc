@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+
+
 helloearth(){
-  echo scripts/update_shortcut.rc
+  echo /home/logic/_workspace/preactjs-playlist/scripts/update_shortcut.rc
 }
 
-update_shortcut(){
+update_tryout_shortcut(){
   TMP_DIR=$(mktemp -d)
   PY_CONTENT=$(cat scripts/update_shortcut.py)
 
@@ -13,6 +15,23 @@ update_shortcut(){
   python3 scripts/update_shortcut.py $TMP_DIR/.env
 
   rsync -avzh $TMP_DIR/.env ./.env
+
+}
+
+update_scripts(){
+  SCRIPT_FILE=$(realpath $0)
+  PROJ_HOME=$(dirname $SCRIPT_FILE)
+  MASTER_GITHUB_PROJ_HOME='/home/logic/_workspace/github-playlist'
+
+  rsync -avzh $MASTER_GITHUB_PROJ_HOME/scripts/update_shortcut.py $PROJ_HOME/scripts
+
+  rsync -avzh $MASTER_GITHUB_PROJ_HOME/scripts/update_shortcut.rc $PROJ_HOME/scripts
+
+  rsync -avzh $PROJ_HOME/scripts/update_shortcut.py $MASTER_GITHUB_PROJ_HOME/scripts
+
+  rsync -avzh $PROJ_HOME/scripts/update_shortcut.py $MASTER_GITHUB_PROJ_HOME/scripts
+
+  cd && cd -
 
 }
 
