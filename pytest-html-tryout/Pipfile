@@ -6,6 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-jupyterlab = "*"
-yfinance = "*"
-plotly = "*"
+fabric3 = "*"
+pytest = "*"
+pytest-html = "*"

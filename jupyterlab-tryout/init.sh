@@ -2,8 +2,17 @@
 
 set -ex
 
-pipenv install jupyterlab
-pipenv run jupyter labextension install jupyterlab-plotly@4.12.0
-pipenv run jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.12.0
+pipenv --rm
 
-pipenv run jupyter lab
+pipenv install jupyterlab
+pipenv install plotly
+pipenv run jupyter labextension install jupyterlab-plotly@4.12.0
+pipenv run jupyter labextension install @jupyter-widgets/jupyterlab-manager
+pipenv run jupyter labextension install plotlywidget@4.12.0
+
+pipenv install yfinance
+
+pipenv shell
+python -m ipykernel install --user --name=$(basename $VIRTUAL_ENV)
+
+jupyter lab
