@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os,sys
+import pytest
 
 def func(x):
   return x + 1

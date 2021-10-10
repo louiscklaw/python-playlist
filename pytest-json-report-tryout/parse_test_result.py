@@ -2,7 +2,9 @@ import os,sys
 from pprint import pprint
 import json
 
-in_json = ''.join(open('./.report.json','r').readlines())
+REPORT_JSON_FILE='./.report.json'
+
+in_json = ''.join(open(REPORT_JSON_FILE,'r').readlines())
 result_json = json.loads(in_json)
 
 SETUP_LBL='setup'
