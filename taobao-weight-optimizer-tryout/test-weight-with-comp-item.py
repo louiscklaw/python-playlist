@@ -6,21 +6,34 @@ from functools import reduce
 from math import ceil
 
 actual_weight=[
-3.04,
-1.45,
-0.14,
-0.44,
-0.6,
-0.26,
-0.11,
-0.3,
-0.1
+0.070,
+0.080,
+0.090,
+0.090,
+0.120,
+0.130,
+0.150,
+0.190,
+0.240,
+0.240,
+0.300,
+0.310,
+0.360,
+0.410,
+0.460,
+0.470,
+0.600,
+0.770,
+1.000,
+1.200,
+1.380,
+1.960,
   ]
 
 len_actual_weight=len(actual_weight)
 range_actual_weights=range(0,len_actual_weight)
 
-comp_items=[8,7,6,5,4,3,2]
+comp_items=[0]
 
 len_comp_item = len(comp_items)
 
@@ -137,7 +150,17 @@ def printWithoutCompItems(list_in):
 def main():
 
   all_combination=[]
+
+  print('finding solution...')
+  total_combinations = 1
   for i in items_weight_range:
+    total_combinations = total_combinations * i
+
+  total_combinations+=1
+  print(f'total combination: {total_combinations}')
+
+  for i in items_weight_range:
+    print(f'finding the {i} iteration...')
     all_combination = all_combination+showCombine(i)
 
   # pprint(showCombine(2))

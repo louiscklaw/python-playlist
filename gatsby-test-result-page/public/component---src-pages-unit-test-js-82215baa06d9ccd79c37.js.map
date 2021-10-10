@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/unit_test.js"],"names":["TestPage","props"],"mappings":"4FAAA,gCAUeA,UARf,SAAkBC,GAChB,OACE","file":"component---src-pages-unit-test-js-82215baa06d9ccd79c37.js","sourcesContent":["import React from 'react'\n\nfunction TestPage(props){\n  return(\n    <>\n      test page\n    </>\n  )\n}\n\nexport default TestPage"],"sourceRoot":""}

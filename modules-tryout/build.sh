@@ -2,4 +2,4 @@
 
 set -ex
 
-jupyter notebook
+python3 ./main.py

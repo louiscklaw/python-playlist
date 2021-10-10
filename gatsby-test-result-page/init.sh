@@ -2,6 +2,4 @@
 
 yarn
 
-yarn clean
-
-yarn build
+yarn start

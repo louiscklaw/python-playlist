@@ -6,15 +6,28 @@ from functools import reduce
 from math import ceil
 
 actual_weight=[
-3.04,
-1.45,
-0.14,
-0.44,
-0.6,
-0.26,
-0.11,
-0.3,
-0.1
+0.120,
+0.360,
+1.200,
+0.310,
+0.240,
+0.770,
+1.960,
+0.190,
+0.090,
+1.000,
+0.090,
+0.470,
+0.130,
+1.380,
+0.410,
+0.070,
+0.240,
+0.460,
+0.600,
+0.080,
+0.300,
+0.150,
   ]
 len_actual_weight=len(actual_weight)
 range_actual_weights=range(0,len_actual_weight)

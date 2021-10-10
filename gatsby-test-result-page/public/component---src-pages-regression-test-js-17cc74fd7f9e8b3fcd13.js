@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{Nb7z:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),r=t.n(a);e.default=function(n){return r.a.createElement(r.a.Fragment,null,"test page")}}}]);
-//# sourceMappingURL=component---src-pages-regression-test-js-17cc74fd7f9e8b3fcd13.js.map

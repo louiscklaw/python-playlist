@@ -32,8 +32,8 @@ jobs:
 def listYmlFiles(path):
     output = []
     for root, dirs, files in os.walk('.'):
-      tryout_dirs = filter(lambda x: x.find('tryout') > 0, dirs)
-      for tryout_dir in tryout_dirs:
+      tryout_dirs = filter(lambda x: re.match('.*tryout$',x) != None , dirs)
+      for tryout_dir in set(tryout_dirs):
         build_yml = '{}/{}/build.yml'.format(PROJ_HOME, tryout_dir)
         if (os.path.exists(build_yml)):
           output.append(build_yml)

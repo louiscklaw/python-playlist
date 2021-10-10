@@ -7,4 +7,6 @@ verify_ssl = true
 
 [packages]
 fabric3 = "*"
-grequests = "*"
+
+[requires]
+python_version = "3"
