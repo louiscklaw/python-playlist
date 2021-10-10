@@ -2,4 +2,4 @@
 
 set -ex
 
-pipenv run pytest
+pipenv run pytest --maxfail=999
