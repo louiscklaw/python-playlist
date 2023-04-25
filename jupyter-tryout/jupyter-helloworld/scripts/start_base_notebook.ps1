@@ -1,5 +1,5 @@
 docker run -it `
-  -v ${PWD}:/app `
+  -v ${PWD}/base-notebook:/app `
   -w /app `
   -p 8888:8888 `
   --rm `
