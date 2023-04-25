@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+notebook = "*"
+pandas = "*"
+quandl = "*"
+seaborn = "*"
+sklearn = "*"
+scikit-learn = "*"
+pydot = "*"
+bokeh = "*"
+jupyter-bokeh = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
