@@ -5,7 +5,7 @@ set -ex
 python -m pip install pipenv
 
 pipenv install jupyter
-pipenv install jupyter notebook
+pipenv install jupyter-notebook
 
 # pipenv install pandas
 # pipenv install quandl

@@ -3,9 +3,15 @@
 ```bash
 ./start_docker.sh
 
-// inside docker
+# inside docker
 
-./dev.sh
+./init.sh
+
+pipenv shell
+
+cd base-notebook
+
+  ./dev.sh
 ```
 
 - jupyter/base-notebook
