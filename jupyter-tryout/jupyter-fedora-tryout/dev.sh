@@ -2,7 +2,19 @@
 
 set -ex
 
-pip install jupyter
+# pip install playwright &
+# pip install nest_asyncio &
+# pip install jupyter &
+
+# wait
+
+# playwright install-deps
+# playwright install
+
+# pip install python-dotenv
+
+# wait 
+
 
 jupyter notebook \
   --allow-root \
