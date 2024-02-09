@@ -2,8 +2,7 @@
 
 set -ex
 
-# docker build . -t jupyter_temp
-
+docker build . -t jupyter_fedora_tryout
 
 docker run -it \
   -v $PWD:/app \
@@ -16,5 +15,5 @@ docker run -it \
   -p 3000:3000 \
   -p 8888:8888 \
   --rm \
-  jupyter_temp \
+  jupyter_fedora_tryout \
   bash
