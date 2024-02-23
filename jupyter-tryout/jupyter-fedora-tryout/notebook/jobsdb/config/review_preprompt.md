@@ -6,3 +6,5 @@
 - Interviewers write down questions after reviewing the application letter.
 - Then share it with the group.
 - reply in markdown format.
+
+Reply "OK" when you understand.
