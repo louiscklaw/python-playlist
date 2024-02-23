@@ -1,0 +1,1 @@
+Please provide the content or details you would like to include in the email draft.---I'm sorry, but it seems there is a misunderstanding. Could you please clarify or provide more context for the task you would like me to do?
