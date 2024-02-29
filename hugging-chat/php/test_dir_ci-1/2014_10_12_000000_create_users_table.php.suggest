@@ -1,0 +1,74 @@
+return new class extends Migration {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        // Create users table
+        Schema::create('users', function (Blueprint $table) {
+            // Define id as the auto-incrementing primary key column
+            $table->id();
+
+            // Define username as string type column
+            $table->string('username');
+
+            // Define firstname as nullable string type column
+            $table->string('firstname')->nullable();
+
+            // Define lastname as nullable string type column
+            $table->string('lastname')->nullable();
+
+            // Define email as unique string type column
+            $table->string('email')->unique();
+
+            // Define email_verified_at as timestamp type column with nullable constraint
+            $table->timestamp('email_verified_at')->nullable();
+
+            // Define password as string type column
+            $table->string('password');
+
+            // Define address as nullable string type column
+            $table->string('address')->nullable();
+
+            // Define city as nullable string type column
+            $table->string('city')->nullable();
+
+            // Define country as nullable string type column
+            $table->string('country')->nullable();
+
+            // Define postal as nullable string type column
+            $table->string('postal')->nullable();
+
+            // Define status as integer type column with default value 1
+            $table->integer('status')->default(1);
+
+            // Define groups as integer type column with default empty value
+            $table->integer('groups')->default(0);
+
+            // Define roles as integer type column with default value 5
+            $table->integer('roles')->default(5);
+
+            // Define about as text type column with nullable constraint
+            $table->text('about')->nullable();
+
+            // Define remember token as string type column
+            $table->rememberToken();
+
+            // Define created_at and updated_at as timestamps type column
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        // Drop users table if it exists
+        Schema::dropIfExists('users');
+    }
+};

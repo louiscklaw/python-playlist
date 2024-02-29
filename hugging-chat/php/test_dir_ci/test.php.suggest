@@ -1,0 +1,81 @@
+<?php
+
+// Import necessary classes from Laravel framework
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+/**
+ * This class contains migration logic for creating 'users' table
+ */
+class CreateUsersTable extends Migration
+{
+    /**
+     * Run the database migrations.
+     *
+     * Creates the 'users' table in the database
+     *
+     * @return void
+     */
+    public function up()
+    {
+        // Define the structure of the 'users' table
+        Schema::create('users', function (Blueprint $table) {
+            // Define an auto-incrementing primary key named 'id'
+            $table->id();
+            
+            // Define a unique string column named 'username'
+            $table->string('username');
+
+            // Define two nullable string columns named 'firstname' and 'lastname' respectively
+            $table->string('firstname')->nullable();
+            $table->string('lastname')->nullable();
+
+            // Define a unique string column named 'email'
+            $table->string('email')->unique();
+
+            // Define a timestamp column named 'email_verified_at' that can be NULL
+            $table->timestamp('email_verified_at')->nullable();
+
+            // Define a string column named 'password'
+            $table->string('password');
+
+            // Define four nullable string columns named 'address', 'city', 'country', and 'postal' respectively
+            $table->string('address')->nullable();
+            $table->string('city')->nullable();
+            $table->string('country')->nullable();
+            $table->string('postal')->nullable();
+
+            // Define an integer column named 'status' with a default value of 1
+            $table->integer('status')->default(1);
+
+            // Define an integer column named 'groups' with a default value of NULL
+            $table->integer('groups')->default(null);
+
+            // Define an integer column named 'roles' with a default value of 5
+            $table->integer('roles')->default(5);
+
+            // Define a text column named 'about' that can be NULL
+            $table->text('about')->nullable();
+
+            // Define a token column named '_token'
+            $table->rememberToken();
+
+            // Define two timestamp columns named 'created_at' and 'updated_at' respectively
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the database migrations.
+     *
+     * Drops the 'users' table if it exists
+     *
+     * @return void
+     */
+    public function down()
+    {
+        // Drop the 'users' table if it exists
+        Schema::dropIfExists('users');
+    }
+}

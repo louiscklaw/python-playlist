@@ -1,0 +1,34 @@
+<?php
+
+// Define a migration for creating 'tbl_projects' table
+return new class () extends Migration {
+    /**
+     * Run the migration to create the 'tbl_projects' table.
+     */
+    public function up()
+    {
+        // Create the 'tbl_projects' table
+        Schema::create('tbl_projects', function (Blueprint $table) {
+            // Add an auto-incremeting primary key column named 'id'
+            $table->id();
+            
+            // Add two timestamp columns named 'created_at' and 'updated_at'
+            $table->timestamps();
+
+            // Allow null values for the 'name' column
+            $table->string('name')->nullable(true); // true as third argument instead of using the nullable method
+
+            // Allow null values for the 'description' column
+            $table->text('description')->nullable(true); // true as third argument instead of using the nullable method
+        });
+    }
+
+    /**
+     * Revert the migration by dropping the 'tbl_projects' table.
+     */
+    public function down()
+    {
+        // Drop the 'tbl_projects' table if it exists
+        Schema::dropIfExists('tbl_projects');
+    }
+};
