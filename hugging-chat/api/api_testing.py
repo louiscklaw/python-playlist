@@ -11,11 +11,21 @@ from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_sqlalchemy import SQLAlchemy
 
+from flask_restful import Api, Resource
+
 from lib.HuggingChatProcessor import HuggingChatProcessor
 
-app = Flask(__name__)
+from resources.Helloworld import HelloWorldResource
+from resources.Ping import PingResource
 
-DATABASE = 'request_logs.sqlite'
+app = Flask(__name__)
+app.config['RATE_LIMIT_PER_HOUR'] = 100
+
+api = Api(app)
+api.add_resource(HelloWorldResource, "/helloworld")
+api.add_resource(PingResource, "/ping")
+
+REQUEST_LOGS_DATABASE = 'request_logs.sqlite'
 limiter = Limiter(
     get_remote_address,
     app=app,
@@ -23,10 +33,21 @@ limiter = Limiter(
     storage_uri="memory://",
 )
 
-@app.route("/ping")
-@limiter.exempt
-def ping():
-    return "PONG"
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+class HelloWorld(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    message = db.Column(db.String(50), nullable=False)
+    ip = db.Column(db.String(50), nullable=False)
+    user_agent = db.Column(db.String(50), nullable=False)
+    created_at = db.Column(db.DateTime(), default=datetime.utcnow())
+
+with app.app_context():
+    print('create_all called')
+    db.create_all()
+
 
 @app.route('/')
 @app.route('/helloworld', methods=['GET'])
@@ -37,29 +58,8 @@ def get_hello():
   print(answer)
   return answer.text
 
-@app.route('/ask_question1', methods=['POST'])
-def ask_question1():
-  print('ask_question')
-
-  if not request.is_json:
-    return jsonify({"error": "Missing JSON in request"}), 400
-  
-  data = request.get_json()
-  try:
-    question = data["question"]
-    pre_prompt = data['pre_prompt']
-    my_instance = HuggingChatProcessor()
-    answer = my_instance.get_answer(question, pre_prompt)
-
-    print(question)
-    print(answer)
-    
-    return jsonify({"answer":answer.text      }), 200
-  except KeyError as e:
-    return jsonify({"error": str(e)}), 400
-
 @app.route('/ask_question', methods=['POST'])
-@limiter.limit("1/minute", override_defaults=True)
+@limiter.limit("3/minute", override_defaults=True)
 def ask_question():
   print('ask_question')
   ip = request.remote_addr
@@ -69,7 +69,13 @@ def ask_question():
   if not request.is_json:
     return jsonify({"error": "Missing JSON in request"}), 400
   
-  connection = None
+  new_message = HelloWorld(
+     message='Hello World!',
+     ip=ip,
+     user_agent=user_agent
+     )
+  db.session.add(new_message)
+  db.session.commit()
 
   data = request.get_json()
   try:
@@ -78,43 +84,12 @@ def ask_question():
     my_instance = HuggingChatProcessor()
     answer = my_instance.get_answer(question, pre_prompt)
 
-    connection = sqlite3.connect(DATABASE)
-    cursor = connection.cursor()
-    # cursor.execute('INSERT INTO request_logs VALUES (?,?)', (int(time.time()), str(answer.text)))
-    connection.commit()
-
     print(question)
     print(answer)
     
     return jsonify({'status': 'success', 'answer': answer.text}), 200
   except KeyError as e:
     return jsonify({"error": str(e)}), 400
-
-@app.route('/xxx', methods=['POST'])
-def post_hello():
-    print('ask_question')
-
-    connection = None
-    try:
-        data = request.get_json()
-        question = data["question"]
-        pre_prompt = data['pre_prompt']
-        my_instance = HuggingChatProcessor()
-        answer = my_instance.get_answer(question, pre_prompt)
-
-        connection = sqlite3.connect(DATABASE)
-        cursor = connection.cursor()
-        cursor.execute('INSERT INTO request_logs VALUES (?,?)', (int(time.time()), str(answer.text)))
-        connection.commit()
-
-        return jsonify({'status': 'success', 'response': answer.text}), 200
-    except Exception as e:
-        error_msg = f"Error occurred while connecting to DB: {str(e)}"
-        print(error_msg)
-        raise e
-    finally:
-        if connection is not None:
-            connection.close()
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', port=5000, debug=True)
