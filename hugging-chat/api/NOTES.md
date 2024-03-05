@@ -20,3 +20,6 @@ D:\_workspace\python-playlist\hugging-chat\php
 <!-- inside pipenv shell -->
 > python api_testing.py
 ```
+
+
+http://localhost:8081/dashboard

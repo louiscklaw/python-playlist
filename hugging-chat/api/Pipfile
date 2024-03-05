@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 hugchat = "*"
 flask = "*"
+flask-limiter = "*"
+flask-sqlalchemy = "*"
+flask-restful = "*"
 
 [dev-packages]
 
