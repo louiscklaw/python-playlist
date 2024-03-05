@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_restful import Api, Resource
 
-from _poc.nocodb.create_ask_record import create_ask_record
+from lib.create_ask_record import create_ask_record
 
 # Define the NoCodeDB configuration
 host = '192.168.10.61'
